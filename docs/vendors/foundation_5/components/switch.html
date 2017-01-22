@@ -1,0 +1,2165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <title>Switches</title>
+
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Diogo Russo">
+<meta name="description" content="Basic">
+<meta name="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS">
+
+
+
+
+<meta name="p:domain_verify" content="f02cbf6a5c8f230685063521292fbfcb"/>
+
+<meta property="fb:app_id"      content="915671155245552" /> 
+<meta property="og:type"        content="website" /> 
+<meta property="og:title"       content="Estúdio Berinjela | Criação" />
+<meta property="og:url"         content="http://lab.diogorusso.com" />
+<meta property="og:image"       content="http://lab.diogorusso.com/my_jekyll/lib/img/_site_card.jpg" />
+<meta property="og:description" content="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS" />
+
+
+<meta property="og:see_also"    content="http://work.diogorusso.com" />
+
+<meta property="og:see_also"    content="http://www.lucaszappa.com.br" />
+
+<meta property="og:see_also"    content="http://www.estudioberinjela.com.br" />
+ 
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="http://lab.diogorusso.com" />
+<meta name="twitter:url" content="http://lab.diogorusso.com">
+<meta name="twitter:title" content="Estúdio Berinjela | Criação" />
+<meta name="twitter:description" content="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS" />
+<meta name="twitter:image" content="http://lab.diogorusso.com/my_jekyll+avatar.png" />
+<meta name="twitter:site" content="@hello_diogo">
+<meta name="twitter:creator" content="@hello_diogo">
+    <link rel=”author” href=”https://plus.google.com/116739255173599428138”/>
+
+  <link rel="stylesheet" href="/my_jekyll/lib/css/main.css">
+  <link rel="stylesheet" href="/my_jekyll/lib/css/custom.css">
+  
+  <link rel="icon"  type="image/ico"  href="/my_jekyll/lib/img/+logo.png">
+
+  <link rel="canonical" href="http://lab.diogorusso.com/my_jekyll/docs/vendors/foundation_5/components/switch.html">
+  <link rel="alternate" type="application/rss+xml" title="Estúdio Berinjela | Criação" href="http://lab.diogorusso.com/my_jekyll/feed.xml">
+
+  <script>document.createElement( "picture" );</script>
+  <script src="/my_jekyll/lib/js/head.js"></script>
+
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'rvc4hsl',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</head>
+
+ 
+  <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '915671155245552',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    <a id="top"></a>
+    
+<div class="overlay">
+    <div class="preloader text-center">
+
+        <img src="/my_jekyll/lib/img/+logo.png">
+
+        <div class="status">
+  <div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div> <!-- spinner-->
+</div><!-- status -->
+
+    </div><!--preloader-->
+</div><!-- overlay -->
+
+<div class="anim-menu">
+
+  <nav class="top-bar large" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="logo">
+        <a href="/my_jekyll"><img src="/my_jekyll/lib/img/+logo.png"></a>
+      </li>
+      <li class="toggle-topbar">
+        <a class="menu-button" id="menuButton">
+          Menu <i class="fa fa-bars"></i>
+        </a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right text-right links">
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  Styleguide
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  UI Kit
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  Foundation 5
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/fulpage_js/" class="page-scroll">
+                  Fullpage.js
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/isotope_js/" class="page-scroll">
+                  Isotope
+                </a>
+          
+      
+   
+</li>
+  
+</ul>
+    </section>
+  </nav>
+</div>
+
+
+
+<div class="back-to-top">
+    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
+</div>
+
+
+
+
+<div class="row">
+
+  <div class="large-3 medium-4 columns">
+    <div class="hide-for-small">
+      <div class="sidebar">
+        <h5>Foundation Documentation</h5>
+        <form>
+          <!--  <label>Search Documentation</label> -->
+          <input tabindex="1" id="autocomplete" type="search" placeholder="Search Docs: e.g. forms">
+        </form>
+
+        <a href="http://foundation.zurb.com/develop/download.html" class="download button expand">Download Foundation</a>
+
+        <nav>
+          <ul class="side-nav">
+             <!--li class="heading">Setup</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/accessibility.html">Accessibility</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/applications.html">Accessibility</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/components/global.html">Global Styles</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/components/kitchen_sink.html">Kitchen sink</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/css.html">Getting Started With Foundation CSS</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/elements.html">Elements</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/index-2.html">Getting Started</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/index.html">Getting Started</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/javascript-utilities.html">JavaScript Utilities</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/javascript.html">JavaScript Setup</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/media-queries.html">Media Queries</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/sass-files.html">What You Get with Foundation Sass</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/sass.html">Getting Started With Sass</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/upgrading.html">Upgrading From Foundation 4</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/using-sass.html">How to Use Foundation Sass</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            -->
+             <li class="heading">Structure</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/block_grid.html">Block Grid</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/grid.html">Grid</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/interchange.html">Interchange</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/rtl.html">Right-to-Left Support</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/visibility.html">Visibility Classes</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/utility-classes.html">Utility Classes</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Navigation</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/breadcrumbs.html">Breadcrumbs</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/icon-bar.html">Icon Bar</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/magellan.html">Magellan</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/offcanvas.html">Off-canvas</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/pagination.html">Pagination</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/sidenav.html">Side Nav</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/subnav.html">Sub Nav</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/topbar.html">Top Bar</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Media</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/clearing.html">Clearing</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/flex_video.html">Flex Video</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/orbit.html">Orbit</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/thumbnails.html">Thumbnails</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Forms</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/abide.html">Abide Validation</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/forms.html">Forms</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/range_slider.html">Range Sliders</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/switch.html">Switches</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Buttons</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/button_groups.html">Button Groups</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/buttons.html">Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/dropdown_buttons.html">Dropdown Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/split_buttons.html">Split Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Typography</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/inline_lists.html">Inline Lists</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/keystrokes.html">Keystrokes</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/labels.html">Labels</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/typography.html">Typography</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Callouts & Prompts</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/alert_boxes.html">Alerts</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/joyride.html">Joyride</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/panels.html">Panels</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/reveal.html">Reveal Modal</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tooltips.html">Tooltips</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              <li class="heading">Content</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/accordion.html">Accordion</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/dropdown.html">Dropdowns</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/equalizer.html">Equalizer</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/pricing_tables.html">Pricing Tables</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/progress_bars.html">Progress Bars</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tables.html">Tables</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tabs.html">Tabs</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              <li class="heading">Support</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/changelog.html">Changelog</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/compatibility.html">Compatibility</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+
+            <!--li class="heading">Setup</li>
+            <li><a href="index-2.html" data-search="">Getting Started</a></li>
+            <li><a href="css.html" data-search="Styles">CSS</a></li>
+            <li><a href="sass.html" data-search="Sass">Sass</a></li>
+            <li><a href="sass-files.html" data-search="Sass,Sass - What You Get, How to Use Sass">Sass Files</a></li>
+            <li><a href="using-sass.html" data-search="Sass,Sass - What You Get, How to Use Sass">Using Sass</a></li>
+            <li><a href="applications.html" data-search="Rails,Gem">Applications</a></li>
+            <li><a href="javascript.html" data-search="">JavaScript</a></li>
+            <li><a href="components/global.html" data-search="Global Styles,Global Mixins,Global Variables,Useful HTML Classes">Global Styles</a></li>
+            <li><a href="components/kitchen_sink.html" data-search="">Kitchen Sink</a></li>
+            <li><a href="accessibility.html" data-search="accessibility">Accessibility</a></li>
+            <li><a href="upgrading.html" data-search="Migration">Upgrading</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Structure</li>
+            <li><a href="media-queries.html" data-search="Breakpoints">Media Queries</a></li>
+            <li><a href="components/visibility.html" data-search="">Visibility</a></li>
+            <li><a href="components/grid.html" data-search="">Grid</a></li>
+            <li><a href="components/block_grid.html" data-search="">Block Grid</a></li>
+            <li><a href="components/interchange.html" data-search="Responsive Images">Interchange Responsive Content <span class="label">JS</span></a></li>
+            <li><a href="utility-classes.html" data-search="">Utility Classes</a></li>
+            <li><a href="javascript-utilities.html" data-search="">Javascript Utilities</a></li>
+            <li><a href="components/rtl.html" data-search="RTL">Right-to-Left Support</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Navigation</li>
+            <li><a href="components/offcanvas.html" data-search="Off Canvas">Off-canvas <span class="label">JS</span></a></li>
+            <li><a href="components/topbar.html" data-search="Nav Bar,Navigation,Sticky">Top Bar <span class="label">JS</span></a></li>
+            <li><a href="components/icon-bar.html" data-search="">Icon Bar</a></li>
+            <li><a href="components/sidenav.html" data-search="">Side Nav</a></li>
+            <li><a href="components/magellan.html" data-search="Scrollspy">Magellan Sticky Nav <span class="label">JS</span></a></li>
+            <li><a href="components/subnav.html" data-search="">Sub Nav</a></li>
+            <li><a href="components/breadcrumbs.html" data-search="Navigation Path,Cookie Crumb">Breadcrumbs</a></li>
+            <li><a href="components/pagination.html" data-search="">Pagination</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Media</li>
+            <li><a href="components/orbit.html" data-search="Carousel,Slider,Slideshow">Orbit Slider <span class="label">JS</span></a></li>
+            <li><a href="components/thumbnails.html" data-search="Images">Thumbnails</a></li>
+            <li><a href="components/clearing.html" data-search="Responsive Lightbox,Lightbox">Clearing Lightbox <span class="label">JS</span></a></li>
+            <li><a href="components/flex_video.html" data-search="Responsive Video">Flex Video</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Forms</li>
+            <li><a href="components/forms.html" data-search="">Forms</a></li>
+            <li><a href="components/switch.html" data-search="">Switches</a></li>
+            <li><a href="components/range_slider.html" data-search="Range Slider">Range Sliders <span class="label">JS</span></a></li>
+            <li><a href="components/abide.html" data-search="Form Validation,Field Validation">Abide Validation <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Buttons</li>
+            <li><a href="components/buttons.html" data-search="">Buttons</a></li>
+            <li><a href="components/button_groups.html" data-search="Button Bar">Button Groups</a></li>
+            <li><a href="components/split_buttons.html" data-search="">Split Buttons <span class="label">JS</span></a></li>
+            <li><a href="components/dropdown_buttons.html" data-search="">Dropdown Buttons <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Typography</li>
+            <li><a href="components/typography.html" data-search="Typography,Type-setting,Composition">Type</a></li>
+            <li><a href="components/inline_lists.html" data-search="Lists">Inline Lists</a></li>
+            <li><a href="components/labels.html" data-search="Tags">Labels</a></li>
+            <li><a href="components/keystrokes.html" data-search="">Keystrokes</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Callouts &amp; Prompts</li>
+            <li><a href="components/reveal.html" data-search="Modal">Reveal Modal <span class="label">JS</span></a></li>
+            <li><a href="components/alert_boxes.html" data-search="Error,Success,Warning">Alerts <span class="label">JS</span></a></li>
+            <li><a href="components/panels.html" data-search="Wells">Panels</a></li>
+            <li><a href="components/tooltips.html" data-search="Popover">Tooltips <span class="label">JS</span></a></li>
+            <li><a href="components/joyride.html" data-search="Tooltip Tour,Guider,Tooltip Walk-through">Joyride <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Content</li>
+            <li><a href="components/dropdown.html" data-search="">Dropdowns <span class="label">JS</span></a></li>
+            <li><a href="components/pricing_tables.html" data-search="">Pricing Tables</a></li>
+            <li><a href="components/progress_bars.html" data-search="">Progress Bars</a></li>
+            <li><a href="components/tables.html" data-search="">Tables</a></li>
+            <li><a href="components/accordion.html" data-search="">Accordion <span class="label">JS</span></a></li>
+            <li><a href="components/tabs.html" data-search="">Tabs <span class="label">JS</span></a></li>
+            <li><a href="components/equalizer.html" data-search="">Equalizer <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Support</li>
+
+            <li><a href="changelog.html" data-search="">Changelog</a></li>
+            <li><a href="compatibility.html" data-search="">Compatibility</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Older Docs</li>
+            <li><a href="v/4.3.2/index.html" data-search="">Foundation 4</a></li>
+            <li><a href="v/3.2.5/index.html" data-search="">Foundation 3</a></li>
+            <li><a href="v/2.2.1/index.html" data-search="">Foundation 2</a></li-->
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+  <div class="large-9 medium-8 columns">
+
+    <h1 id="getting-started">Switches</h1>
+    <p><h3 class="subheader">Switches are toggle element that switch between an Off and On state on tap or click. They make use of checkbox inputs (or radio buttons) and require no javascript.</h3></p>
+    <hr>
+    <h3>Basic</h3>
+
+<p>You can create a switch using minimal markup.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;switch&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">&quot;exampleCheckboxSwitch&quot;</span> <span class="attribute">type</span>=<span class="value">&quot;checkbox&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;exampleCheckboxSwitch&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span> 
+
+<span class="comment">&lt;!-- Using radio buttons – each switch turns off the other two --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;switch small&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">&quot;exampleRadioSwitch1&quot;</span> <span class="attribute">type</span>=<span class="value">&quot;radio&quot;</span> <span class="attribute">checked</span> <span class="attribute">name</span>=<span class="value">&quot;testGroup&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;exampleRadioSwitch1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span> 
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;switch radius&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">&quot;exampleRadioSwitch2&quot;</span> <span class="attribute">type</span>=<span class="value">&quot;radio&quot;</span> <span class="attribute">name</span>=<span class="value">&quot;testGroup&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;exampleRadioSwitch2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span> 
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;switch round large&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">&quot;exampleRadioSwitch3&quot;</span> <span class="attribute">type</span>=<span class="value">&quot;radio&quot;</span> <span class="attribute">name</span>=<span class="value">&quot;testGroup&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;exampleRadioSwitch3&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>Rendered Checkbox HTML</h4>
+<div class="switch">
+  <input id="exampleCheckboxSwitch" type="checkbox">
+  <label for="exampleCheckboxSwitch"></label>
+</div> 
+
+<h4>Rendered Radio HTML</h4>
+
+<div class="switch small">
+  <input id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+  <label for="exampleRadioSwitch1"></label>
+</div> 
+
+<div class="switch radius">
+  <input id="exampleRadioSwitch2" type="radio" name="testGroup">
+  <label for="exampleRadioSwitch2"></label>
+</div> 
+
+<div class="switch round large">
+  <input id="exampleRadioSwitch3" type="radio" name="testGroup">
+  <label for="exampleRadioSwitch3"></label>
+</div>
+  </div>
+</div>
+
+<p>The class options:</p>
+<ul>
+<li><code>radius</code>: Add this to the the switch container to get a 3px radius paddle and edges</li>
+<li><code>round</code>: Add this to the the switch container to get a round paddle and edges</li>
+<li><code>tiny</code>: Set the height and text of the switch to tiny</li>
+<li><code>small</code>: Set the height and text of the switch to small</li>
+<li><code>large</code>: Set the height and text of the switch to large</li>
+</ul>
+<hr>
+<h2 id="accessibility">Accessibility</h2>
+<p>To have switches work with ARIA, you will need to change the div to fieldset and add a <code>tabindex</code> of 0. Here is how to use <code>aria-checked</code> when using Switches to make it accessible to screen readers:</p>
+<p>Because our switches are non-standard form elements, assistive devices need help figuring out what they are. To make switches more accessible, use the <code>&lt;fieldset&gt;</code> tag as a container, with the attribute <code>tabindex=&quot;0&quot;</code>, so keyboards can tab to it.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">fieldset</span> <span class="attribute">class</span>=<span class="value">&quot;switch&quot;</span> <span class="attribute">tabindex</span>=<span class="value">&quot;0&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">&quot;exampleCheckboxSwitch4&quot;</span> <span class="attribute">type</span>=<span class="value">&quot;checkbox&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;exampleCheckboxSwitch4&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">fieldset</span>&gt;</span></div></code></pre>
+
+
+  </div>
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+<fieldset class="switch" tabindex="0">
+  <input id="exampleCheckboxSwitch4" type="checkbox">
+  <label for="exampleCheckboxSwitch4"></label>
+</fieldset>
+
+  </div>
+</div>
+
+<hr>
+<h2 id="customize-with-sass">Customize with Sass</h2>
+<p>Switches can be easily customized using our Sass variables.</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">form</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// Controlling background color for the switch container</span>
+$switch-bg<span class="value">: $gainsboro;</span>
+
+<span class="comment">// We use these to control the switch heights for our default classes</span>
+$switch-<span class="attribute">height</span>-tny<span class="value">: <span class="number">1.5</span>rem;</span>
+$switch-<span class="attribute">height</span>-sml<span class="value">: <span class="number">1.75</span>rem;</span>
+$switch-<span class="attribute">height</span>-med<span class="value">: <span class="number">2</span>rem;</span>
+$switch-<span class="attribute">height</span>-lrg<span class="value">: <span class="number">2.5</span>rem;</span>
+$switch-<span class="attribute">bottom</span>-<span class="attribute">margin</span><span class="value">: <span class="number">1.5</span>rem;</span>
+
+<span class="comment">// We use these to style the switch-paddle</span>
+$switch-paddle-bg<span class="value">: $white;</span>
+$switch-paddle-<span class="attribute">transition</span>-speed<span class="value">: .<span class="number">15</span>s;</span>
+$switch-paddle-<span class="attribute">transition</span>-ease<span class="value">: ease-out;</span>
+$switch-active-<span class="attribute">color</span><span class="value">: $primary-color !default;</span></div></code></pre>
+
+
+<p>The markup is very simple; you need a class on the container for the switch, and then an input and a label. You can use checkboxes or radio buttons &mdash; for radiu buttons remember that they can only be turned off by another radio button (one must be on).</p>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"switch"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">"switchName"</span> <span class="attribute">type</span>=<span class="value">"checkbox"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"switchName"</span>&gt;</span><span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+
+<h5 id="quick-mixin">Quick Mixin</h5>
+<p>You can build your switches using our global mixin by including it on your custom class or ID in your own stylesheet. The mixin contains options for changing the key styles, the rest of the defaults can be modified using the available variables. The global mixin looks like this:</p>
+<pre><code class="language-scss"><div class="code-container"><span class="comment">/* Using the default styles */</span>
+<span class="class">.your-class-name</span> { <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> switch</span>;</span> }</div></code></pre>
+
+
+<div class="switch">
+  <input id="mixinSwitch" type="checkbox">
+  <label for="mixinSwitch"></label>
+</div>
+
+<p>There are <strong>seven options</strong> you can customize on the fly when writing this mixin. These control things like radius, transition speed, and size.</p>
+<pre><code class="language-scss"><div class="code-container"><span class="comment">/* Using the available options */</span>
+<span class="class">.your-class-name</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> switch</span>($transition-speed, $transition-ease, $height, $paddle-bg, $active-color, $radius, $base-style);</span>
+}
+
+<span class="comment">/* This sets the speed at which the switch toggles */</span>
+$<span class="attribute">transition</span>-speed<span class="value">: $switch-paddle-transition-speed;</span>
+
+<span class="comment">/* This sets the ease of the switch transition */</span>
+$<span class="attribute">transition</span>-ease<span class="value">: $switch-paddle-transition-ease;</span>
+
+<span class="comment">/* This controls the overall height of the switch */</span>
+$<span class="attribute">height</span><span class="value">: $switch-height-med;</span>
+
+<span class="comment">/* This controls the background of the paddle */</span>
+$paddle-bg<span class="value">: $switch-paddle-bg;</span>
+
+<span class="comment">/* Set the background color for the switch when it's on */</span>
+$active-<span class="attribute">color</span><span class="value">: $switch-active-color;</span>
+
+<span class="comment">/* Set this to true for default radius or any number for complete control */</span>
+$radius<span class="value">: false;</span>
+
+<span class="comment">/* If you set this to false, base styles are left out */</span>
+$<span class="tag">base</span>-<span class="tag">style</span><span class="value">: true;</span></div></code></pre>
+
+
+<hr>
+<h2 id="semantic-markup-with-sass">Semantic Markup With Sass</h2>
+<p>You can create your own switches using our Sass mixins. You have access to a few internal mixins that can create parts of the switch as needed. The base mixin will create a switch base that only includes structural styles.</p>
+<pre><code class="language-scss"><div class="code-container"><span class="class">.your-class-name</span> { <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> switch-base</span>($transition-speed, $transition-ease);</span> }</div></code></pre>
+
+
+<h5 id="size-mixin">Size Mixin</h5>
+<p>The size mixin will let you control the size of the switch.</p>
+<pre><code class="language-scss"><div class="code-container"><span class="class">.your-class-name</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> switch-base</span>($transition-speed, $transition-ease);</span>
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> switch-size</span>($height);</span>
+}</div></code></pre>
+
+
+<h5 id="style-mixin">Style Mixin</h5>
+<p>The last internal mixin you have access to for switches is the style mixin. This will help you style paddle color, active color and radius.</p>
+<pre><code class="language-scss"><div class="code-container"><span class="class">.your-class-name</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> switch-base</span>($transition-speed, $transition-ease);</span>
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> switch-size</span>($height);</span>
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> switch-style</span>($paddle-bg, $active-color, $radius, $base-style);</span>
+}</div></code></pre>
+
+
+<hr>
+<h5 id="sass-errors-">Sass Errors?</h5>
+<p>If the default &quot;foundation&quot; import was commented out, then make sure you import this file:</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container"><span class="at_rule">@<span class="keyword">import</span> <span class="string">"foundation/components/switches"</span>;</span></div></code></pre>
+
+
+
+            </div>
+
+  </div>
+</div>    
+     <script type="text/javascript" src="/my_jekyll/lib/js/vendor.js"></script>
+<script type="text/javascript" src="/my_jekyll/lib/js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59944728-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+

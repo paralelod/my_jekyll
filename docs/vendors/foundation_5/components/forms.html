@@ -1,0 +1,2626 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <title>Forms</title>
+
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Diogo Russo">
+<meta name="description" content="Building Forms With HTMLCreating a form in Foundation is designed to be easy but extremely flexible. Forms are built with a combination of standard form elem...">
+<meta name="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS">
+
+
+
+
+<meta name="p:domain_verify" content="f02cbf6a5c8f230685063521292fbfcb"/>
+
+<meta property="fb:app_id"      content="915671155245552" /> 
+<meta property="og:type"        content="website" /> 
+<meta property="og:title"       content="Estúdio Berinjela | Criação" />
+<meta property="og:url"         content="http://lab.diogorusso.com" />
+<meta property="og:image"       content="http://lab.diogorusso.com/my_jekyll/lib/img/_site_card.jpg" />
+<meta property="og:description" content="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS" />
+
+
+<meta property="og:see_also"    content="http://work.diogorusso.com" />
+
+<meta property="og:see_also"    content="http://www.lucaszappa.com.br" />
+
+<meta property="og:see_also"    content="http://www.estudioberinjela.com.br" />
+ 
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="http://lab.diogorusso.com" />
+<meta name="twitter:url" content="http://lab.diogorusso.com">
+<meta name="twitter:title" content="Estúdio Berinjela | Criação" />
+<meta name="twitter:description" content="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS" />
+<meta name="twitter:image" content="http://lab.diogorusso.com/my_jekyll+avatar.png" />
+<meta name="twitter:site" content="@hello_diogo">
+<meta name="twitter:creator" content="@hello_diogo">
+    <link rel=”author” href=”https://plus.google.com/116739255173599428138”/>
+
+  <link rel="stylesheet" href="/my_jekyll/lib/css/main.css">
+  <link rel="stylesheet" href="/my_jekyll/lib/css/custom.css">
+  
+  <link rel="icon"  type="image/ico"  href="/my_jekyll/lib/img/+logo.png">
+
+  <link rel="canonical" href="http://lab.diogorusso.com/my_jekyll/docs/vendors/foundation_5/components/forms.html">
+  <link rel="alternate" type="application/rss+xml" title="Estúdio Berinjela | Criação" href="http://lab.diogorusso.com/my_jekyll/feed.xml">
+
+  <script>document.createElement( "picture" );</script>
+  <script src="/my_jekyll/lib/js/head.js"></script>
+
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'rvc4hsl',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</head>
+
+ 
+  <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '915671155245552',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    <a id="top"></a>
+    
+<div class="overlay">
+    <div class="preloader text-center">
+
+        <img src="/my_jekyll/lib/img/+logo.png">
+
+        <div class="status">
+  <div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div> <!-- spinner-->
+</div><!-- status -->
+
+    </div><!--preloader-->
+</div><!-- overlay -->
+
+<div class="anim-menu">
+
+  <nav class="top-bar large" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="logo">
+        <a href="/my_jekyll"><img src="/my_jekyll/lib/img/+logo.png"></a>
+      </li>
+      <li class="toggle-topbar">
+        <a class="menu-button" id="menuButton">
+          Menu <i class="fa fa-bars"></i>
+        </a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right text-right links">
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  Styleguide
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  UI Kit
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  Foundation 5
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/fulpage_js/" class="page-scroll">
+                  Fullpage.js
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/isotope_js/" class="page-scroll">
+                  Isotope
+                </a>
+          
+      
+   
+</li>
+  
+</ul>
+    </section>
+  </nav>
+</div>
+
+
+
+<div class="back-to-top">
+    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
+</div>
+
+
+
+
+<div class="row">
+
+  <div class="large-3 medium-4 columns">
+    <div class="hide-for-small">
+      <div class="sidebar">
+        <h5>Foundation Documentation</h5>
+        <form>
+          <!--  <label>Search Documentation</label> -->
+          <input tabindex="1" id="autocomplete" type="search" placeholder="Search Docs: e.g. forms">
+        </form>
+
+        <a href="http://foundation.zurb.com/develop/download.html" class="download button expand">Download Foundation</a>
+
+        <nav>
+          <ul class="side-nav">
+             <!--li class="heading">Setup</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/accessibility.html">Accessibility</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/applications.html">Accessibility</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/components/global.html">Global Styles</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/components/kitchen_sink.html">Kitchen sink</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/css.html">Getting Started With Foundation CSS</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/elements.html">Elements</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/index-2.html">Getting Started</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/index.html">Getting Started</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/javascript-utilities.html">JavaScript Utilities</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/javascript.html">JavaScript Setup</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/media-queries.html">Media Queries</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/sass-files.html">What You Get with Foundation Sass</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/sass.html">Getting Started With Sass</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/upgrading.html">Upgrading From Foundation 4</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/using-sass.html">How to Use Foundation Sass</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            -->
+             <li class="heading">Structure</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/block_grid.html">Block Grid</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/grid.html">Grid</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/interchange.html">Interchange</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/rtl.html">Right-to-Left Support</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/visibility.html">Visibility Classes</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/utility-classes.html">Utility Classes</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Navigation</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/breadcrumbs.html">Breadcrumbs</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/icon-bar.html">Icon Bar</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/magellan.html">Magellan</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/offcanvas.html">Off-canvas</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/pagination.html">Pagination</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/sidenav.html">Side Nav</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/subnav.html">Sub Nav</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/topbar.html">Top Bar</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Media</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/clearing.html">Clearing</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/flex_video.html">Flex Video</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/orbit.html">Orbit</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/thumbnails.html">Thumbnails</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Forms</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/abide.html">Abide Validation</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/forms.html">Forms</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/range_slider.html">Range Sliders</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/switch.html">Switches</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Buttons</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/button_groups.html">Button Groups</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/buttons.html">Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/dropdown_buttons.html">Dropdown Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/split_buttons.html">Split Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Typography</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/inline_lists.html">Inline Lists</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/keystrokes.html">Keystrokes</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/labels.html">Labels</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/typography.html">Typography</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Callouts & Prompts</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/alert_boxes.html">Alerts</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/joyride.html">Joyride</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/panels.html">Panels</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/reveal.html">Reveal Modal</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tooltips.html">Tooltips</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              <li class="heading">Content</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/accordion.html">Accordion</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/dropdown.html">Dropdowns</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/equalizer.html">Equalizer</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/pricing_tables.html">Pricing Tables</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/progress_bars.html">Progress Bars</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tables.html">Tables</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tabs.html">Tabs</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              <li class="heading">Support</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/changelog.html">Changelog</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/compatibility.html">Compatibility</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+
+            <!--li class="heading">Setup</li>
+            <li><a href="index-2.html" data-search="">Getting Started</a></li>
+            <li><a href="css.html" data-search="Styles">CSS</a></li>
+            <li><a href="sass.html" data-search="Sass">Sass</a></li>
+            <li><a href="sass-files.html" data-search="Sass,Sass - What You Get, How to Use Sass">Sass Files</a></li>
+            <li><a href="using-sass.html" data-search="Sass,Sass - What You Get, How to Use Sass">Using Sass</a></li>
+            <li><a href="applications.html" data-search="Rails,Gem">Applications</a></li>
+            <li><a href="javascript.html" data-search="">JavaScript</a></li>
+            <li><a href="components/global.html" data-search="Global Styles,Global Mixins,Global Variables,Useful HTML Classes">Global Styles</a></li>
+            <li><a href="components/kitchen_sink.html" data-search="">Kitchen Sink</a></li>
+            <li><a href="accessibility.html" data-search="accessibility">Accessibility</a></li>
+            <li><a href="upgrading.html" data-search="Migration">Upgrading</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Structure</li>
+            <li><a href="media-queries.html" data-search="Breakpoints">Media Queries</a></li>
+            <li><a href="components/visibility.html" data-search="">Visibility</a></li>
+            <li><a href="components/grid.html" data-search="">Grid</a></li>
+            <li><a href="components/block_grid.html" data-search="">Block Grid</a></li>
+            <li><a href="components/interchange.html" data-search="Responsive Images">Interchange Responsive Content <span class="label">JS</span></a></li>
+            <li><a href="utility-classes.html" data-search="">Utility Classes</a></li>
+            <li><a href="javascript-utilities.html" data-search="">Javascript Utilities</a></li>
+            <li><a href="components/rtl.html" data-search="RTL">Right-to-Left Support</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Navigation</li>
+            <li><a href="components/offcanvas.html" data-search="Off Canvas">Off-canvas <span class="label">JS</span></a></li>
+            <li><a href="components/topbar.html" data-search="Nav Bar,Navigation,Sticky">Top Bar <span class="label">JS</span></a></li>
+            <li><a href="components/icon-bar.html" data-search="">Icon Bar</a></li>
+            <li><a href="components/sidenav.html" data-search="">Side Nav</a></li>
+            <li><a href="components/magellan.html" data-search="Scrollspy">Magellan Sticky Nav <span class="label">JS</span></a></li>
+            <li><a href="components/subnav.html" data-search="">Sub Nav</a></li>
+            <li><a href="components/breadcrumbs.html" data-search="Navigation Path,Cookie Crumb">Breadcrumbs</a></li>
+            <li><a href="components/pagination.html" data-search="">Pagination</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Media</li>
+            <li><a href="components/orbit.html" data-search="Carousel,Slider,Slideshow">Orbit Slider <span class="label">JS</span></a></li>
+            <li><a href="components/thumbnails.html" data-search="Images">Thumbnails</a></li>
+            <li><a href="components/clearing.html" data-search="Responsive Lightbox,Lightbox">Clearing Lightbox <span class="label">JS</span></a></li>
+            <li><a href="components/flex_video.html" data-search="Responsive Video">Flex Video</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Forms</li>
+            <li><a href="components/forms.html" data-search="">Forms</a></li>
+            <li><a href="components/switch.html" data-search="">Switches</a></li>
+            <li><a href="components/range_slider.html" data-search="Range Slider">Range Sliders <span class="label">JS</span></a></li>
+            <li><a href="components/abide.html" data-search="Form Validation,Field Validation">Abide Validation <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Buttons</li>
+            <li><a href="components/buttons.html" data-search="">Buttons</a></li>
+            <li><a href="components/button_groups.html" data-search="Button Bar">Button Groups</a></li>
+            <li><a href="components/split_buttons.html" data-search="">Split Buttons <span class="label">JS</span></a></li>
+            <li><a href="components/dropdown_buttons.html" data-search="">Dropdown Buttons <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Typography</li>
+            <li><a href="components/typography.html" data-search="Typography,Type-setting,Composition">Type</a></li>
+            <li><a href="components/inline_lists.html" data-search="Lists">Inline Lists</a></li>
+            <li><a href="components/labels.html" data-search="Tags">Labels</a></li>
+            <li><a href="components/keystrokes.html" data-search="">Keystrokes</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Callouts &amp; Prompts</li>
+            <li><a href="components/reveal.html" data-search="Modal">Reveal Modal <span class="label">JS</span></a></li>
+            <li><a href="components/alert_boxes.html" data-search="Error,Success,Warning">Alerts <span class="label">JS</span></a></li>
+            <li><a href="components/panels.html" data-search="Wells">Panels</a></li>
+            <li><a href="components/tooltips.html" data-search="Popover">Tooltips <span class="label">JS</span></a></li>
+            <li><a href="components/joyride.html" data-search="Tooltip Tour,Guider,Tooltip Walk-through">Joyride <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Content</li>
+            <li><a href="components/dropdown.html" data-search="">Dropdowns <span class="label">JS</span></a></li>
+            <li><a href="components/pricing_tables.html" data-search="">Pricing Tables</a></li>
+            <li><a href="components/progress_bars.html" data-search="">Progress Bars</a></li>
+            <li><a href="components/tables.html" data-search="">Tables</a></li>
+            <li><a href="components/accordion.html" data-search="">Accordion <span class="label">JS</span></a></li>
+            <li><a href="components/tabs.html" data-search="">Tabs <span class="label">JS</span></a></li>
+            <li><a href="components/equalizer.html" data-search="">Equalizer <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Support</li>
+
+            <li><a href="changelog.html" data-search="">Changelog</a></li>
+            <li><a href="compatibility.html" data-search="">Compatibility</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Older Docs</li>
+            <li><a href="v/4.3.2/index.html" data-search="">Foundation 4</a></li>
+            <li><a href="v/3.2.5/index.html" data-search="">Foundation 3</a></li>
+            <li><a href="v/2.2.1/index.html" data-search="">Foundation 2</a></li-->
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+  <div class="large-9 medium-8 columns">
+
+    <h1 id="getting-started">Forms</h1>
+    <p><h3 class="subheader">We set out to create an easy, powerful and versatile form layout system. A combination of form styles and the Foundation grid means you can do almost anything.</h3></p>
+    <hr>
+    <h2 id="building-forms-with-html">Building Forms With HTML</h2>
+<p>Creating a form in Foundation is designed to be easy but extremely flexible. Forms are built with a combination of standard form elements, as well as the Grid (rows and columns).</p>
+<p>Form elements in Foundation are styled based on their type attribute rather than a class, and can be sized in a couple of ways:</p>
+<ul>
+<li>You can size inputs using column sizes, like <code>.large-6</code>, <code>.small-6</code>.</li>
+<li>You can create row elements inside your form and use columns for the form, including inputs, labels and more. Rows inside a form inherit some special padding to even up input spacing.</li>
+</ul>
+<p>This is an example form we&#39;ve created that is laid out using the grid:</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-12 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">label</span>&gt;</span>Input Label
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;large-12.columns&quot;</span> /&gt;</span>
+      <span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-4 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">label</span>&gt;</span>Input Label
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;large-4.columns&quot;</span> /&gt;</span>
+      <span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-4 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">label</span>&gt;</span>Input Label
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;large-4.columns&quot;</span> /&gt;</span>
+      <span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-4 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row collapse&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">label</span>&gt;</span>Input Label<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-9 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;small-9.columns&quot;</span> /&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-3 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">&quot;postfix&quot;</span>&gt;</span>.com<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-12 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">label</span>&gt;</span>Select Box
+        <span class="tag">&lt;<span class="title">select</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">&quot;husker&quot;</span>&gt;</span>Husker<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">&quot;starbuck&quot;</span>&gt;</span>Starbuck<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">&quot;hotdog&quot;</span>&gt;</span>Hot Dog<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">&quot;apollo&quot;</span>&gt;</span>Apollo<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">select</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-6 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">label</span>&gt;</span>Choose Your Favorite<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;radio&quot;</span> <span class="attribute">name</span>=<span class="value">&quot;pokemon&quot;</span> <span class="attribute">value</span>=<span class="value">&quot;Red&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;pokemonRed&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;pokemonRed&quot;</span>&gt;</span>Red<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;radio&quot;</span> <span class="attribute">name</span>=<span class="value">&quot;pokemon&quot;</span> <span class="attribute">value</span>=<span class="value">&quot;Blue&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;pokemonBlue&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;pokemonBlue&quot;</span>&gt;</span>Blue<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-6 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">label</span>&gt;</span>Check these out<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">&quot;checkbox1&quot;</span> <span class="attribute">type</span>=<span class="value">&quot;checkbox&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;checkbox1&quot;</span>&gt;</span>Checkbox 1<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">&quot;checkbox2&quot;</span> <span class="attribute">type</span>=<span class="value">&quot;checkbox&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;checkbox2&quot;</span>&gt;</span>Checkbox 2<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-12 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">label</span>&gt;</span>Textarea Label
+        <span class="tag">&lt;<span class="title">textarea</span> <span class="attribute">placeholder</span>=<span class="value">&quot;small-12.columns&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">textarea</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></div></code></pre>
+
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+
+<form>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Input Label
+        <input type="text" placeholder="large-12.columns" />
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-4 columns">
+      <label>Input Label
+        <input type="text" placeholder="large-4.columns" />
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>Input Label
+        <input type="text" placeholder="large-4.columns" />
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <div class="row collapse">
+        <label>Input Label</label>
+        <div class="small-9 columns">
+          <input type="text" placeholder="small-9.columns" />
+        </div>
+        <div class="small-3 columns">
+          <span class="postfix">.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Select Box
+        <select>
+          <option value="husker">Husker</option>
+          <option value="starbuck">Starbucks</option>
+          <option value="hotdog">Hot Dog</option>
+          <option value="apollo">Apollo</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      <label>Choose Your Favorite</label>
+      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+    </div>
+    <div class="large-6 columns">
+      <label>Check These Out</label>
+      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Textarea Label
+        <textarea placeholder="small-12.columns"></textarea>
+      </label>
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+
+<h3 id="inline-labels">Inline Labels</h3>
+<p>Sometimes you want a form with labels to the left of your inputs. Piece of cake. You can put the label inside a different column to the left of the input. Then add a class of <code>.right</code> to the label to have it align to the right.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-8&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-3 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;right-label&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;right&quot;</span>&gt;</span>Label<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-9 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;right-label&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Inline Text Input&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></div></code></pre>
+
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+<form>
+  <div class="row">
+    <div class="small-8">
+      <div class="row">
+        <div class="small-3 columns">
+          <label for="right-label" class="right">Label</label>
+        </div>
+        <div class="small-9 columns">
+          <input type="text" id="right-label" placeholder="Inline Text Input">
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+
+<p>Adding a class of <code>.inline</code> will have it vertically center against an input. You can use one or both of these classes to accomplish the look you want.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-8 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-3 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;right-label&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;right inline&quot;</span>&gt;</span>Label<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-9 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;right-label&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Inline Text Input&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></div></code></pre>
+
+
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+<form>
+  <div class="row">
+    <div class="small-8">
+      <div class="row">
+        <div class="small-3 columns">
+          <label for="right-label-inline" class="right inline">Label</label>
+        </div>
+        <div class="small-9 columns">
+          <input type="text" id="right-label-inline" placeholder="Inline Text Input">
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+  </div>
+</div>
+
+<hr>
+<h3 id="defining-a-fieldset">Defining a Fieldset</h3>
+<p>We don&#39;t see them too much, but one of the useful form elements included with Foundation is <code>&lt;fieldset&gt;</code>. This is used as a wrapper right inside the form element. Right after you define a fieldset, you can include a legend title by using <code>&lt;legend&gt;</code>. Here&#39;s some HTML to help make copy paste.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">fieldset</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">legend</span>&gt;</span>Fieldset Legend<span class="tag">&lt;/<span class="title">legend</span>&gt;</span>
+
+    <span class="tag">&lt;<span class="title">label</span>&gt;</span>Input Label
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Inputs and other form elements go inside...&quot;</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">fieldset</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></div></code></pre>
+
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+<form>
+  <fieldset>
+    <legend>Fieldset Legend</legend>
+
+    <label>Input Label
+      <input type="text" placeholder="Inputs and other form elements go inside...">
+    </label>
+  </fieldset>
+</form>
+  </div>
+</div>
+
+<hr>
+<h3 id="pre-postfix-labels-amp-actions">Pre/Postfix Labels &amp; Actions</h3>
+<p>Foundation forms support actions tied to buttons, and prefix / postfix labels, through a versatile approach using special grid properties. Essentially you can use <code>&lt;div class=&quot;row collapse&quot;&gt;</code> to create label / action / input combinations. You use the Foundation columns to define the size of the pre/postfix <code>&lt;span class=&quot;postfix&quot;&gt;</code> or <code>&lt;span class=&quot;prefix&quot;&gt;</code>.</p>
+<p>You can also give a button / input pair a radius or a rounded edge by adding the classes <code>prefix-radius</code>, <code>postfix-radius</code>, <code>prefix-round</code> or <code>postfix-round</code> to the row that contains the elements. For example, <code>&lt;div class=&quot;row collapse postfix-round&quot;&gt;</code> will add a rounded edge to the left side of the input field, and to the right side of the button, creating a cohesive rounded input. Here are a few examples:</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row collapse&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-3 large-2 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">&quot;prefix&quot;</span>&gt;</span>http://<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-9 large-10 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Enter your URL...&quot;</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-12 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row collapse&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-10 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Hex Value&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-2 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;button postfix&quot;</span>&gt;</span>Go<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-6 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row collapse prefix-radius&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-3 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">&quot;prefix&quot;</span>&gt;</span>Label<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-9 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Value&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-6 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row collapse postfix-radius&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-9 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Value&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-3 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">&quot;postfix&quot;</span>&gt;</span>Label<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-6 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row collapse prefix-round&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-3 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;button prefix&quot;</span>&gt;</span>Go<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-9 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Value&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-6 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row collapse postfix-round&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-9 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Value&quot;</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;small-3 columns&quot;</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;button postfix&quot;</span>&gt;</span>Go<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></div></code></pre>
+
+
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+<form>
+  <div class="row collapse">
+    <div class="small-3 large-2 columns">
+      <span class="prefix">http://</span>
+    </div>
+    <div class="small-9 large-10 columns">
+      <input type="text" placeholder="Enter your URL...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row collapse">
+        <div class="small-10 columns">
+          <input type="text" placeholder="Hex Value">
+        </div>
+        <div class="small-2 columns">
+          <a href="#" class="button postfix">Go</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      <div class="row collapse prefix-radius">
+        <div class="small-3 columns">
+          <span class="prefix">Label</span>
+        </div>
+        <div class="small-9 columns">
+          <input type="text" placeholder="Value">
+        </div>
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="row collapse postfix-radius">
+        <div class="small-9 columns">
+          <input type="text" placeholder="Value">
+        </div>
+        <div class="small-3 columns">
+          <span class="postfix">Label</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      <div class="row collapse prefix-round">
+        <div class="small-3 columns">
+          <a href="#" class="button prefix">Go</a>
+        </div>
+        <div class="small-9 columns">
+          <input type="text" placeholder="Value">
+        </div>
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="row collapse postfix-round">
+        <div class="small-9 columns">
+          <input type="text" placeholder="Value">
+        </div>
+        <div class="small-3 columns">
+          <a href="#" class="button postfix">Go</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+  </div>
+</div>
+
+<p>You&#39;ll notice that on the last postfix element, we&#39;ve included the class of <code>radius</code>. This adds the border radius on the appropriate edge depending on whether it&#39;s a prefix or a postfix element. You can even include buttons with these styles, just apply the <code>.button</code> as well as the pre/postfix class.</p>
+<hr>
+<h3 id="error-states">Error States</h3>
+<p>Foundation includes error states for labels, inputs and messaging that you can have your app generate programatically. You can attach a class of <code>.error</code> either to the individual elements (label, input, small) or to a column/div.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-6 columns&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">label</span> <span class="attribute">class</span>=<span class="value">&quot;error&quot;</span>&gt;</span>Error
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;error&quot;</span> /&gt;</span>
+      <span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">small</span> <span class="attribute">class</span>=<span class="value">&quot;error&quot;</span>&gt;</span>Invalid entry<span class="tag">&lt;/<span class="title">small</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;large-6 columns error&quot;</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">label</span>&gt;</span>Another Error
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> /&gt;</span>
+      <span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">small</span> <span class="attribute">class</span>=<span class="value">&quot;error&quot;</span>&gt;</span>Invalid entry<span class="tag">&lt;/<span class="title">small</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">textarea</span> <span class="attribute">class</span>=<span class="value">&quot;error&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Message...&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">textarea</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">small</span> <span class="attribute">class</span>=<span class="value">&quot;error&quot;</span>&gt;</span>Invalid entry<span class="tag">&lt;/<span class="title">small</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></div></code></pre>
+
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+<form>
+  <div class="row">
+    <div class="large-6 columns">
+      <label class="error">Error
+        <input type="text" class="error" />
+      </label>
+      <small class="error">Invalid entry</small>
+    </div>
+    <div class="large-6 columns error">
+      <label>Another Error
+        <input type="text" />
+      </label>
+      <small class="error">Invalid entry</small>
+    </div>
+  </div>
+  <textarea class="error" placeholder="Message..."></textarea>
+  <small class="error">Invalid entry</small>
+</form>
+  </div>
+</div>
+
+<hr>
+<h2 id="accessibility">Accessibility</h2>
+<p>For the most part, if you stick to standard HTML input types and label them properly, you won&#39;t need to worry too much about accessibility. Here are some things to keep in mind.</p>
+<h3 id="label-your-inputs">Label your inputs</h3>
+<p>We recommend nesting your inputs inside of their labels, which removes the need to connect them using the <code>for</code> attribute.</p>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">label</span>&gt;</span>
+  Name
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">name</span>=<span class="value">"name"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">label</span>&gt;</span></div></code></pre>
+<p>If you need your labels and inputs to be separated, make sure the two are connected so screen readers will know (and to keep the labels clickable!).</p>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"name"</span>&gt;</span>Name<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">name</span>=<span class="value">"name"</span> <span class="attribute">id</span>=<span class="value">"name"</span>&gt;</span></div></code></pre>
+<p>If an input field doesn&#39;t have a label, add the attribute <code>aria-label</code> to the input to clarify its purpose.</p>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">name</span>=<span class="value">"name"</span> <span class="attribute">aria-label</span>=<span class="value">"Name"</span>&gt;</span></div></code></pre>
+<h3 id="label-help-text">Label help text</h3>
+<p>If an input has some sort of help text distinct from the label, it should be connected to the input it describes using the attribute <code>aria-describedby</code>.</p>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">label</span>&gt;</span>
+  Name
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">name</span>=<span class="value">"name"</span> <span class="attribute">aria-describedby</span>=<span class="value">"nameHelpText"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span> <span class="attribute">id</span>=<span class="value">"nameHelpText"</span>&gt;</span>Enter your name.<span class="tag">&lt;/<span class="title">p</span>&gt;</span></div></code></pre>
+<h3 id="label-custom-inputs">Label custom inputs</h3>
+<p>Custom inputs, like date pickers, range sliders, or switches need some extra attention to be made accessible. Our custom inputs&mdash;the range slider and switch&mdash;do most of this work for you.</p>
+<p>Custom inputs with labels or help text need the attributes <code>aria-labelledby</code> and <code>aria-describedby</code> added to them, so screen readers know how to describe a custom input.</p>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">label</span> <span class="attribute">id</span>=<span class="value">"ageLabel"</span>&gt;</span>Age<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"range-slider"</span> <span class="attribute">data-slider</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"range-slider-handle"</span> <span class="attribute">role</span>=<span class="value">"slider"</span> <span class="attribute">aria-labelledby</span>=<span class="value">"ageLabel"</span> <span class="attribute">aria-describedby</span>=<span class="value">"ageHelpText"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"range-slider-active-segment"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"hidden"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span> <span class="attribute">id</span>=<span class="value">"ageHelpText"</span>&gt;</span>How old are you?<span class="tag">&lt;/<span class="title">p</span>&gt;</span></div></code></pre>
+<hr>
+<h2 id="customize-with-sass">Customize With Sass</h2>
+<p>Forms can be easily customized with our provided Sass variables.</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">form</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// We use this to set the base for lots of form spacing and positioning styles</span>
+$<span class="tag">form</span>-spacing<span class="value">: rem-calc(<span class="number">16</span>);</span>
+
+<span class="comment">// We use these to style the labels in different ways</span>
+$<span class="tag">form</span>-<span class="tag">label</span>-<span class="value">pointer</span><span class="value">: pointer;</span>
+$<span class="tag">form</span>-<span class="tag">label</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">14</span>);</span>
+$<span class="tag">form</span>-<span class="tag">label</span>-<span class="attribute">font-weight</span><span class="value">: $font-weight-normal;</span>
+$<span class="tag">form</span>-<span class="tag">label</span>-<span class="attribute">line-height</span><span class="value">: <span class="number">1.5</span>;</span>
+$<span class="tag">form</span>-<span class="tag">label</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: scale-color($black, $lightness: <span class="number">30</span>%);</span>
+$<span class="tag">form</span>-<span class="tag">label</span>-<span class="tag">small</span>-<span class="attribute">transform</span><span class="value">: capitalize;</span>
+$<span class="tag">form</span>-<span class="tag">label</span>-<span class="attribute">bottom</span>-<span class="attribute">margin</span><span class="value">: <span class="number">0</span>;</span>
+$<span class="tag">input</span>-<span class="attribute">font-family</span><span class="value">: inherit;</span>
+$<span class="tag">input</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.75</span>);</span>
+$<span class="tag">input</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">14</span>);</span>
+$<span class="tag">input</span>-bg-<span class="attribute">color</span><span class="value">: $white;</span>
+$<span class="tag">input</span>-focus-bg-<span class="attribute">color</span><span class="value">: scale-color($white, $lightness: -<span class="number">2</span>%);</span>
+$<span class="tag">input</span>-<span class="attribute">border-color</span><span class="value">: scale-color($white, $lightness: -<span class="number">20</span>%);</span>
+$<span class="tag">input</span>-focus-<span class="attribute">border-color</span><span class="value">: scale-color($white, $lightness: -<span class="number">40</span>%);</span>
+$<span class="tag">input</span>-<span class="attribute">border-style</span><span class="value">: solid;</span>
+$<span class="tag">input</span>-<span class="attribute">border-width</span><span class="value">: <span class="number">1</span>px;</span>
+$<span class="tag">input</span>-<span class="attribute">border-radius</span><span class="value">: $global-radius;</span>
+$<span class="tag">input</span>-<span class="value">disabled</span>-bg<span class="value">: $gainsboro;</span>
+$<span class="tag">input</span>-<span class="value">disabled</span>-<span class="attribute">cursor</span><span class="value">: $cursor-default-value;</span>
+$<span class="tag">input</span>-<span class="attribute">box-shadow</span><span class="value">: inset <span class="number">0</span> <span class="number">1</span>px <span class="number">2</span>px rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>);</span>
+$<span class="tag">input</span>-include-glowing-effect<span class="value">: true;</span>
+
+<span class="comment">// We use these to style the fieldset border and spacing.</span>
+$<span class="tag">fieldset</span>-<span class="attribute">border-style</span><span class="value">: solid;</span>
+$<span class="tag">fieldset</span>-<span class="attribute">border-width</span><span class="value">: <span class="number">1</span>px;</span>
+$<span class="tag">fieldset</span>-<span class="attribute">border-color</span><span class="value">: $gainsboro;</span>
+$<span class="tag">fieldset</span>-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">20</span>);</span>
+$<span class="tag">fieldset</span>-<span class="attribute">margin</span><span class="value">: rem-calc(<span class="number">18</span> <span class="number">0</span>);</span>
+
+<span class="comment">// We use these to style the legends when you use them</span>
+$<span class="tag">legend</span>-bg<span class="value">: $white;</span>
+$<span class="tag">legend</span>-<span class="attribute">font-weight</span><span class="value">: $font-weight-bold;</span>
+$<span class="tag">legend</span>-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">0</span> <span class="number">3</span>);</span>
+
+<span class="comment">// We use these to style the prefix and postfix input elements</span>
+$<span class="tag">input</span>-prefix-bg<span class="value">: scale-color($white, $lightness: -<span class="number">5</span>%);</span>
+$<span class="tag">input</span>-prefix-<span class="attribute">border-color</span><span class="value">: scale-color($white, $lightness: -<span class="number">20</span>%);</span>
+$<span class="tag">input</span>-prefix-<span class="attribute">border</span>-size<span class="value">: <span class="number">1</span>px;</span>
+$<span class="tag">input</span>-prefix-<span class="attribute">border</span>-type<span class="value">: solid;</span>
+$<span class="tag">input</span>-prefix-<span class="attribute">overflow</span><span class="value">: hidden;</span>
+$<span class="tag">input</span>-prefix-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $oil;</span>
+$<span class="tag">input</span>-prefix-<span class="attribute">font</span>-<span class="attribute">color</span>-alt<span class="value">: $white;</span>
+
+<span class="comment">// We use this setting to turn on/off HTML5 number spinners (the up/down arrows)</span>
+$<span class="tag">input</span>-number-spinners<span class="value">: true;</span>
+
+<span class="comment">// We use these to style the error states for inputs and labels</span>
+$<span class="tag">input</span>-error-message-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">6</span> <span class="number">9</span> <span class="number">9</span>);</span>
+$<span class="tag">input</span>-error-message-<span class="attribute">top</span><span class="value">: -<span class="number">1</span>px;</span>
+$<span class="tag">input</span>-error-message-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">12</span>);</span>
+$<span class="tag">input</span>-error-message-<span class="attribute">font-weight</span><span class="value">: $font-weight-normal;</span>
+$<span class="tag">input</span>-error-message-<span class="attribute">font-style</span><span class="value">: italic;</span>
+$<span class="tag">input</span>-error-message-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $white;</span>
+$<span class="tag">input</span>-error-message-bg-<span class="attribute">color</span><span class="value">: $alert-color;</span>
+$<span class="tag">input</span>-error-message-<span class="attribute">font</span>-<span class="attribute">color</span>-alt<span class="value">: $oil;</span>
+
+<span class="comment">// We use this to style the glowing effect of inputs when focused</span>
+$glowing-effect-fade-<span class="tag">time</span><span class="value">: <span class="number">0.45</span>s;</span>
+$glowing-effect-<span class="attribute">color</span><span class="value">: $input-focus-border-color;</span>
+
+<span class="comment">// We use this to style the transition when inputs are focused and when the glowing effect is disabled.</span>
+<span class="comment">// $input-transition-fade-time: 0.15s;</span>
+<span class="comment">// $input-transition-fade-timing-function: linear;</span>
+
+<span class="comment">// Select variables</span>
+$<span class="tag">select</span>-bg-<span class="attribute">color</span><span class="value">: $ghost;</span>
+$<span class="tag">select</span>-hover-bg-<span class="attribute">color</span><span class="value">: scale-color($select-bg-color, $lightness: -<span class="number">3</span>%);</span></div></code></pre>
+
+
+
+<hr>
+<h2 id="semantic-markup-with-sass">Semantic Markup With Sass</h2>
+<p>You can create your own forms using our Sass mixins.</p>
+<h3>Pre/Postfix Mixin</h3>
+
+<p>You can use the <code>prefix-postfix-base()</code> and <code>prefix()</code> mixin to create your own form, like so:</p>
+<h5 id="base-mixin">Base mixin</h5>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>SCSS</h4>
+<pre><code class="language-scss"><div class="code-container"><span class="class">.custom-prefix-class</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> prefix-postfix-base</span>();</span>
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-column</span>(
+    $columns:<span class="number">3</span>,
+    $float:left
+  );</span>
+}
+
+<span class="tag">input</span><span class="attr_selector">[type=&quot;text&quot;]</span><span class="class">.custom-input-class</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-column</span>($columns:<span class="number">9</span>);</span>
+}</div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row collapse&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">&quot;custom-prefix-class&quot;</span>&gt;</span>Label<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;custom-input-class&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Value&quot;</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></div></code></pre>
+
+  </div>
+</div>
+
+<h5 id="prefix-amp-postfix-style-mixins">Prefix &amp; Postfix Style Mixins</h5>
+<p>We use this mixin to create prefix label styles</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>SCSS</h4>
+<pre><code class="language-scss"><div class="code-container"><span class="class">.custom-prefix-class</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> prefix-postfix-base</span>();</span>
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> prefix</span>(
+    //<span class="preprocessor"> Control</span><span class="preprocessor"> the</span><span class="preprocessor"> background</span><span class="preprocessor"> color</span>,<span class="preprocessor"> which</span><span class="preprocessor"> also</span><span class="preprocessor"> effect</span><span class="preprocessor"> the</span><span class="preprocessor"> border</span><span class="preprocessor"> and</span><span class="preprocessor"> font</span><span class="preprocessor"> color.</span><span class="preprocessor"> Default</span>:$input-prefix-bg (<span class="function">scale-color(#fff, $lightness: -<span class="number">5</span>%)</span>)
+    $bg: $input-prefix-bg,
+    //<span class="preprocessor"> Toggle</span><span class="preprocessor"> position</span><span class="preprocessor"> settings</span><span class="preprocessor"> if</span><span class="preprocessor"> prefix</span><span class="preprocessor"> is</span><span class="preprocessor"> a</span><span class="preprocessor"> button.</span><span class="preprocessor"> Default</span>:false
+    $is-button:<span class="preprocessor"> false</span>
+  );</span>
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-column</span>($columns:<span class="number">3</span>,$float:left);</span>
+}
+
+<span class="tag">input</span><span class="attr_selector">[type=&quot;text&quot;]</span><span class="class">.custom-input-class</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-column</span>($columns:<span class="number">9</span>);</span>
+}</div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;row collapse&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">&quot;custom-prefix-class&quot;</span>&gt;</span>Label<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;text&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;custom-input-class&quot;</span> <span class="attribute">placeholder</span>=<span class="value">&quot;Value&quot;</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></div></code></pre>
+
+  </div>
+</div>
+
+<hr>
+<h3 id="sass-errors-">Sass Errors?</h3>
+<p>If the default &quot;foundation&quot; import was commented out, then make sure you import this file:</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container"><span class="at_rule">@<span class="keyword">import</span> <span class="string">"foundation/components/buttons"</span>;</span>
+<span class="at_rule">@<span class="keyword">import</span> <span class="string">"foundation/components/forms"</span>;</span></div></code></pre>
+
+            </div>
+
+  </div>
+</div>    
+     <script type="text/javascript" src="/my_jekyll/lib/js/vendor.js"></script>
+<script type="text/javascript" src="/my_jekyll/lib/js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59944728-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+

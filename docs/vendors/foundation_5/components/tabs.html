@@ -1,0 +1,2288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <title>Tabs</title>
+
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Diogo Russo">
+<meta name="description" content="Horizontal Tabs  Tab 1  Tab 2  Tab 3  Tab 4                                        This is the first panel of the basic tab example. You can place all sorts ...">
+<meta name="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS">
+
+
+
+
+<meta name="p:domain_verify" content="f02cbf6a5c8f230685063521292fbfcb"/>
+
+<meta property="fb:app_id"      content="915671155245552" /> 
+<meta property="og:type"        content="website" /> 
+<meta property="og:title"       content="Estúdio Berinjela | Criação" />
+<meta property="og:url"         content="http://lab.diogorusso.com" />
+<meta property="og:image"       content="http://lab.diogorusso.com/my_jekyll/lib/img/_site_card.jpg" />
+<meta property="og:description" content="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS" />
+
+
+<meta property="og:see_also"    content="http://work.diogorusso.com" />
+
+<meta property="og:see_also"    content="http://www.lucaszappa.com.br" />
+
+<meta property="og:see_also"    content="http://www.estudioberinjela.com.br" />
+ 
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="http://lab.diogorusso.com" />
+<meta name="twitter:url" content="http://lab.diogorusso.com">
+<meta name="twitter:title" content="Estúdio Berinjela | Criação" />
+<meta name="twitter:description" content="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS" />
+<meta name="twitter:image" content="http://lab.diogorusso.com/my_jekyll+avatar.png" />
+<meta name="twitter:site" content="@hello_diogo">
+<meta name="twitter:creator" content="@hello_diogo">
+    <link rel=”author” href=”https://plus.google.com/116739255173599428138”/>
+
+  <link rel="stylesheet" href="/my_jekyll/lib/css/main.css">
+  <link rel="stylesheet" href="/my_jekyll/lib/css/custom.css">
+  
+  <link rel="icon"  type="image/ico"  href="/my_jekyll/lib/img/+logo.png">
+
+  <link rel="canonical" href="http://lab.diogorusso.com/my_jekyll/docs/vendors/foundation_5/components/tabs.html">
+  <link rel="alternate" type="application/rss+xml" title="Estúdio Berinjela | Criação" href="http://lab.diogorusso.com/my_jekyll/feed.xml">
+
+  <script>document.createElement( "picture" );</script>
+  <script src="/my_jekyll/lib/js/head.js"></script>
+
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'rvc4hsl',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</head>
+
+ 
+  <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '915671155245552',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    <a id="top"></a>
+    
+<div class="overlay">
+    <div class="preloader text-center">
+
+        <img src="/my_jekyll/lib/img/+logo.png">
+
+        <div class="status">
+  <div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div> <!-- spinner-->
+</div><!-- status -->
+
+    </div><!--preloader-->
+</div><!-- overlay -->
+
+<div class="anim-menu">
+
+  <nav class="top-bar large" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="logo">
+        <a href="/my_jekyll"><img src="/my_jekyll/lib/img/+logo.png"></a>
+      </li>
+      <li class="toggle-topbar">
+        <a class="menu-button" id="menuButton">
+          Menu <i class="fa fa-bars"></i>
+        </a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right text-right links">
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  Styleguide
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  UI Kit
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  Foundation 5
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/fulpage_js/" class="page-scroll">
+                  Fullpage.js
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/isotope_js/" class="page-scroll">
+                  Isotope
+                </a>
+          
+      
+   
+</li>
+  
+</ul>
+    </section>
+  </nav>
+</div>
+
+
+
+<div class="back-to-top">
+    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
+</div>
+
+
+
+
+<div class="row">
+
+  <div class="large-3 medium-4 columns">
+    <div class="hide-for-small">
+      <div class="sidebar">
+        <h5>Foundation Documentation</h5>
+        <form>
+          <!--  <label>Search Documentation</label> -->
+          <input tabindex="1" id="autocomplete" type="search" placeholder="Search Docs: e.g. forms">
+        </form>
+
+        <a href="http://foundation.zurb.com/develop/download.html" class="download button expand">Download Foundation</a>
+
+        <nav>
+          <ul class="side-nav">
+             <!--li class="heading">Setup</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/accessibility.html">Accessibility</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/applications.html">Accessibility</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/components/global.html">Global Styles</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/components/kitchen_sink.html">Kitchen sink</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/css.html">Getting Started With Foundation CSS</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/elements.html">Elements</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/index-2.html">Getting Started</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/index.html">Getting Started</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/javascript-utilities.html">JavaScript Utilities</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/javascript.html">JavaScript Setup</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/media-queries.html">Media Queries</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/sass-files.html">What You Get with Foundation Sass</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/sass.html">Getting Started With Sass</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/upgrading.html">Upgrading From Foundation 4</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/using-sass.html">How to Use Foundation Sass</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            -->
+             <li class="heading">Structure</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/block_grid.html">Block Grid</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/grid.html">Grid</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/interchange.html">Interchange</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/rtl.html">Right-to-Left Support</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/visibility.html">Visibility Classes</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/utility-classes.html">Utility Classes</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Navigation</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/breadcrumbs.html">Breadcrumbs</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/icon-bar.html">Icon Bar</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/magellan.html">Magellan</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/offcanvas.html">Off-canvas</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/pagination.html">Pagination</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/sidenav.html">Side Nav</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/subnav.html">Sub Nav</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/topbar.html">Top Bar</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Media</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/clearing.html">Clearing</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/flex_video.html">Flex Video</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/orbit.html">Orbit</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/thumbnails.html">Thumbnails</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Forms</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/abide.html">Abide Validation</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/forms.html">Forms</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/range_slider.html">Range Sliders</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/switch.html">Switches</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Buttons</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/button_groups.html">Button Groups</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/buttons.html">Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/dropdown_buttons.html">Dropdown Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/split_buttons.html">Split Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Typography</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/inline_lists.html">Inline Lists</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/keystrokes.html">Keystrokes</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/labels.html">Labels</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/typography.html">Typography</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Callouts & Prompts</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/alert_boxes.html">Alerts</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/joyride.html">Joyride</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/panels.html">Panels</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/reveal.html">Reveal Modal</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tooltips.html">Tooltips</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              <li class="heading">Content</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/accordion.html">Accordion</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/dropdown.html">Dropdowns</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/equalizer.html">Equalizer</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/pricing_tables.html">Pricing Tables</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/progress_bars.html">Progress Bars</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tables.html">Tables</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tabs.html">Tabs</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              <li class="heading">Support</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/changelog.html">Changelog</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/compatibility.html">Compatibility</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+
+            <!--li class="heading">Setup</li>
+            <li><a href="index-2.html" data-search="">Getting Started</a></li>
+            <li><a href="css.html" data-search="Styles">CSS</a></li>
+            <li><a href="sass.html" data-search="Sass">Sass</a></li>
+            <li><a href="sass-files.html" data-search="Sass,Sass - What You Get, How to Use Sass">Sass Files</a></li>
+            <li><a href="using-sass.html" data-search="Sass,Sass - What You Get, How to Use Sass">Using Sass</a></li>
+            <li><a href="applications.html" data-search="Rails,Gem">Applications</a></li>
+            <li><a href="javascript.html" data-search="">JavaScript</a></li>
+            <li><a href="components/global.html" data-search="Global Styles,Global Mixins,Global Variables,Useful HTML Classes">Global Styles</a></li>
+            <li><a href="components/kitchen_sink.html" data-search="">Kitchen Sink</a></li>
+            <li><a href="accessibility.html" data-search="accessibility">Accessibility</a></li>
+            <li><a href="upgrading.html" data-search="Migration">Upgrading</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Structure</li>
+            <li><a href="media-queries.html" data-search="Breakpoints">Media Queries</a></li>
+            <li><a href="components/visibility.html" data-search="">Visibility</a></li>
+            <li><a href="components/grid.html" data-search="">Grid</a></li>
+            <li><a href="components/block_grid.html" data-search="">Block Grid</a></li>
+            <li><a href="components/interchange.html" data-search="Responsive Images">Interchange Responsive Content <span class="label">JS</span></a></li>
+            <li><a href="utility-classes.html" data-search="">Utility Classes</a></li>
+            <li><a href="javascript-utilities.html" data-search="">Javascript Utilities</a></li>
+            <li><a href="components/rtl.html" data-search="RTL">Right-to-Left Support</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Navigation</li>
+            <li><a href="components/offcanvas.html" data-search="Off Canvas">Off-canvas <span class="label">JS</span></a></li>
+            <li><a href="components/topbar.html" data-search="Nav Bar,Navigation,Sticky">Top Bar <span class="label">JS</span></a></li>
+            <li><a href="components/icon-bar.html" data-search="">Icon Bar</a></li>
+            <li><a href="components/sidenav.html" data-search="">Side Nav</a></li>
+            <li><a href="components/magellan.html" data-search="Scrollspy">Magellan Sticky Nav <span class="label">JS</span></a></li>
+            <li><a href="components/subnav.html" data-search="">Sub Nav</a></li>
+            <li><a href="components/breadcrumbs.html" data-search="Navigation Path,Cookie Crumb">Breadcrumbs</a></li>
+            <li><a href="components/pagination.html" data-search="">Pagination</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Media</li>
+            <li><a href="components/orbit.html" data-search="Carousel,Slider,Slideshow">Orbit Slider <span class="label">JS</span></a></li>
+            <li><a href="components/thumbnails.html" data-search="Images">Thumbnails</a></li>
+            <li><a href="components/clearing.html" data-search="Responsive Lightbox,Lightbox">Clearing Lightbox <span class="label">JS</span></a></li>
+            <li><a href="components/flex_video.html" data-search="Responsive Video">Flex Video</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Forms</li>
+            <li><a href="components/forms.html" data-search="">Forms</a></li>
+            <li><a href="components/switch.html" data-search="">Switches</a></li>
+            <li><a href="components/range_slider.html" data-search="Range Slider">Range Sliders <span class="label">JS</span></a></li>
+            <li><a href="components/abide.html" data-search="Form Validation,Field Validation">Abide Validation <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Buttons</li>
+            <li><a href="components/buttons.html" data-search="">Buttons</a></li>
+            <li><a href="components/button_groups.html" data-search="Button Bar">Button Groups</a></li>
+            <li><a href="components/split_buttons.html" data-search="">Split Buttons <span class="label">JS</span></a></li>
+            <li><a href="components/dropdown_buttons.html" data-search="">Dropdown Buttons <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Typography</li>
+            <li><a href="components/typography.html" data-search="Typography,Type-setting,Composition">Type</a></li>
+            <li><a href="components/inline_lists.html" data-search="Lists">Inline Lists</a></li>
+            <li><a href="components/labels.html" data-search="Tags">Labels</a></li>
+            <li><a href="components/keystrokes.html" data-search="">Keystrokes</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Callouts &amp; Prompts</li>
+            <li><a href="components/reveal.html" data-search="Modal">Reveal Modal <span class="label">JS</span></a></li>
+            <li><a href="components/alert_boxes.html" data-search="Error,Success,Warning">Alerts <span class="label">JS</span></a></li>
+            <li><a href="components/panels.html" data-search="Wells">Panels</a></li>
+            <li><a href="components/tooltips.html" data-search="Popover">Tooltips <span class="label">JS</span></a></li>
+            <li><a href="components/joyride.html" data-search="Tooltip Tour,Guider,Tooltip Walk-through">Joyride <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Content</li>
+            <li><a href="components/dropdown.html" data-search="">Dropdowns <span class="label">JS</span></a></li>
+            <li><a href="components/pricing_tables.html" data-search="">Pricing Tables</a></li>
+            <li><a href="components/progress_bars.html" data-search="">Progress Bars</a></li>
+            <li><a href="components/tables.html" data-search="">Tables</a></li>
+            <li><a href="components/accordion.html" data-search="">Accordion <span class="label">JS</span></a></li>
+            <li><a href="components/tabs.html" data-search="">Tabs <span class="label">JS</span></a></li>
+            <li><a href="components/equalizer.html" data-search="">Equalizer <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Support</li>
+
+            <li><a href="changelog.html" data-search="">Changelog</a></li>
+            <li><a href="compatibility.html" data-search="">Compatibility</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Older Docs</li>
+            <li><a href="v/4.3.2/index.html" data-search="">Foundation 4</a></li>
+            <li><a href="v/3.2.5/index.html" data-search="">Foundation 3</a></li>
+            <li><a href="v/2.2.1/index.html" data-search="">Foundation 2</a></li-->
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+  <div class="large-9 medium-8 columns">
+
+    <h1 id="getting-started">Tabs</h1>
+    <p><h3 class="subheader">Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.</h3></p>
+    <hr>
+    <h3 id="horizontal-tabs">Horizontal Tabs</h3>
+<div>
+<ul class="tabs" data-tab>
+  <li class="tab-title active"><a href="#panela">Tab 1</a></li>
+  <li class="tab-title"><a href="#panelb">Tab 2</a></li>
+  <li class="tab-title"><a href="#panelc">Tab 3</a></li>
+  <li class="tab-title"><a href="#paneld">Tab 4</a></li>
+</ul>
+<div class="tabs-content">
+  <div class="content active" id="panela">
+    <div class="row">
+      <div class="small-3 columns">
+        <img src="http://placehold.it/350x150">
+      </div>
+      <div class="small-4 end columns">
+        <p>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content" id="panelb">
+    <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panelc">
+    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="paneld">
+    <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+  </div>
+</div>
+
+<p></div></p>
+<h3 id="vertical-tabs">Vertical Tabs</h3>
+<div>
+<ul class="tabs vertical" data-tab>
+  <li class="tab-title active"><a href="#panela1">Tab 1</a></li>
+  <li class="tab-title"><a href="#panelb1">Tab 2</a></li>
+  <li class="tab-title"><a href="#panelc1">Tab 3</a></li>
+  <li class="tab-title"><a href="#paneld1">Tab 4</a></li>
+</ul>
+<div class="tabs-content">
+  <div class="content active" id="panela1">
+    <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panelb1">
+    <p>This is the second panel of the basic tab example. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, nesciunt. Aperiam sed expedita quo. Ipsam iusto sapiente animi? Voluptatem ut facilis maxime minima. Aperiam, at non sequi molestias tempora. Enim.</p>
+  </div>
+  <div class="content" id="panelc1">
+    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="paneld1">
+    <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+  </div>
+</div>
+
+<p></div></p>
+<hr>
+<h3>Basic</h3>
+
+<p>You can create a group of horizontal tabs using minimal markup.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">&quot;tabs&quot;</span> <span class="attribute">data-tab</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">&quot;tab-title active&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#panel1&quot;</span>&gt;</span>Tab 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">&quot;tab-title&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#panel2&quot;</span>&gt;</span>Tab 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">&quot;tab-title&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#panel3&quot;</span>&gt;</span>Tab 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">&quot;tab-title&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#panel4&quot;</span>&gt;</span>Tab 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;tabs-content&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;content active&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;panel1&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;content&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;panel2&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the second panel of the basic tab example. This is the second panel of the basic tab example.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;content&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;panel3&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the third panel of the basic tab example. This is the third panel of the basic tab example.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;content&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;panel4&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+<ul class="tabs" data-tab>
+  <li class="tab-title active"><a href="#panel1">Tab 1</a></li>
+  <li class="tab-title"><a href="#panel2">Tab 2</a></li>
+  <li class="tab-title"><a href="#panel3">Tab 3</a></li>
+  <li class="tab-title"><a href="#panel4">Tab 4</a></li>
+</ul>
+<div class="tabs-content">
+  <div class="content active" id="panel1">
+    <p>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.</p>
+  </div>
+  <div class="content" id="panel2">
+    <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panel3">
+    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panel4">
+    <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+  </div>
+</div>
+
+
+<p>  </div>
+</div></p>
+<p class="lead panel">Note: Tabs used to require <code>&lt;dl&gt;</code> and <code>&lt;dd&gt;</code> markup. It now works with <code>&lt;ul&gt;</code>&#39;s and <code>&lt;li&gt;</code>&#39;s as well.</p>
+
+<hr>
+<h3 id="vertical-tabs">Vertical Tabs</h3>
+<p>You can create a group of vertical tabs using minimal markup. Just adding the class <code>vertical</code> changes the orientation of horizontal tabs.</p>
+<h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"tabs vertical"</span> <span class="attribute">data-tab</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"tab-title active"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel11"</span>&gt;</span>Tab 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"tab-title"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel21"</span>&gt;</span>Tab 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"tab-title"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel31"</span>&gt;</span>Tab 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"tab-title"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel41"</span>&gt;</span>Tab 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"tabs-content"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content active"</span> <span class="attribute">id</span>=<span class="value">"panel11"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel21"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the second panel of the basic tab example. This is the second panel of the basic tab example.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel31"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the third panel of the basic tab example. This is the third panel of the basic tab example.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel41"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+
+<h4>Rendered HTML</h4>
+
+<p><ul class="tabs vertical" data-tab>
+  <li class="tab-title active"><a href="#panel11">Tab 1</a></li>
+  <li class="tab-title"><a href="#panel21">Tab 2</a></li>
+  <li class="tab-title"><a href="#panel31">Tab 3</a></li>
+  <li class="tab-title"><a href="#panel41">Tab 4</a></li>
+</ul></p>
+<div class="tabs-content">
+  <div class="content active" id="panel11">
+    <p>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.</p>
+  </div>
+  <div class="content" id="panel21">
+    <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panel31">
+    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+  </div>
+  <div class="content" id="panel41">
+    <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+<hr>
+<h3 id="deep-linking-to-tabs-or-tab-contents">Deep linking to tabs or tab contents</h3>
+<p>The tabs Foundation component can parse the location hash value and open the corresponding tab content pane. To enable deep linking set <code>data-options=&quot;deep_linking:true&quot;</code>. If the location hash maps to an element ID within a tab content pane, then the appropriate tab will become active and the browser window will scroll to the specified element. If you do not want to scroll to the specified element then set <code>data-options=&quot;scroll_to_content: false&quot;</code>.</p>
+<p>In the following example, deep linking is enabled. If the location hash is <code>#tabs-deeplink-2</code> then the second tab will become active. If the location hash is <code>#tabs-deeplink-content-2</code> then the second tab will become active, and the browser will scroll to the paragraph tag with ID, tabs-deeplink-content-2.</p>
+<p><ul class="tabs" data-tab role="tablist" data-options="deep_linking: true">
+  <li class="tab-title active" role="presentational"><a href="#tabs-deeplink-1" role="tab" tabindex="0" aria-selected="true" controls="tabs-deeplink-1">Tab 1</a></li>
+  <li class="tab-title active" role="presentational"><a href="#tabs-deeplink-2" role="tab" tabindex="0" aria-selected="true" controls="tabs-deeplink-2">Tab 2</a></li>
+  <li class="tab-title active" role="presentational"><a href="#tabs-deeplink-3" role="tab" tabindex="0" aria-selected="true" controls="tabs-deeplink-3">Tab 3</a></li>
+</ul></p>
+<div class="tabs-content">
+  <section id="tabs-deeplink-1" role="tabpanel" aria-hidden="false" class="content active">
+    <h2>First Panel Header</h2>
+    <p id="tabs-deeplink-content-1">First panel content goes here...</p>
+  </section>
+  <section id="tabs-deeplink-2"role="tabpanel" aria-hidden="true" class="content" >
+    <h2>Second Panel Header</h2>
+    <p id="tabs-deeplink-content-2"> Second panel content goes here...</p>
+  </section>
+  <section id="tabs-deeplink-3"role="tabpanel" aria-hidden="true" class="content" >
+    <h2>Third Panel Header</h2>
+    <p id="tabs-deeplink-content-3"> Third panel content goes here...</p>
+  </section>
+</div>
+
+<hr>
+<h3 id="callbacks">Callbacks</h3>
+<p>There are two ways to bind to callbacks in your tabs.</p>
+<div class="row">
+  <div class="large-6 columns">
+<p><h4>Callback function</h4></p>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
+  $(document).foundation({
+    tab: {
+      callback : <span class="function"><span class="keyword">function</span> <span class="params">(tab)</span> {</span>
+        console.log(tab);
+      }
+    }
+  });
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+<p><h4>Toggled Event</h4></p>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
+  $(<span class="string">&#39;#myTabs&#39;</span>).on(<span class="string">&#39;toggled&#39;</span>, <span class="function"><span class="keyword">function</span> <span class="params">(event, tab)</span> {</span>
+    console.log(tab);
+  });
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></code></pre>
+
+  </div>
+</div>
+
+<hr>
+<h2 id="accessibility">Accessibility</h2>
+<p>You can make tabs more accessible by using the code snippet below. The tabs are keyboard accessible meaning that a user can use the tab key or arrow keys to navigate through them. The role of <code>tablist</code> tells a screen reader what the element is and reads the necessary content.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">&quot;tabs&quot;</span> <span class="attribute">data-tab</span> <span class="attribute">role</span>=<span class="value">&quot;tablist&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">&quot;tab-title active&quot;</span> <span class="attribute">role</span>=<span class="value">&quot;presentational&quot;</span> &gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#panel2-1&quot;</span> <span class="attribute">role</span>=<span class="value">&quot;tab&quot;</span> <span class="attribute">tabindex</span>=<span class="value">&quot;0&quot;</span> <span class="attribute">aria-selected</span>=<span class="value">&quot;true&quot;</span> <span class="attribute">controls</span>=<span class="value">&quot;panel2-1&quot;</span>&gt;</span>Tab 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">&quot;tab-title&quot;</span> <span class="attribute">role</span>=<span class="value">&quot;presentational&quot;</span> &gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#panel2-2&quot;</span> <span class="attribute">role</span>=<span class="value">&quot;tab&quot;</span> <span class="attribute">tabindex</span>=<span class="value">&quot;0&quot;</span><span class="attribute">aria-selected</span>=<span class="value">&quot;false&quot;</span> <span class="attribute">controls</span>=<span class="value">&quot;panel2-2&quot;</span>&gt;</span>Tab 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">&quot;tab-title&quot;</span> <span class="attribute">role</span>=<span class="value">&quot;presentational&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#panel2-3&quot;</span> <span class="attribute">role</span>=<span class="value">&quot;tab&quot;</span> <span class="attribute">tabindex</span>=<span class="value">&quot;0&quot;</span> <span class="attribute">aria-selected</span>=<span class="value">&quot;false&quot;</span> <span class="attribute">controls</span>=<span class="value">&quot;panel2-3&quot;</span>&gt;</span>Tab 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">&quot;tab-title&quot;</span> <span class="attribute">role</span>=<span class="value">&quot;presentational&quot;</span> &gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#panel2-4&quot;</span> <span class="attribute">role</span>=<span class="value">&quot;tab&quot;</span> <span class="attribute">tabindex</span>=<span class="value">&quot;0&quot;</span> <span class="attribute">aria-selected</span>=<span class="value">&quot;false&quot;</span> <span class="attribute">controls</span>=<span class="value">&quot;panel2-4&quot;</span>&gt;</span>Tab 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;tabs-content&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">section</span> <span class="attribute">role</span>=<span class="value">&quot;tabpanel&quot;</span> <span class="attribute">aria-hidden</span>=<span class="value">&quot;false&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;content active&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;panel2-1&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h2</span>&gt;</span>First panel content goes here...<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">section</span> <span class="attribute">role</span>=<span class="value">&quot;tabpanel&quot;</span> <span class="attribute">aria-hidden</span>=<span class="value">&quot;true&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;content&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;panel2-2&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Second panel content goes here...<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">section</span> <span class="attribute">role</span>=<span class="value">&quot;tabpanel&quot;</span> <span class="attribute">aria-hidden</span>=<span class="value">&quot;true&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;content&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;panel2-3&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Third panel content goes here...<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">section</span> <span class="attribute">role</span>=<span class="value">&quot;tabpanel&quot;</span> <span class="attribute">aria-hidden</span>=<span class="value">&quot;true&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;content&quot;</span> <span class="attribute">id</span>=<span class="value">&quot;panel2-4&quot;</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Fourth panel content goes here...<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+<ul class="tabs" data-tab role="tablist">
+  <li class="tab-title active" role="presentational" ><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Tab 1</a></li>
+  <li class="tab-title" role="presentational" ><a href="#panel2-2" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Tab 2</a></li>
+  <li class="tab-title" role="presentational"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Tab 3</a></li>
+  <li class="tab-title" role="presentational" ><a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" controls="panel2-4">Tab 4</a></li>
+</ul>
+<div class="tabs-content">
+  <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+    <h2>First panel content goes here...</h2>
+  </section>
+  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+    <h2>Second panel content goes here...</h2>
+  </section>
+  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
+    <h2>Third panel content goes here...</h2>
+  </section>
+  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-4">
+    <h2>Fourth panel content goes here...</h2>
+  </section>
+</div>
+
+<p>  </div>
+</div></p>
+<hr>
+<h3 id="adding-new-tab-content-after-page-load">Adding New Tab Content After Page Load</h3>
+<p>If you add new content after the page has been loaded, you will need to reinitialize the Foundation JavaScript by running the following:</p>
+<pre><code class="language-javascript"><div class="code-container">$(document).foundation();</div></code></pre>
+
+
+<p>Reflow will make Foundation check the DOM for any elements and re-apply any listeners to them.</p>
+<pre><code class="language-javascript"><div class="code-container">$(document).foundation(<span class="string">'tab'</span>, <span class="string">'reflow'</span>);</div></code></pre>
+
+
+<hr>
+<h2 id="customize-with-sass">Customize with Sass</h2>
+<p>Tabs can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-tabs-classes<span class="value">: $include-html-classes;</span>
+
+$tabs-navigation-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">16</span>);</span>
+$tabs-navigation-bg-<span class="attribute">color</span><span class="value">: $silver;</span>
+$tabs-navigation-active-bg-<span class="attribute">color</span><span class="value">: $white;</span>
+$tabs-navigation-hover-bg-<span class="attribute">color</span><span class="value">: scale-color($tabs-navigation-bg-color, $lightness: -<span class="number">6</span>%);</span>
+$tabs-navigation-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $jet;</span>
+$tabs-navigation-active-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $tabs-navigation-font-color;</span>
+$tabs-navigation-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">16</span>);</span>
+$tabs-navigation-<span class="attribute">font-family</span><span class="value">: $body-font-family;</span>
+
+$tabs-<span class="attribute">content</span>-<span class="attribute">margin-bottom</span><span class="value">: rem-calc(<span class="number">24</span>);</span>
+$tabs-<span class="attribute">content</span>-<span class="attribute">padding</span><span class="value">: $column-gutter/<span class="number">2</span>;</span>
+
+$tabs-vertical-navigation-<span class="attribute">margin-bottom</span><span class="value">: <span class="number">1.25</span>rem;</span></div></code></pre>
+
+
+
+<hr>
+<h5 id="sass-errors-">Sass Errors?</h5>
+<p>If the default &quot;foundation&quot; import was commented out, then make sure you import this file:</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container"><span class="at_rule">@<span class="keyword">import</span> <span class="string">"foundation/components/tabs"</span>;</span></div></code></pre>
+
+            </div>
+
+  </div>
+</div>    
+     <script type="text/javascript" src="/my_jekyll/lib/js/vendor.js"></script>
+<script type="text/javascript" src="/my_jekyll/lib/js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59944728-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+
