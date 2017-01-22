@@ -14,7 +14,6 @@ gulp.task('deploy', function() {
               'dist-jekyll-build',
               'gh-pages',
               //html
-              'dist-jekyll-clean',
               'yamlDistHtml',
               'dist-scripts',
               'dist-images-copy',
@@ -22,7 +21,9 @@ gulp.task('deploy', function() {
               'dist-fonts-copy',
               'dist-jekyll-copy',
               'dist-jekyll-build',
-              'html-deploy'
+              'html-deploy',
+              //back to DEV yml
+              'yamlDev'
     );
 });
 

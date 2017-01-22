@@ -10,5 +10,5 @@ gulp.task("gh-pages", function () {
 
 gulp.task("html-deploy", function () {
     return gulp.src(config.html.src)
-        .pipe(ghPages({branch: config.ghPages.branch}));
+        .pipe(ghPages({branch: config.html.branch}));
 });
