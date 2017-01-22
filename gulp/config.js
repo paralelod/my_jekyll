@@ -9,8 +9,8 @@ module.exports = {
        src: './_dist/jekyll_dist/**/*',
      },
     html: {
-       branch:'./_dist/jekyll_dist/_site/**/*',
-       src: 'html',
+       branch:'html',
+       src: './_dist/jekyll_dist/_site/**/*',
      }
   },
 
