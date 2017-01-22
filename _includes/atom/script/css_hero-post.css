@@ -1,8 +1,0 @@
-
-/* HERO POSTS */
-
-{% assign featured-cover-max-size =  795 %}
-{% assign breakpoints = "795|480" | split: "|" %}
-
-
-	
