@@ -1,0 +1,11 @@
+
+- title: "Work"
+  url: "/"
+- title: "Ideas"
+  url: "/work"
+- title: "Newsletter"
+  url: "/sign-up.html"
+  icon: heart
+  icon-color: "fff"
+- title: "Connect"
+  url: "#connect"
