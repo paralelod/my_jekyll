@@ -1,0 +1,16 @@
+---
+layout: default
+type: page-fullpage
+---
+
+{% include molecule/loading/cover.html %}
+{% include molecule/nav/nav_top-right-docs.html %}
+{% include atom/util/back_top_btn.html %}
+
+<div class="main-container">
+    
+    {% include organism/sidebar/sidebar-fixed.html %}
+    
+    {{ content }}
+    
+</div>
