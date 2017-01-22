@@ -1,29 +1,14 @@
+---
+layout: script
+---
 
-/* HERO ABOUT - WORK */
+{% include atom/script/css_hero.css %}
 
+{% include atom/script/css_hero-post.css %}
 
+{% include atom/script/css_process.css %}
 
-
-
-
-
-
-
-/* HERO POSTS */
-
-
-
-
-
-	
-
-/* PROCESS BG */
-
-
-.bio-txt-bg{
-	background: ;
-}
-
+{% include atom/script/css_bio.css %}
 
 
 
