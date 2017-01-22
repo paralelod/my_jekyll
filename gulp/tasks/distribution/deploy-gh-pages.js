@@ -1,14 +1,14 @@
 var gulp = require('gulp');
 var ghPages= require("gulp-gh-pages");
-var config = require('../../config').jekyll;
+var config = require('../../config').deploy;
 
 gulp.task("gh-pages", function () {
-    return gulp.src("./_dist/jekyll_dist/**/*")
-        .pipe(ghPages({branch: 'gh-pages'}));
+    return gulp.src(config.ghPages.src)
+        .pipe(ghPages({branch: config.ghPages.branch}));
 });
 
 
 gulp.task("html-deploy", function () {
-    return gulp.src("./_dist/jekyll_dist/_site/**/*")
-        .pipe(ghPages({branch: 'html'}));
+    return gulp.src(config.html.src)
+        .pipe(ghPages({branch: config.ghPages.branch}));
 });

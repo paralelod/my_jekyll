@@ -1,4 +1,4 @@
-baseurl: /my_jekyll
+baseurl: '/my_jekyll # only for github, gulp baseurl set in config_dev.yml'
 url: 'http://lab.diogorusso.com'
 markdown: kramdown
 gems:
