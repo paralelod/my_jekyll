@@ -6,9 +6,9 @@ gulp.task('deploy', function() {
               'dist-jekyll-clean',
               //gh pages
               'yamlDistGhPages',
+              'dist-sass',
               'dist-scripts',
               'dist-images-copy',
-              'dist-sass',
               'dist-fonts-copy',
               'dist-jekyll-copy',
               'dist-jekyll-build',

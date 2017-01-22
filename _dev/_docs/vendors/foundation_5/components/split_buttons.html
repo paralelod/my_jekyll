@@ -1,0 +1,199 @@
+---
+title: "Split Buttons"
+description: "We&#39;ve simplified our split dropdown buttons by removing the dedicated ones associated with a style of button. Instead, you&#39;ll use our new dropdown plugin to attach a split button to the button style of your choice."
+category: "Buttons"
+--- 
+
+
+<p><a href="#" class="tiny button split">Split Button <span data-dropdown="drop12123"></span></a><br></p>
+<ul id="drop12123" class="f-dropdown" data-dropdown-content>
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+
+<p><a href="#" class="small secondary radius button split">Split Button <span data-dropdown="drop2"></span></a><br></p>
+<ul id="drop2" class="f-dropdown" data-dropdown-content>
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+
+<p><a href="#" class="button alert round split">Split Button <span data-dropdown="drop3"></span></a><br></p>
+<ul id="drop3" class="f-dropdown" data-dropdown-content>
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+
+<p><a href="#" class="large success button split">Split Button <span data-dropdown="drop4"></span></a><br></p>
+<ul id="drop4" class="f-dropdown" data-dropdown-content>
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+
+
+<hr>
+<h2>Basic</h2>
+
+<p>You can create a split button using minimal markup.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;button split&quot;</span>&gt;</span>Split Button <span class="tag">&lt;<span class="title">span</span> <span class="attribute">data-dropdown</span>=<span class="value">&quot;drop&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">&quot;drop&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;f-dropdown&quot;</span> <span class="attribute">data-dropdown-content</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>This is a link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>This is another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>Yet another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+    <a href="#" class="button split">Split Button <span data-dropdown="drop"></span></a><br>
+    <ul id="drop" class="f-dropdown" data-dropdown-content>
+      <li><a href="#">This is a link</a></li>
+      <li><a href="#">This is another</a></li>
+      <li><a href="#">Yet another</a></li>
+    </ul>
+
+  </div>
+</div>
+
+<hr>
+<h2>Advanced</h2>
+
+<p>Additional classes can be added to your split buttons to change its appearance.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;[tiny small medium large] [secondary alert success] [radius round] button split&quot;</span>&gt;</span>Split Button <span class="tag">&lt;<span class="title">span</span> <span class="attribute">data-dropdown</span>=<span class="value">&quot;drop&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">&quot;drop&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;f-dropdown&quot;</span> <span class="attribute">data-dropdown-content</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>This is a link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>This is another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>Yet another<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>HTML Rendered</h4>
+<a href="#" class="small alert round button split">Split Button <span data-dropdown="drop223"></span></a><br>
+<ul id="drop223" class="f-dropdown" data-dropdown-content>
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+  </div>
+</div>
+
+<hr>
+<h2>Custom Pip</h2>
+
+<p>If you desire to use your own pip in the split button, the <code>no-pip</code> class will remove ours and allow you to place any icon inside of the pip span</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;button split no-pip&quot;</span>&gt;</span>Custom Pip<span class="tag">&lt;<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">&quot;fi-arrow-down&quot;</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>HTML Rendered</h4>
+<a href="#" class="button split no-pip">Custom Pip<span><i class="fi-arrow-down"></i></span></a>
+  </div>
+</div>
+
+<hr>
+<h2 id="accessibility">Accessibility</h2>
+<p class="panel">This component is not yet accessible. Stay tuned for updates in future releases.</p>
+
+<hr>
+<h2 id="customize-with-sass">Customize with Sass</h2>
+<p>Split buttons can be easily customized using our provided Sass variables.</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">button</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">/* We use these to control different shared styles for Split Buttons */</span>
+$split-<span class="tag">button</span>-function-factor<span class="value">: <span class="number">15</span>%;</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#fff</span>;</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">color</span>-alt<span class="value">: <span class="hexcolor">#333</span>;</span>
+$split-<span class="tag">button</span>-active-bg-tint<span class="value">: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>);</span>
+$split-<span class="tag">button</span>-<span class="tag">span</span>-<span class="attribute">border-color</span><span class="value">: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.5</span>);</span>
+
+<span class="comment">/* We use these to control tiny split buttons */</span>
+$split-<span class="tag">button</span>-<span class="attribute">padding</span>-tny<span class="value">: $button-tny * <span class="number">9</span>;</span>
+$split-<span class="tag">button</span>-<span class="tag">span</span>-<span class="attribute">width</span>-tny<span class="value">: $button-tny * <span class="number">6.5</span>;</span>
+$split-<span class="tag">button</span>-pip-size-tny<span class="value">: $button-tny;</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">top</span>-tny<span class="value">: $button-tny * <span class="number">2</span>;</span>
+$split-<span class="tag">button</span>-pip-<span class="value">default</span>-<span class="attribute">float</span>-tny<span class="value">: rem-calc(-<span class="number">5</span>);</span>
+
+<span class="comment">/* We use these to control small split buttons */</span>
+$split-<span class="tag">button</span>-<span class="attribute">padding</span>-sml<span class="value">: $button-sml * <span class="number">7</span>;</span>
+$split-<span class="tag">button</span>-<span class="tag">span</span>-<span class="attribute">width</span>-sml<span class="value">: $button-sml * <span class="number">5</span>;</span>
+$split-<span class="tag">button</span>-pip-size-sml<span class="value">: $button-sml;</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">top</span>-sml<span class="value">: $button-sml * <span class="number">1.5</span>;</span>
+$split-<span class="tag">button</span>-pip-<span class="value">default</span>-<span class="attribute">float</span>-sml<span class="value">: rem-calc(-<span class="number">9</span>);</span>
+
+<span class="comment">/* We use these to control medium split buttons */</span>
+$split-<span class="tag">button</span>-<span class="attribute">padding</span>-med<span class="value">: $button-med * <span class="number">6.4</span>;</span>
+$split-<span class="tag">button</span>-<span class="tag">span</span>-<span class="attribute">width</span>-med<span class="value">: $button-med * <span class="number">4</span>;</span>
+$split-<span class="tag">button</span>-pip-size-med<span class="value">: $button-med - rem-calc(<span class="number">3</span>);</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">top</span>-med<span class="value">: $button-med * <span class="number">1.5</span>;</span>
+$split-<span class="tag">button</span>-pip-<span class="value">default</span>-<span class="attribute">float</span>-med<span class="value">: rem-calc(-<span class="number">9</span>);</span>
+
+<span class="comment">/* We use these to control large split buttons */</span>
+$split-<span class="tag">button</span>-<span class="attribute">padding</span>-lrg<span class="value">: $button-lrg * <span class="number">6</span>;</span>
+$split-<span class="tag">button</span>-<span class="tag">span</span>-<span class="attribute">width</span>-lrg<span class="value">: $button-lrg * <span class="number">3.75</span>;</span>
+$split-<span class="tag">button</span>-pip-size-lrg<span class="value">: $button-lrg - rem-calc(<span class="number">6</span>);</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">top</span>-lrg<span class="value">: $button-lrg + rem-calc(<span class="number">5</span>);</span>
+$split-<span class="tag">button</span>-pip-<span class="value">default</span>-<span class="attribute">float</span>-lrg<span class="value">: rem-calc(-<span class="number">9</span>);</span></div></code></pre>
+
+
+<hr>
+<h2 id="semantic-markup-with-sass">Semantic Markup with Sass</h2>
+<p>You can create your own split buttons using our Sass mixins.</p>
+<h3>Basic</h3>
+
+<p>You can use the <code>split-button()</code> mixin to create your own split button, like so:</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container"><span class="class">.custom-split-button-class</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> split-button</span>();</span>
+}</div></code></pre>
+
+
+<h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"custom-split-button-class"</span>&gt;</span>Split Button Text <span class="tag">&lt;<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></div></code></pre>
+
+
+<h3>Advanced</h3>
+
+<p>You can further customize your split buttons using the provided options in the <code>split-button</code> mixin:</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container"><span class="class">.custom-split-button-class</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> split-button</span>(
+    //<span class="preprocessor"> Type</span><span class="preprocessor"> of</span><span class="preprocessor"> padding</span><span class="preprocessor"> to</span><span class="preprocessor"> apply.</span><span class="preprocessor"> Default</span>:<span class="preprocessor"> medium.</span>
+    //<span class="preprocessor"> Options</span>:<span class="preprocessor"> tiny</span>,<span class="preprocessor"> small</span>,<span class="preprocessor"> medium</span>,<span class="preprocessor"> large.</span>
+    $padding:<span class="preprocessor"> medium</span>,
+    //<span class="preprocessor"> Color</span><span class="preprocessor"> of</span><span class="preprocessor"> the</span><span class="preprocessor"> triangle.</span><span class="preprocessor"> Default</span>: $split-button-pip-color.
+    $pip-color:<span class="preprocessor"> orange</span>,
+    //<span class="preprocessor"> Border</span><span class="preprocessor"> color</span><span class="preprocessor"> of</span><span class="preprocessor"> button</span><span class="preprocessor"> divider.</span><span class="preprocessor"> Default</span>: $primary-color.
+    $span-border:<span class="preprocessor"> pink</span>,
+    //<span class="preprocessor"> Apply</span><span class="preprocessor"> base</span><span class="preprocessor"> style</span><span class="preprocessor"> to</span><span class="preprocessor"> split</span><span class="preprocessor"> button.</span><span class="preprocessor"> Default</span>:<span class="preprocessor"> true.</span>
+    $base-style:<span class="preprocessor"> true</span>
+  );</span>
+}</div></code></pre>
+
+
+<hr>
+<h3 id="sass-errors-">Sass Errors?</h3>
+<p>If the default &quot;foundation&quot; import was commented out, then make sure you import this file:</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container"><span class="at_rule">@<span class="keyword">import</span> <span class="string">"foundation/components/buttons"</span>;</span>
+<span class="at_rule">@<span class="keyword">import</span> <span class="string">"foundation/components/split-buttons"</span>;</span></div></code></pre>
+
+            </div>

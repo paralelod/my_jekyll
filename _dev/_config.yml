@@ -57,7 +57,7 @@ defaults:
       path: ''
       type: docs
     values:
-      layout: docs-foundation
+      layout: docs/docs-foundation
 g-analytics: UA-59944728-3
 fb-app-id: '915671155245552'
 see-also:
