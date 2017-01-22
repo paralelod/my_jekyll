@@ -1,0 +1,157 @@
+---
+title: "Sub Nav"
+description: "This simple sub nav is great for moving between different states of a page. We use these frequently to show iterations of something, typically by date, but they&#39;re also handy for filters like these."
+category: "Navigation"
+--- 
+
+<dl class="sub-nav">
+  <dt>Filter:</dt>
+  <dd class="active"><a href="#">All</a></dd>
+  <dd><a href="#">Active</a></dd>
+  <dd><a href="#">Pending</a></dd>
+  <dd class="hide-for-small-only"><a href="#">Suspended</a></dd>
+</dl>
+
+<hr>
+<h2 id="basic">Basic</h2>
+<p>Add a <code>.sub-nav</code> class to a <code>dl</code> element and fill it full of definitions. You can use the definition title as a label at the beginning (useful for building filters on a page).</p>
+<p>Add a title to the beginning of your list with the <code>dt</code> element. Add an <code>.active</code> class to a <code>dd</code> element to give it the active style.</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">dl</span> <span class="attribute">class</span>=<span class="value">&quot;sub-nav&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dt</span>&gt;</span>Filter:<span class="tag">&lt;/<span class="title">dt</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">&quot;active&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>All<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>Active<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>Pending<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">&quot;hide-for-small-only&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>Suspended<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">dl</span>&gt;</span></div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+<dl class="sub-nav">
+  <dt>Filter:</dt>
+  <dd class="active"><a href="#">All</a></dd>
+  <dd><a href="#">Active</a></dd>
+  <dd><a href="#">Pending</a></dd>
+  <dd class="hide-for-small-only"><a href="#">Suspended</a></dd>
+</dl>
+
+  </div>
+</div>
+
+<hr>
+<h2 id="customize-with-sass">Customize with Sass</h2>
+<p>Sub Navs can be easily customized using our provided Sass variables.</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">nav</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// We use these to control margin and padding</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-list-<span class="attribute">margin</span><span class="value">: rem-calc(-<span class="number">4</span> <span class="number">0</span> <span class="number">18</span>);</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-list-<span class="attribute">padding-top</span><span class="value">: rem-calc(<span class="number">4</span>);</span>
+
+<span class="comment">// We use this to control the definition</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">14</span>);</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#999</span>;</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-<span class="attribute">font-weight</span><span class="value">: normal;</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-<span class="attribute">text-decoration</span><span class="value">: none;</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-<span class="attribute">border-radius</span><span class="value">: <span class="number">1000</span>px;</span>
+
+<span class="comment">// We use these to control the active item styles</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-active-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-active-bg<span class="value">: $primary-color;</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-active-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#fff</span>;</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-active-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">3</span> <span class="number">9</span>);</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-active-<span class="attribute">cursor</span><span class="value">: default;</span>
+
+<span class="comment">// We use these to the item divider</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-item-divider<span class="value">: <span class="string">""</span>;</span>
+$<span class="tag">sub</span>-<span class="tag">nav</span>-item-divider-<span class="attribute">margin</span><span class="value">: rem-calc(<span class="number">12</span>);</span></div></code></pre>
+
+
+<hr>
+<h2 id="semantic-markup-with-sass">Semantic Markup with Sass</h2>
+<p>You apply Sub Nav styles to semantic markup using Sass mixins.</p>
+<h3>Basic</h3>
+
+<p>You can use the <code>sub-nav()</code> mixin to create your own sub nav with semantic markup, like so:</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>SCSS</h4>
+<pre><code class="language-scss"><div class="code-container"><span class="class">.your-class-name</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> sub-nav</span>();</span>
+}</div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">dl</span> <span class="attribute">class</span>=<span class="value">&quot;your-class-name&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dt</span>&gt;</span>Filter:<span class="tag">&lt;/<span class="title">dt</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">&quot;active&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>All<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>Active<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>Pending<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#&quot;</span>&gt;</span>Suspended<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">dl</span>&gt;</span></div></code></pre>
+
+  </div>
+</div>
+
+
+<h3>Advanced</h3>
+
+<p>You can further customize your alert boxes using the provided options in the <code>sub-nav()</code> mixin:</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container"><span class="class">.your-class-name</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> sub-nav</span>(
+    //<span class="preprocessor"> Control</span><span class="preprocessor"> the</span><span class="preprocessor"> color</span><span class="preprocessor"> of</span><span class="preprocessor"> the</span><span class="preprocessor"> divider</span><span class="preprocessor"> between</span><span class="preprocessor"> links.</span>
+    $font-color: $primary-color,
+    //<span class="preprocessor"> Control</span><span class="preprocessor"> your</span><span class="preprocessor"> font-size</span><span class="preprocessor"> per</span><span class="preprocessor"> label.</span>
+    $font-size:<span class="preprocessor"> rem-calc</span>(<span class="number">14</span>),
+    //<span class="preprocessor"> Change</span><span class="preprocessor"> the</span><span class="preprocessor"> background</span><span class="preprocessor"> color</span><span class="preprocessor"> for</span><span class="preprocessor"> your</span><span class="preprocessor"> labels</span>
+    $active-bg: $primary-color
+  );</span>
+}</div></code></pre>
+<p><strong>Note:</strong> <code>rem-calc();</code> is a function we wrote to convert <code>px</code> to <code>rem</code>. It is included in <strong>_variables.scss</strong>.</p>
+<hr>
+<h3>Accessibility</h3>
+
+<p>Use this snippet to make sub-nav more accessible. Adding the role attribute gives context to a screen reader. Using the Tab button, a user can navigate until they&#39;ve reached the link below. (Use Shift+Tab to navigate back one step.)</p>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>SCSS</h4>
+<pre><code class="language-scss"><div class="code-container"> &lt;dl class=&quot;sub-nav&quot; role=&quot;menu&quot; title=&quot;Filter Menu List&quot;&gt;
+    &lt;dt&gt;Filter:&lt;/dt&gt;
+    &lt;dd class=&quot;active&quot; role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;All&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;Active&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;Pending&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;Suspended&lt;/a&gt;&lt;/dd&gt;
+  &lt;/dl&gt;</div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>HTML</h4>
+
+ <dl class="sub-nav" role="menu" title="Filter Menu List">
+    <dt>Filter:</dt>
+    <dd class="active" role="menuitem"><a href="#">All</a></dd>
+    <dd role="menuitem"><a href="#">Active</a></dd>
+    <dd role="menuitem"><a href="#">Pending</a></dd>
+    <dd class="hide-for-small-only" role="menuitem"><a href="#">Suspended</a></dd>
+ </dl>
+
+
+  </div>
+</div>
+
+<p><strong>Note:</strong> It is bad practice to leave links that do not go anywhere on your live site. Use something like foo.html to fill them as you build.</p>
+<hr>
+<h3 id="sass-errors-">Sass Errors?</h3>
+<p>If the default &quot;foundation&quot; import was commented out, then make sure you import this file:</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container"><span class="at_rule">@<span class="keyword">import</span> <span class="string">"foundation/components/sub-nav"</span>;</span></div></code></pre>
+
+            </div>

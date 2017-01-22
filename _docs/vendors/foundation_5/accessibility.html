@@ -1,0 +1,111 @@
+---
+title: "Accessibility"
+description: "Guidelines on this page will help you make your sites more accessible for keyboard navigation and screen readers."
+category: Setup
+---
+
+<p>Aside from accessibility features that has been built into Foundation&#39;s components, this guide will give you additional best practices towards making your site more accessible. This is a living document and will continue to be updated.</p>
+<p class="panel">Care about accessibility or want to contribute? Submit a Pull Request or get into the conversation on <a href="https://github.com/zurb/foundation">GitHub</a>.</p>
+
+<hr>
+<h2 id="basic-concepts-overview">Basic Concepts - Overview</h2>
+<ul>
+    <li>Images should have text alternative for images. Captions or transcripts should be provided for video and audio. Sufficient color contrast between text and background is important for people with vision impairment or color blindness.</li>
+    <li>Sites should be navigatable using only a keyboard, providing meaningful hyperlinks, and allowing enough time for users to complete a task.</li>
+    <li>Make content readable and provide predictable functionality.</li>
+    <li>Maximizing compatibility with current and future tools (web browsers, assistive technologies, etc.).</li>
+</ul>
+
+<hr>
+<h2 id="keyboard-access">Keyboard Access</h2>
+<p>The most common impairments for web users are those with problems seeing, hearing or a physical inability to use a mouse. For that reason, the site must be navigatable by keyboard. Most commonly the tab key is used to tab through the content. For a vision impaired person will have a <a href="http://en.wikipedia.org/wiki/Screen_reader">screenreader</a> installed that reads the content out loud. We used <a href="http://www.chromevox.com/">Chromevox</a> to test with. You can find a list of popular screen readers below in the resource list.</p>
+
+<h3 id="tab-index">Tab-index</h3>
+<p>Tab index lets users move forward and backward through the links and form elements on a page. But you can make anything &quot;tabbable&quot; with the tabindex attribute. 
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">h2</span> <span class="attribute">tabindex</span>=<span class="value">&quot;1&quot;</span>&gt;</span>…<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">article</span> <span class="attribute">tabindex</span>=<span class="value">&quot;2&quot;</span>&gt;</span>…<span class="tag">&lt;/<span class="title">article</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">tabindex</span>=<span class="value">&quot;3&quot;</span>&gt;</span>…<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+
+
+<p>As the numbers suggest, tapping on the tab key takes users through anything with the tabindex attribute in order. In HTML5, you can use it on any element. That means you can set priorities quickly. Want to help people get past the same tedious navigation they get on every page? Use tabindex to put navigation last.</p>
+
+<p><strong>Tip:</strong> When starting out use sets of 10: tabindex=&quot;10&quot;, tabindex=&quot;20&quot;, tabindex=&quot;30&quot;. If you decide to rearrange the order — say, put the third item between the first and second — you don&#39;t have to rearrange everything. Just make it tabindex=&quot;15&quot;.</p>
+
+
+<h3 id="how-to-test-a-website-s-keyboard-accessibility">How to Test a Website’s Keyboard Accessibility</h3>
+<p>On a desktop or laptop in Firefox, IE, Chrome, or Safari, 
+click into the browser address bar.</p>
+
+<p>Take your hand off your mouse and use only your keyboard.
+Using the Tab button, navigate until you’ve reached the link below. (You can use Shift+Tab to navigate back one step.)</p>
+
+<ul>
+    <li>Right arrow: Next navigation bar item</li>
+    <li>Left arrow: Previous navigation bar item</li>
+    <li>Enter: Activate currently focused item (i.e. navigate to corresponding URL)</li>
+</ul>
+
+<hr>
+<h3 id="skip-navigation">Skip Navigation</h3>
+<p>Give the person the ability to skip the navigation at the top of the page. If you have menu with 40 links, you can imagine how long it would take someone to tab through all that. Here&#39;s one way to do it:</p>
+
+<div class="row">
+    <div class="medium-7 columns">
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">&quot;skip&quot;</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&quot;#content&quot;</span>&gt;</span>Skip to Main Content<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+    </div>
+    <div class="medium-5 columns">
+<pre><code class="language-css"><div class="code-container">    <span class="id">#skip</span> <span class="tag">a</span> <span class="rules">{
+        <span class="rule">{<span class="attribute">position</span>:<span class="value">absolute;</span></span>
+        <span class="rule"><span class="attribute">left</span>:<span class="value">-<span class="number">10000</span>px;</span></span>
+        <span class="rule"><span class="attribute">top</span>:<span class="value">auto;</span></span>
+        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">1</span>px;</span></span>
+        <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">1</span>px;</span></span>
+        <span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden;</span></span>
+    <span class="rule">}</span></span>
+
+    <span class="id">#skip</span> <span class="tag">a</span><span class="pseudo">:focus</span> <span class="rules">{ 
+        <span class="rule"><span class="attribute">position</span>:<span class="value">static;</span></span> 
+        <span class="rule"><span class="attribute">width</span>:<span class="value">auto;</span></span> 
+        <span class="rule"><span class="attribute">height</span>:<span class="value">auto;</span></span> 
+    <span class="rule">}</span></span></div></code></pre>
+
+ </div>
+</div>
+
+<p>Note: A person who can see may be slightly confused that their focus is off screen. This is a minor compromise for this method.</p>
+
+<hr>
+<h3 id="nested-headings">Nested Headings</h3>
+<p>When nesting headings <code>&lt;h1&gt; - &lt;h6&gt;</code>, your primary document header should be an <code>&lt;h1&gt;</code>. Subsequent headings should make logical use of <code>&lt;h2&gt; - &lt;h6&gt;</code> such that screen readers can construct a table of contents for your pages.</p>
+
+<hr>
+<h2 id="learn-more">Learn More</h2>
+<div class="row">
+    <div class="medium-6 columns">
+    <h4>Additional resources</h4>
+        <ul class="side-nav" role="navigation" title="Link List">
+            <li role="menuitem"><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">WCAG 2.0 Guide</a></li>
+            <li role="menuitem"><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">MDN accessibility documentation</a></li>
+            <li role="menuitem"><a href="http://achecker.ca/checker/index.php">AChecker Web Accessibility Checker</a></li>
+            <li role="menuitem"><a href="http://www.w3.org/WAI/intro/accessibility.php">w3.org Introduction to Accessibility</a></li>
+            <li role="menuitem"><a href="http://www.section508.gov/">Section 508 Government Requirements</a></li>
+            <li role="menuitem"><a href="http://webaim.org/">Accessibilty Certification and Training</a></li>
+        </ul>
+    </div>
+    <div class="medium-6 columns">
+    <h4>Tools</h4>
+        <ul class="side-nav" role="navigation" title="Link List">
+            <li role="menuitem"><a href="http://www.chromevox.com/">Chromevox screnreader plugin for Chrome</a></li>
+            <li role="menuitem"><a href="http://www.freedomscientific.com/Products/Blindness/Jaws">Jaws screnreader plugin for Windows</a></li>
+            <li role="menuitem"><a href="https://github.com/squizlabs/HTML_CodeSniffer">&quot;HTML Codesniffer&quot; bookmarklet for identifying accessibility issues</a></li>
+            <li role="menuitem"><a href="http://webaim.org/">Accessibilty Certification and Training</a></li>
+        </ul>
+    </div>
+</div>
+
+            </div>
+          </div>

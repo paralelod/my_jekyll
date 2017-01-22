@@ -1,0 +1,46 @@
+---
+title: "Right-to-Left Support"
+description: "Right-to-left text direction support in Foundation allows you to easily switch text direction for all components."
+category: "Structure"
+--- 
+
+<h2 id="setup">Setup</h2>
+<p>Foundation was built to support right-to-left text direction out of the box, but you&#39;ll need to make a couple of adjustments to your markup and Sass to get everything up and running.</p>
+<h3 id="markup-changes-for-right-to-left-languages">Markup Changes for Right-to-Left Languages</h3>
+<p>You&#39;ll need to make a few changes to your markup to get the Javascript components working nice and smooth. In the <code>html</code> tag, you&#39;ll need to add a <code>dir</code> attribute with a value of <code>rtl</code>. Here&#39;s what your <code>html</code> tag should look like:</p>
+<h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- This example is for a right-to-left Arabic layout --&gt;</span>
+<span class="tag">&lt;<span class="title">html</span> <span class="attribute">class</span>=<span class="value">"no-js"</span> <span class="attribute">lang</span>=<span class="value">"ar"</span> <span class="attribute">dir</span>=<span class="value">"rtl"</span>&gt;</span></div></code></pre>
+
+
+<h3 id="change-the-language-too">Change the Language Too</h3>
+<p>You&#39;ll need to change your <code>lang</code> attribute value to match your language. Here&#39;s a handy list of common right-to-left languages and their html codes:</p>
+<ul>
+<li>Arabic: ar</li>
+<li>Chinese: zh</li>
+<li>Farsi: fa</li>
+<li>Hebrew: he, iw</li>
+<li>Japanese: ja</li>
+<li>Urdu: ur</li>
+<li>Yiddish: yi, ji</li>
+</ul>
+<hr>
+<h3 id="a-single-sass-adjustment">A Single Sass Adjustment</h3>
+<p>We made it really easy to switch the entire Foundation grid to right-to-left by changing the <code>$text-direction</code> Sass variable. Here&#39;s what the variable should look like:</p>
+<h4 id="sass">Sass</h4>
+<pre><code class="language-scss"><div class="code-container">$<span class="value">text</span>-<span class="attribute">direction</span><span class="value">: rtl;</span></div></code></pre>
+
+
+<p>By changing this single variable, the entire grid and all the Foundation components will be switched to right-to-left orientation.</p>
+<div class="panel">
+<h4 id="using-css">Using CSS</h4>
+<p>  If you prefer vanilla CSS, use the customizer to download Foundation and get right-to-left support. Your download should be ready to use without any of the steps mentioned above.</p>
+<p>  <a href="http://foundation.zurb.com/develop/download.html#customizeFoundation">Download Right-to-Left Foundation &raquo;</a></p>
+
+
+</div>
+
+
+
+            </div>

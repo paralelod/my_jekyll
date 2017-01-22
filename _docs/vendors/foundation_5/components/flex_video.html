@@ -1,0 +1,108 @@
+---
+title: "Flex Video"
+description: "Flex Video lets browsers automatically scale video objects in your webpages. If you&#39;re embedding a video from YouTube, Vimeo, or another site that uses iframe, embed or object elements, you can wrap your video in <code>div.flex-video</code> to create an intrinsic ratio that will properly scale your video on any device."
+category: "Media"
+--- 
+
+<div class="row">
+  <div class="large-6 columns">
+    <div class="flex-video">
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="large-6 columns">
+    <div class="flex-video widescreen vimeo">
+      <iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
+  </div>
+</div>
+
+<hr>
+<h2>Basic</h2>
+
+<p>You can create a flex video with minimal markup.</p>
+<div class="row">
+  <div class="large-6 columns">
+
+    <h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;flex-video&quot;</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">iframe</span> <span class="attribute">width</span>=<span class="value">&quot;420&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;315&quot;</span> <span class="attribute">src</span>=<span class="value">&quot;//www.youtube.com/embed/aiBt44rrslw&quot;</span> <span class="attribute">frameborder</span>=<span class="value">&quot;0&quot;</span> <span class="attribute">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+
+  </div>
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+    <div class="flex-video">
+            <iframe width="420" height="315" src="http://www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<h2>Advanced</h2>
+
+<p>Additional classes can be added to your flex video to change its appearance.</p>
+<div class="row">
+  <div class="large-6 columns">
+
+    <h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">&quot;flex-video widescreen vimeo&quot;</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">iframe</span> <span class="attribute">src</span>=<span class="value">&quot;<a href="http://player.vimeo.com/video/60122989">http://player.vimeo.com/video/60122989</a>&quot;</span> <span class="attribute">width</span>=<span class="value">&quot;400&quot;</span> <span class="attribute">height</span>=<span class="value">&quot;225&quot;</span> <span class="attribute">frameborder</span>=<span class="value">&quot;0&quot;</span> <span class="attribute">webkitAllowFullScreen</span> <span class="attribute">mozallowfullscreen</span> <span class="attribute">allowFullScreen</span>&gt;</span><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+    <h4>Rendered HTML</h4>
+    <div class="flex-video widescreen vimeo">
+      <iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
+  </div>
+</div>
+
+<hr>
+<h2 id="customize-with-sass">Customize with Sass</h2>
+<p>Flex video can be easily customized using our Sass variables.</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-media-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// We use these to control video container padding and margins</span>
+$<span class="attribute">flex</span>-<span class="tag">video</span>-<span class="attribute">padding-top</span><span class="value">: rem-calc(<span class="number">25</span>);</span>
+$<span class="attribute">flex</span>-<span class="tag">video</span>-<span class="attribute">padding-bottom</span><span class="value">: <span class="number">67.5</span>%;</span>
+$<span class="attribute">flex</span>-<span class="tag">video</span>-<span class="attribute">margin-bottom</span><span class="value">: rem-calc(<span class="number">16</span>);</span>
+
+<span class="comment">// We use this to control widescreen bottom padding</span>
+$<span class="attribute">flex</span>-<span class="tag">video</span>-widescreen-<span class="attribute">padding-bottom</span><span class="value">: <span class="number">57.25</span>%;</span></div></code></pre>
+
+
+<hr>
+<h2 id="semantic-markup-with-sass">Semantic Markup with Sass</h2>
+<p>You can create your own flex video using our Sass mixins.</p>
+<h3>Basic</h3>
+
+<p>You can use the <code>flex-video-container()</code> mixin to create your own flex-video container, like so:</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container"><span class="class">.custom-flex-video-class</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> flex-video-container</span>();</span>
+}</div></code></pre>
+
+
+<h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"custom-flex-video-class"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">iframe</span> <span class="attribute">src</span>=<span class="value">"http://player.vimeo.com/video/21762736"</span> <span class="attribute">width</span>=<span class="value">"400"</span> <span class="attribute">height</span>=<span class="value">"225"</span> <span class="attribute">frameborder</span>=<span class="value">"0"</span> <span class="attribute">webkitAllowFullScreen</span> <span class="attribute">mozallowfullscreen</span> <span class="attribute">allowFullScreen</span>&gt;</span><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+
+<hr>
+<h3 id="sass-errors-">Sass Errors?</h3>
+<p>If the default &quot;foundation&quot; import was commented out, then make sure you import this file:</p>
+<h4>SCSS</h4>
+
+<pre><code class="language-scss"><div class="code-container"><span class="at_rule">@<span class="keyword">import</span> <span class="string">"foundation/components/global"</span>;</span>
+<span class="at_rule">@<span class="keyword">import</span> <span class="string">"foundation/components/flex-video"</span>;</span></div></code></pre>
+
+            </div>

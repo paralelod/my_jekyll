@@ -1,0 +1,2474 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <title>JavaScript Setup</title>
+
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Diogo Russo">
+<meta name="description" content="InstallationFoundation JavaScript was designed to work with jQuery right out of the gate. In the &lt;head&gt; section of your page add Modernizr. Modernizr a...">
+<meta name="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS">
+
+
+
+
+<meta name="p:domain_verify" content="f02cbf6a5c8f230685063521292fbfcb"/>
+
+<meta property="fb:app_id"      content="915671155245552" /> 
+<meta property="og:type"        content="website" /> 
+<meta property="og:title"       content="Estúdio Berinjela | Criação" />
+<meta property="og:url"         content="http://lab.diogorusso.com" />
+<meta property="og:image"       content="http://lab.diogorusso.com/my_jekyll/lib/img/_site_card.jpg" />
+<meta property="og:description" content="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS" />
+
+
+<meta property="og:see_also"    content="http://work.diogorusso.com" />
+
+<meta property="og:see_also"    content="http://www.lucaszappa.com.br" />
+
+<meta property="og:see_also"    content="http://www.estudioberinjela.com.br" />
+ 
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="http://lab.diogorusso.com" />
+<meta name="twitter:url" content="http://lab.diogorusso.com">
+<meta name="twitter:title" content="Estúdio Berinjela | Criação" />
+<meta name="twitter:description" content="I'm a DESIGNER and STORYTELLER I help businesses, individuals and communities craft meaningful EXPERIENCES and PRODUCTS" />
+<meta name="twitter:image" content="http://lab.diogorusso.com/my_jekyll+avatar.png" />
+<meta name="twitter:site" content="@hello_diogo">
+<meta name="twitter:creator" content="@hello_diogo">
+    <link rel=”author” href=”https://plus.google.com/116739255173599428138”/>
+
+  <link rel="stylesheet" href="/my_jekyll/lib/css/main.css">
+  <link rel="stylesheet" href="/my_jekyll/lib/css/custom.css">
+  
+  <link rel="icon"  type="image/ico"  href="/my_jekyll/lib/img/+logo.png">
+
+  <link rel="canonical" href="http://lab.diogorusso.com/my_jekyll/docs/vendors/foundation_5/javascript.html">
+  <link rel="alternate" type="application/rss+xml" title="Estúdio Berinjela | Criação" href="http://lab.diogorusso.com/my_jekyll/feed.xml">
+
+  <script>document.createElement( "picture" );</script>
+  <script src="/my_jekyll/lib/js/head.js"></script>
+
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'rvc4hsl',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</head>
+
+ 
+  <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '915671155245552',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    <a id="top"></a>
+    
+<div class="overlay">
+    <div class="preloader text-center">
+
+        <img src="/my_jekyll/lib/img/+logo.png">
+
+        <div class="status">
+  <div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div> <!-- spinner-->
+</div><!-- status -->
+
+    </div><!--preloader-->
+</div><!-- overlay -->
+
+<div class="anim-menu">
+
+  <nav class="top-bar large" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="logo">
+        <a href="/my_jekyll"><img src="/my_jekyll/lib/img/+logo.png"></a>
+      </li>
+      <li class="toggle-topbar">
+        <a class="menu-button" id="menuButton">
+          Menu <i class="fa fa-bars"></i>
+        </a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right text-right links">
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  Styleguide
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  UI Kit
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/foundation_5/" class="page-scroll">
+                  Foundation 5
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/fulpage_js/" class="page-scroll">
+                  Fullpage.js
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/docs/isotope_js/" class="page-scroll">
+                  Isotope
+                </a>
+          
+      
+   
+</li>
+  
+</ul>
+    </section>
+  </nav>
+</div>
+
+
+
+<div class="back-to-top">
+    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
+</div>
+
+
+
+
+<div class="row">
+
+  <div class="large-3 medium-4 columns">
+    <div class="hide-for-small">
+      <div class="sidebar">
+        <h5>Foundation Documentation</h5>
+        <form>
+          <!--  <label>Search Documentation</label> -->
+          <input tabindex="1" id="autocomplete" type="search" placeholder="Search Docs: e.g. forms">
+        </form>
+
+        <a href="http://foundation.zurb.com/develop/download.html" class="download button expand">Download Foundation</a>
+
+        <nav>
+          <ul class="side-nav">
+             <!--li class="heading">Setup</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/accessibility.html">Accessibility</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/applications.html">Accessibility</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/components/global.html">Global Styles</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/components/kitchen_sink.html">Kitchen sink</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/css.html">Getting Started With Foundation CSS</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/elements.html">Elements</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/index-2.html">Getting Started</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/index.html">Getting Started</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/javascript-utilities.html">JavaScript Utilities</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/javascript.html">JavaScript Setup</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/media-queries.html">Media Queries</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/sass-files.html">What You Get with Foundation Sass</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/sass.html">Getting Started With Sass</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/upgrading.html">Upgrading From Foundation 4</a></li>
+              
+            
+              
+                <li><a href="/docs/vendors/foundation_5/using-sass.html">How to Use Foundation Sass</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            -->
+             <li class="heading">Structure</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/block_grid.html">Block Grid</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/grid.html">Grid</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/interchange.html">Interchange</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/rtl.html">Right-to-Left Support</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/visibility.html">Visibility Classes</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/utility-classes.html">Utility Classes</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Navigation</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/breadcrumbs.html">Breadcrumbs</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/icon-bar.html">Icon Bar</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/magellan.html">Magellan</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/offcanvas.html">Off-canvas</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/pagination.html">Pagination</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/sidenav.html">Side Nav</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/subnav.html">Sub Nav</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/topbar.html">Top Bar</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Media</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/clearing.html">Clearing</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/flex_video.html">Flex Video</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/orbit.html">Orbit</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/thumbnails.html">Thumbnails</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+             <li class="heading">Forms</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/abide.html">Abide Validation</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/forms.html">Forms</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/range_slider.html">Range Sliders</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/switch.html">Switches</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Buttons</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/button_groups.html">Button Groups</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/buttons.html">Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/dropdown_buttons.html">Dropdown Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/split_buttons.html">Split Buttons</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Typography</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/inline_lists.html">Inline Lists</a></li>
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/keystrokes.html">Keystrokes</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/labels.html">Labels</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/typography.html">Typography</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            <li class="heading">Callouts & Prompts</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/alert_boxes.html">Alerts</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/joyride.html">Joyride</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/panels.html">Panels</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/reveal.html">Reveal Modal</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tooltips.html">Tooltips</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              <li class="heading">Content</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/accordion.html">Accordion</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/dropdown.html">Dropdowns</a></li>
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/equalizer.html">Equalizer</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/pricing_tables.html">Pricing Tables</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/progress_bars.html">Progress Bars</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tables.html">Tables</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/components/tabs.html">Tabs</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              <li class="heading">Support</li>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/changelog.html">Changelog</a></li>
+              
+            
+              
+                <li><a href="/my_jekyll/docs/vendors/foundation_5/compatibility.html">Compatibility</a></li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+
+            <!--li class="heading">Setup</li>
+            <li><a href="index-2.html" data-search="">Getting Started</a></li>
+            <li><a href="css.html" data-search="Styles">CSS</a></li>
+            <li><a href="sass.html" data-search="Sass">Sass</a></li>
+            <li><a href="sass-files.html" data-search="Sass,Sass - What You Get, How to Use Sass">Sass Files</a></li>
+            <li><a href="using-sass.html" data-search="Sass,Sass - What You Get, How to Use Sass">Using Sass</a></li>
+            <li><a href="applications.html" data-search="Rails,Gem">Applications</a></li>
+            <li><a href="javascript.html" data-search="">JavaScript</a></li>
+            <li><a href="components/global.html" data-search="Global Styles,Global Mixins,Global Variables,Useful HTML Classes">Global Styles</a></li>
+            <li><a href="components/kitchen_sink.html" data-search="">Kitchen Sink</a></li>
+            <li><a href="accessibility.html" data-search="accessibility">Accessibility</a></li>
+            <li><a href="upgrading.html" data-search="Migration">Upgrading</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Structure</li>
+            <li><a href="media-queries.html" data-search="Breakpoints">Media Queries</a></li>
+            <li><a href="components/visibility.html" data-search="">Visibility</a></li>
+            <li><a href="components/grid.html" data-search="">Grid</a></li>
+            <li><a href="components/block_grid.html" data-search="">Block Grid</a></li>
+            <li><a href="components/interchange.html" data-search="Responsive Images">Interchange Responsive Content <span class="label">JS</span></a></li>
+            <li><a href="utility-classes.html" data-search="">Utility Classes</a></li>
+            <li><a href="javascript-utilities.html" data-search="">Javascript Utilities</a></li>
+            <li><a href="components/rtl.html" data-search="RTL">Right-to-Left Support</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Navigation</li>
+            <li><a href="components/offcanvas.html" data-search="Off Canvas">Off-canvas <span class="label">JS</span></a></li>
+            <li><a href="components/topbar.html" data-search="Nav Bar,Navigation,Sticky">Top Bar <span class="label">JS</span></a></li>
+            <li><a href="components/icon-bar.html" data-search="">Icon Bar</a></li>
+            <li><a href="components/sidenav.html" data-search="">Side Nav</a></li>
+            <li><a href="components/magellan.html" data-search="Scrollspy">Magellan Sticky Nav <span class="label">JS</span></a></li>
+            <li><a href="components/subnav.html" data-search="">Sub Nav</a></li>
+            <li><a href="components/breadcrumbs.html" data-search="Navigation Path,Cookie Crumb">Breadcrumbs</a></li>
+            <li><a href="components/pagination.html" data-search="">Pagination</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Media</li>
+            <li><a href="components/orbit.html" data-search="Carousel,Slider,Slideshow">Orbit Slider <span class="label">JS</span></a></li>
+            <li><a href="components/thumbnails.html" data-search="Images">Thumbnails</a></li>
+            <li><a href="components/clearing.html" data-search="Responsive Lightbox,Lightbox">Clearing Lightbox <span class="label">JS</span></a></li>
+            <li><a href="components/flex_video.html" data-search="Responsive Video">Flex Video</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Forms</li>
+            <li><a href="components/forms.html" data-search="">Forms</a></li>
+            <li><a href="components/switch.html" data-search="">Switches</a></li>
+            <li><a href="components/range_slider.html" data-search="Range Slider">Range Sliders <span class="label">JS</span></a></li>
+            <li><a href="components/abide.html" data-search="Form Validation,Field Validation">Abide Validation <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Buttons</li>
+            <li><a href="components/buttons.html" data-search="">Buttons</a></li>
+            <li><a href="components/button_groups.html" data-search="Button Bar">Button Groups</a></li>
+            <li><a href="components/split_buttons.html" data-search="">Split Buttons <span class="label">JS</span></a></li>
+            <li><a href="components/dropdown_buttons.html" data-search="">Dropdown Buttons <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Typography</li>
+            <li><a href="components/typography.html" data-search="Typography,Type-setting,Composition">Type</a></li>
+            <li><a href="components/inline_lists.html" data-search="Lists">Inline Lists</a></li>
+            <li><a href="components/labels.html" data-search="Tags">Labels</a></li>
+            <li><a href="components/keystrokes.html" data-search="">Keystrokes</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Callouts &amp; Prompts</li>
+            <li><a href="components/reveal.html" data-search="Modal">Reveal Modal <span class="label">JS</span></a></li>
+            <li><a href="components/alert_boxes.html" data-search="Error,Success,Warning">Alerts <span class="label">JS</span></a></li>
+            <li><a href="components/panels.html" data-search="Wells">Panels</a></li>
+            <li><a href="components/tooltips.html" data-search="Popover">Tooltips <span class="label">JS</span></a></li>
+            <li><a href="components/joyride.html" data-search="Tooltip Tour,Guider,Tooltip Walk-through">Joyride <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Content</li>
+            <li><a href="components/dropdown.html" data-search="">Dropdowns <span class="label">JS</span></a></li>
+            <li><a href="components/pricing_tables.html" data-search="">Pricing Tables</a></li>
+            <li><a href="components/progress_bars.html" data-search="">Progress Bars</a></li>
+            <li><a href="components/tables.html" data-search="">Tables</a></li>
+            <li><a href="components/accordion.html" data-search="">Accordion <span class="label">JS</span></a></li>
+            <li><a href="components/tabs.html" data-search="">Tabs <span class="label">JS</span></a></li>
+            <li><a href="components/equalizer.html" data-search="">Equalizer <span class="label">JS</span></a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Support</li>
+
+            <li><a href="changelog.html" data-search="">Changelog</a></li>
+            <li><a href="compatibility.html" data-search="">Compatibility</a></li>
+
+            <li class="divider"></li>
+            <li class="heading">Older Docs</li>
+            <li><a href="v/4.3.2/index.html" data-search="">Foundation 4</a></li>
+            <li><a href="v/3.2.5/index.html" data-search="">Foundation 3</a></li>
+            <li><a href="v/2.2.1/index.html" data-search="">Foundation 2</a></li-->
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+  <div class="large-9 medium-8 columns">
+
+    <h1 id="getting-started">JavaScript Setup</h1>
+    <p><h3 class="subheader">We streamlined how you implement Foundation plugins by combining them into a single plugin under the $.fn.foundation() jQuery namespace.</h3></p>
+    <hr>
+    <h3 id="installation">Installation</h3>
+<p>Foundation JavaScript was designed to work with <a href="http://jquery.com/" title="jQuery Docs">jQuery</a> right out of the gate. In the <code>&lt;head&gt;</code> section of your page add Modernizr. Modernizr acts as a shim for HTML5 elements that older browsers may not recognize, and provides detection for mobile devices:</p>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"/js/vendor/modernizr.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></code></pre>
+<p>Before the closing <code>body</code> tag, insert JQuery and FastClick.</p>
+<h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"/js/vendor/jquery.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"/js/vendor/fastclick.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></code></pre>
+<p>Then either load each plugin individually, or include <code>foundation.min.js</code>, which automatically loads the Foundation Core and all JavaScript plugins.</p>
+<h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"/js/foundation.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+
+<span class="comment">&lt;!-- or individually --&gt;</span>
+
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"/js/foundation.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"/js/foundation.alert.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="comment">&lt;!-- ... --&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"/js/foundation.dropdown.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"/js/foundation.tab.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></code></pre>
+<hr>
+<h3 id="initialize-foundation">Initialize Foundation</h3>
+<p>After you have included the Foundation JavaScript, just add a simple call to initialize all plugins on your page.</p>
+<p>We recommend that you initialize Foundation at the end of the page <code>&lt;body&gt;</code>.</p>
+<h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
+  $(document).foundation();
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></code></pre>
+<p><strong>Note:</strong> We include a tested version of jQuery in the Foundation repo to get you started quickly.</p>
+<hr>
+<h3 id="adding-new-content-after-page-load">Adding New Content After Page Load</h3>
+<p>If you add new content after the page has been loaded, you will need to reinitialize the Foundation JavaScript by running the following:</p>
+<pre><code class="language-javascript"><div class="code-container">$(document).foundation();</div></code></pre>
+
+
+<p>Reflow will make Foundation check the DOM for any elements and re-apply any listeners to them.</p>
+<pre><code class="language-javascript"><div class="code-container">$(document).foundation(<span class="string">'reflow'</span>);</div></code></pre>
+
+
+<p>To be efficient, target the actual Foundation plugin you need to <code>reflow</code>:</p>
+<pre><code class="language-javascript"><div class="code-container">$(document).foundation(<span class="string">'orbit'</span>, <span class="string">'reflow'</span>);
+or
+$(document).foundation(<span class="string">'tab'</span>, <span class="string">'reflow'</span>);
+or
+$(document).foundation(<span class="string">'interchange'</span>, <span class="string">'reflow'</span>);
+etc...</div></code></pre>
+
+
+<hr>
+<h3 id="configuration">Configuration</h3>
+<p>Foundation offers you options to customize plugin initialization. By default, calling <code>$(&#39;#scope&#39;).foundation();</code> will initialize all available plugins on the page. Alternatively, you can pass individual plugins along with configuration options and a callback. This way, you can select which plugins you want to customize, and which are fine by default. You can take a look at the call here:</p>
+<pre><code class="language-js"><div class="code-container">$(document).foundation({tab: {toggleable: <span class="literal">false</span>}});</div></code></pre>
+<p>The call will initialize all the plugins on the page and will configure tabs with <code>toggleable</code> enabled.</p>
+<p>You can configure multiple libraries within the same call as well. Here are a few ways to make it happen:</p>
+<h4>JS</h4>
+
+<pre><code class="language-js"><div class="code-container">$(document).foundation({
+  reveal : {
+    animation_speed: <span class="number">500</span>
+  },
+  tooltip : {
+    disable_for_touch: <span class="literal">true</span>
+  },
+  topbar : {
+    custom_back_text: <span class="literal">false</span>,
+    is_hover: <span class="literal">false</span>,
+    mobile_show_parent_link: <span class="literal">true</span>
+  }
+});</div></code></pre>
+<p>The above will initialize all of the plugins with default settings as well as customized settings for <code>reveal</code>, <code>tooltip</code>, and <code>topbar</code>.</p>
+<h4 id="dataOptions">Data Options</h4>
+
+<p>Instead of passing the settings to the plugins using JavaScript, you can pass them through the markup using <code>data-options</code>. To pass in an option, just place it in the <code>data-options</code> HTML attribute of the element the plugin is being called on. To pass in multiple options, format them as a semicolon-delimited list:</p>
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">data-tooltip</span> <span class="attribute">data-options</span>=<span class="value">"disable_for_touch:true;touch_close_text:'close me'"</span> <span class="attribute">class</span>=<span class="value">"has-tip"</span> <span class="attribute">title</span>=<span class="value">"Tooltips are awesome!"</span>&gt;</span>Has Tooltip<span class="tag">&lt;/<span class="title">span</span>&gt;</span></div></code></pre>
+<p>A chart of of all the available data-options is below.</p>
+<div class="row">
+  <div class="twelve columns">
+    <table class="plugin-options">
+  <tbody>
+    <tr>
+      <td rowspan="4">Abide</td>
+      <td>live_validate</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>validate_on_blur</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>focus_on_invalid</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>error_labels</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>timeout</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Accordion</td>
+      <td>active_class</td>
+      <td>&#39;active&#39;</td>
+    </tr>
+    <tr>
+      <td>toggleable</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Clearing</td>
+      <td>close_selectors</td>
+      <td>&#39;.clearing-close&#39;</td>
+    </tr>
+    <tr>
+      <td>touch_label</td>
+      <td>&#39;&larr;&nbsp;Swipe to Advance&nbsp;&rarr;&#39;</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Dropdown</td>
+      <td>active_class</td>
+      <td>&#39;open&#39;</td>
+    </tr>
+    <tr>
+      <td>is_hover</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td rowspan="1">Interchange</td>
+      <td>load_attr</td>
+      <td>&#39;interchange&#39;</td>
+    </tr>
+    <tr>
+      <td rowspan="20">Joyride</td>
+      <td>expose</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>modal</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>tip_location</td>
+      <td>&#39;bottom&#39;</td>
+    </tr>
+    <tr>
+      <td>nub_position</td>
+      <td>&#39;auto&#39;</td>
+    </tr>
+    <tr>
+      <td>scroll_speed</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>scroll_animation</td>
+      <td>&#39;linear&#39;</td>
+    </tr>
+    <tr>
+      <td>timer</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>start_timer_on_click</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>start_offset</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>next_button</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>tip_animation</td>
+      <td>&#39;fade&#39;</td>
+    </tr>
+    <tr>
+      <td>pause_after</td>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <td>exposed</td>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <td>tip_animation_fade_speed</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>cookie_monster</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>cookie_name</td>
+      <td>&#39;joyride&#39;</td>
+    </tr>
+    <tr>
+      <td>cookie_domain</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>cookie_expires</td>
+      <td>365</td>
+    </tr>
+    <tr>
+      <td>tip_container</td>
+      <td>&#39;body&#39;</td>
+    </tr>
+    <tr>
+      <td>expose_add_class</td>
+      <td>&#39;&#39;</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Magellan</td>
+      <td>active_class</td>
+      <td>&#39;active&#39;</td>
+    </tr>
+    <tr>
+      <td>threshold</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>destination_threshold</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>throttle_delay</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td rowspan="1">OffCanvas</td>
+      <td>close_on_click</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td rowspan="29">Orbit</td>
+      <td>animation</td>
+      <td>&#39;slide&#39;</td>
+    </tr>
+    <tr>
+      <td>timer_speed</td>
+      <td>10000</td>
+    </tr>
+    <tr>
+      <td>pause_on_hover</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>resume_on_mouseout</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>animation_speed</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>stack_on_small</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>navigation_arrows</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>slide_number</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>slide_number_text</td>
+      <td>&#39;of&#39;</td>
+    </tr>
+    <tr>
+      <td>container_class</td>
+      <td>&#39;orbit-container&#39;</td>
+    </tr>
+    <tr>
+      <td>stack_on_small_class</td>
+      <td>&#39;orbit-stack-on-small&#39;</td>
+    </tr>
+    <tr>
+      <td>next_class</td>
+      <td>&#39;orbit-next&#39;</td>
+    </tr>
+    <tr>
+      <td>prev_class</td>
+      <td>&#39;orbit-prev&#39;</td>
+    </tr>
+    <tr>
+      <td>timer_container_class</td>
+      <td>&#39;orbit-timer&#39;</td>
+    </tr>
+    <tr>
+      <td>timer_paused_class</td>
+      <td>&#39;paused&#39;</td>
+    </tr>
+    <tr>
+      <td>timer_progress_class</td>
+      <td>&#39;orbit-progress&#39;</td>
+    </tr>
+    <tr>
+      <td>slides_container_class</td>
+      <td>&#39;orbit-slides-container&#39;</td>
+    </tr>
+    <tr>
+      <td>slide_selector</td>
+      <td>&#39;*&#39;</td>
+    </tr>
+    <tr>
+      <td>bullets_container_class</td>
+      <td>&#39;orbit-bullets&#39;</td>
+    </tr>
+    <tr>
+      <td>bullets_active_class</td>
+      <td>&#39;active&#39;</td>
+    </tr>
+    <tr>
+      <td>slide_number_class</td>
+      <td>&#39;orbit-slide-number&#39;</td>
+    </tr>
+    <tr>
+      <td>caption_class</td>
+      <td>&#39;orbit-caption&#39;</td>
+    </tr>
+    <tr>
+      <td>active_slide_class</td>
+      <td>&#39;active&#39;</td>
+    </tr>
+    <tr>
+      <td>orbit_transition_class</td>
+      <td>&#39;orbit-transitioning&#39;</td>
+    </tr>
+    <tr>
+      <td>bullets</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>circular</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>timer</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>variable_height</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>swipe</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Reveal</td>
+      <td>animation</td>
+      <td>&#39;fadeAndPop&#39;</td>
+    </tr>
+    <tr>
+      <td>animation_speed</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>close_on_background_click</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>close_on_esc</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>dismiss_modal_class</td>
+      <td>&#39;close-reveal-modal&#39;</td>
+    </tr>
+    <tr>
+      <td>bg_class</td>
+      <td>&#39;reveal-modal-bg&#39;</td>
+    </tr>
+    <tr>
+      <td>root_element</td>
+      <td>&#39;body&#39;</td>
+    </tr>
+    <tr>
+      <td>bg</td>
+      <td>$(&#39;.reveal-modal-bg&#39;)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Sliders</td>
+      <td>start</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>end</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>step</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Tab</td>
+      <td>active_class</td>
+      <td>&#39;active&#39;</td>
+    </tr>
+    <tr>
+      <td>is_hover</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Tooltip</td>
+      <td>additional_inheritable_classes</td>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <td>tooltip_class</td>
+      <td>&#39;.tooltip&#39;</td>
+    </tr>
+    <tr>
+      <td>append_to</td>
+      <td>&#39;body&#39;</td>
+    </tr>
+    <tr>
+      <td>touch_close_text</td>
+      <td>&#39;Tap To Close&#39;</td>
+    </tr>
+    <tr>
+      <td>disable_for_touch</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>hover_delay</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Topbar</td>
+      <td>index</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>sticky_class</td>
+      <td>&#39;sticky&#39;</td>
+    </tr>
+    <tr>
+      <td>custom_back_text</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>back_text</td>
+      <td>&#39;Back&#39;</td>
+    </tr>
+    <tr>
+      <td>is_hover</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>mobile_show_parent_link</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>scrolltop</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+  <thead>
+    <td>Plugin Name</td>
+    <td>Setting</td>
+    <td>Default Value</td>
+  </thead>
+</table>
+
+  </div>
+</div>
+
+
+<hr>
+<h3 id="configure-on-the-fly">Configure on the fly</h3>
+<p>New to Foundation 5, you can now reconfigure instances of your plugin after the page has loaded and Foundation has already been initialized.</p>
+<p>Let&#39;s pretend that we have an alert that was on our page when Foundation was first initialized:</p>
+<h4>HTML</h4>
+
+<pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-alert</span> <span class="attribute">class</span>=<span class="value">"alert-box"</span> <span class="attribute">id</span>=<span class="value">"myAlert"</span>&gt;</span>
+  This is a standard alert.
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"close"</span>&gt;</span>&amp;times;<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+<p>The default fade out speed is 300 milliseconds, if we wanted to change this to 3 seconds we could do the following:</p>
+<h4>JS</h4>
+
+<pre><code class="language-js"><div class="code-container">$(<span class="string">'#myAlert'</span>).foundation({alert: {speed: <span class="number">3000</span>}});</div></code></pre>
+<p>You can set any configuration option or callback this way.</p>
+<hr>
+<h3 id="calling-internal-methods">Calling Internal Methods</h3>
+<p>Foundation JavaScript allows you call internal plugin methods by passing the method name as the second argument. This is necessary for plugins like Joyride, which are not initialized on page load by default.</p>
+<p>This will fire the <code>start</code> method on Joyride:</p>
+<h4>JS</h4>
+
+<pre><code class="language-html"><div class="code-container">$(document).foundation('joyride', 'start');</div></code></pre>
+
+            </div>
+
+  </div>
+</div>    
+     <script type="text/javascript" src="/my_jekyll/lib/js/vendor.js"></script>
+<script type="text/javascript" src="/my_jekyll/lib/js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59944728-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+
