@@ -1,11 +1,11 @@
 - title: "Styleguide"
-  url: "/docs/foundation_5/"
+  url: "/docs/vendors/foundation_5/"
 - title: "UI Kit"
-  url: "/docs/foundation_5/"
+  url: "/docs/ui-kit/"
 - title: "Foundation 5"
-  url: "/docs/foundation_5/"
+  url: "/docs/vendors/foundation_5/"
 - title: "Fullpage.js"
-  url: "/docs/fulpage_js/"
+  url: "/docs/vendors/fullpage_js/"
 - title: Isotope
-  url: "/docs/isotope_js/"
+  url: "/docs/vendors/isotope_js/"
 

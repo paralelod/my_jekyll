@@ -53,10 +53,19 @@ defaults:
       tags:
         - journal
   - scope:
-      path: ''
+      path: _docs/vendors/foundation_5
       type: docs
     values:
       layout: docs/docs-foundation
+      auto-scroll: false
+      txt-color: dark
+  - scope:
+      path: _docs/vendors/fullpage_js
+      type: docs
+    values:
+      layout: docs/docs-fullpage_js
+      auto-scroll: true
+      txt-color: dark
 g-analytics: UA-59944728-3
 fb-app-id: '915671155245552'
 see-also:
