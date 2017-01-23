@@ -1,3 +1,67 @@
+//fitvid
+
+$(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $(["#fullpage-scroll", "#fullpage-noscroll"]).fitVids();
+  });
+
+//foundation init
+  $(document).foundation();
+
+  //foundation init JOYRIDE *crash ORBIT slider
+  //$(document).foundation('joyride', 'start');
+
+/* acessar link accordion Foundation --->  
+
+setTimeout(function() {
+
+  var hash = window.location.hash;
+  if (hash != ''){
+
+    $('a[href="'+ hash +'"]').trigger('click.fndtn.accordion');
+
+    $('html, body').animate({
+      scrollTop: $('dl.accordion').offset().top
+    });
+  }
+}, 600);*/
+$(function(){
+var $grid= $('.grid').isotope({
+    itemSelector: '.grid li',
+    percentPosition: true,
+    //isAnimated: false,
+    transitionDuration:0,
+    //layoutMode: 'fitRows',
+    isInitLayout: true,
+    });
+
+    $grid.imagesLoaded().always(function(){
+        var elements=".grid-item";
+        var $elements=$(elements);
+        $grid.append($elements);
+        $grid.isotope();
+    });
+
+    // filter .Creative_Direction items
+    $grid.isotope({ filter: '.Creative_Direction' });
+
+    // filter .Experience items
+    $grid.isotope({ filter: '.Experience' });
+
+    // filter .Experience items
+    $grid.isotope({ filter: '.Design' });
+
+    // show all items
+    $grid.isotope({ filter: '*' });
+
+    // filter items on button click
+    $('.filter-button-group').on( 'click', 'button', function() {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+    });
+
+});
+$('.swipebox').swipebox();
 $(document).ready(function(){
   		$(window).resize(function(){
 			    var footerHeight = $('.footer').outerHeight();

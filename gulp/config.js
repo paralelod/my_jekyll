@@ -103,7 +103,6 @@ module.exports = {
         './_dev/_assets/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js' ,
         './_dev/_assets/bower_components/fullpage.js/dist/jquery.fullpage.min.js' ,
         './_dev/_assets/bower_components/aos/dist/aos.js',
-
         //vendor 
        './_dev/_assets/vendors/FitVids.js-master/jquery.fitvids.js' ,
         './_dev/_assets/vendors/animsition-master/animsition.min.js',
@@ -113,7 +112,7 @@ module.exports = {
     // js script
 
     scriptSrc: [
-       './_dev/_assets/_scripts/my_scripts/_init/**/*.js',
+       './_dev/_assets/_scripts/_init/**/*.js',
        './_dev/_assets/_scripts/my_scripts/**/*.js'
     ],
 

@@ -1,16 +1,23 @@
 ---
-layout: docs
+layout: docs/docs
 type: docs
 ---
 
-
+{% if page.auto-scroll == true %}
+<div id="fullpage-scroll">
+{% else %}
+<div id="fullpage-noscroll">
+{% endif %}
     {{ content }}
-  
-
-  <div class="section auto-height">
+     <div class="section auto-height">
     {% for doc in site.docs %}
-              {% if doc.category == "fullpage" %}
-                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
-              {% endif %}
-            {% endfor %}
+      {% if doc.category == "fullpage" %}
+        <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endif %}
+    {% endfor %}
   </div>
+</div>
+
+{% include molecule/script/footer.html %}
+
+{% include atom/script/js_init_fullpage.html %}
