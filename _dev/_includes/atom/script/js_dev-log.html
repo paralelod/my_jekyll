@@ -1,0 +1,27 @@
+{% if page.dev-info == true %}
+ <script>
+ console.log("*** INFO  ***")
+ console.log("ID: {{ page.page-id }} ")
+ console.log("url: {{ page.url }} ")
+ console.log("layout: {{ page.layout }} ")
+
+ console.log("*** LAYOUT ***")
+ console.log("preloader: {{ page.preloader }} ")
+ console.log("top-nav: {{ page.top-nav }} ")
+ console.log("footer: {{ page.footer }} ")
+ console.log("sidebar: {{ page.sidebar }} ")
+ console.log("grid: {{ page.grid }} ")
+ console.log("mast-head: {{ page.mast-head }} ")
+ console.log("back-to-top: {{ page.back-to-top }} ")
+
+ console.log("*** BUILD ***")
+ 
+ {% if page.fullpage != "" %}
+    console.log("fullpage: {{ page.fullpage }} ")
+ {% endif %}
+
+ {% if page.istope == 1 %}
+    console.log("isotope: {{ page.isotpe }} ")
+ {% endif %}
+ </script>
+ {% endif %}

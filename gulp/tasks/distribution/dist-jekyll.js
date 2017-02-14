@@ -21,7 +21,7 @@ gulp.task('dist-jekyll-copy', function() {
   return gulp.src(
   		config.jekyllSrcDist
   	)
-    .pipe(gulp.dest(config.jekyllpathDist));
+    .pipe(gulp.dest(config.jekyllPathDist));
 });
 
 

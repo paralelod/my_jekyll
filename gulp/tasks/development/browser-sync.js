@@ -8,7 +8,7 @@ gulp.task('browsersync', function () {
         { server: {
              baseDir: config.baseDir,
             },
-            port: 1818,
+            port: config.port,
         }
     );
 
