@@ -1,16 +1,1 @@
-jQuery(document).ready(function() {
-  var offset = 220;
-  var duration = 500;
-  jQuery(window).scroll(function() {
-    if (jQuery(this).scrollTop() > offset) {
-      jQuery('.back-to-top').fadeIn(duration);
-    } else {
-      jQuery('.back-to-top').fadeOut(duration);
-    }
-  });
-});
-
-
-
-
-
+jQuery(document).ready(function(){var o=220,e=500;jQuery(window).scroll(function(){jQuery(this).scrollTop()>o?jQuery(".back-to-top").fadeIn(e):jQuery(".back-to-top").fadeOut(e)})});

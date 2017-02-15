@@ -7,18 +7,39 @@ var config = require('../../config').sass;
 
 gulp.task('sass', function() {
   runSequence('sass-clean',
-              'sass-build' 
+              'sass-icon',
+              'sass-theme',
+              'sass-vendor' 
     );
 });
+
+var compression = 'uncompressed';
+
 
 gulp.task('sass-clean', function () {
   return gulp.src(config.cssClean, {read: true})
     .pipe(clean());
 });
 
-gulp.task('sass-build', function() {
-    gulp.src(config.sassSrc)
-        .pipe(sass({outputStyle: 'uncompressed'}).on('error', sass.logError))
-        .pipe(rename(config.cssDist))
-        .pipe(gulp.dest(config.pathDist))
+
+gulp.task('sass-theme', function() {
+    gulp.src(config.sassThemeSrc)
+        .pipe(sass({outputStyle: compression}).on('error', sass.logError))
+        .pipe(rename(config.cssThemeDist))
+        .pipe(gulp.dest(config.pathDist));
 });
+
+gulp.task('sass-vendor', function() {
+    gulp.src(config.sassVendorSrc)
+        .pipe(sass({outputStyle: compression}).on('error', sass.logError))
+        .pipe(rename(config.cssVendorDist))
+        .pipe(gulp.dest(config.pathDist));
+});
+
+gulp.task('sass-icon', function() {
+    gulp.src(config.sassIconFontSrc)
+        .pipe(sass({outputStyle: compression}).on('error', sass.logError))
+        .pipe(rename(config.cssIconFontDist))
+        .pipe(gulp.dest(config.pathDist));
+});
+

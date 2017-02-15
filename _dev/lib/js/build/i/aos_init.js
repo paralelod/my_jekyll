@@ -1,3 +1,1 @@
-  AOS.init({
-        easing: 'ease-in-out-sine'
-      });
+AOS.init({easing:"ease-in-out-sine"});

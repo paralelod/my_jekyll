@@ -13,15 +13,13 @@ gulp.task('dist-jekyll', function() {
 
 
 gulp.task('dist-jekyll-clean', function () {
-  return gulp.src(config.jekyllpathDist, {read: true})
+  return gulp.src(config.jekyllPathDist, {read: true})
     .pipe(clean());
 });
 
 gulp.task('dist-jekyll-copy', function() {
-  return gulp.src(
-  		config.jekyllSrcDist
-  	)
-    .pipe(gulp.dest(config.jekyllPathDist));
+  return gulp.src(config.jekyllSrcDist)
+ .pipe(gulp.dest(config.jekyllPathDist));
 });
 
 

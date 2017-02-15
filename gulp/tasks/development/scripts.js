@@ -1,25 +1,25 @@
-var gulp 	= require('gulp');
+var gulp = require('gulp');
 var concat = require('gulp-concat');
 var clean   = require('gulp-clean');
 var runSequence = require('run-sequence');
 var config = require('../../config').script;
 
 
-gulp.task('scripts', function() {
+gulp.task('dist-scripts', function() {
   runSequence(
-              'scripts-clean',
+              'dist-scripts-clean',
               
-              'scripts-head',
+              'dist-scripts-head',
 
-              'scripts-vendor',
-              'scripts-custom',
-              'scripts-init',
+              'dist-scripts-vendor',
+              'dist-scripts-custom',
+              'dist-scripts-init',
 
-              'scripts-main',
-              'scripts-isotope',
-              'scripts-copy-vendors',
-              'scripts-copy-init',
-              'scripts-copy-custom'
+              'dist-scripts-main',
+              'dist-scripts-isotope',
+              'dist-scripts-copy-vendors',
+              'dist-scripts-copy-init',
+              'dist-scripts-copy-custom'
     );
 });
 

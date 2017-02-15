@@ -1,10 +1,1 @@
-$(document).ready(function(){
-  		$(window).resize(function(){
-			    var footerHeight = $('.footer').outerHeight();
-			    var stickFooterPush = $('.push').height(footerHeight);
-		
-    			$('.wrapper').css({'marginBottom':'-' + footerHeight + 'px'});
-		    });
-		
-    		$(window).resize();
-	    });
+$(document).ready(function(){$(window).resize(function(){var e=$(".footer").outerHeight();$(".push").height(e);$(".wrapper").css({marginBottom:"-"+e+"px"})}),$(window).resize()});

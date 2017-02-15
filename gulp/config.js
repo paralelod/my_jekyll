@@ -72,10 +72,14 @@ module.exports = {
   //--------- sass ----------//
 
   sass: {
-    sassSrc:  ['./_dev/_assets/_sass/_theme/jellyfish-theme.scss'],
-    cssClean: ['./_dev/lib/css/main.css'],
-    pathDist: './_dev/lib/css/',
-    cssDist: 'main.css'
+    sassThemeSrc:  ['./_dev/_assets/_sass/_main/theme.scss'],
+    sassVendorSrc:  ['./_dev/_assets/_sass/_main/vendor.scss'],
+    sassIconFontSrc:  ['./_dev/_assets/_sass/_main/iconFont.scss'],
+    cssClean: ['./_dev/lib/css/a/'],
+    pathDist: './_dev/lib/css/a/',
+    cssIconFontDist: 'i.css',
+    cssThemeDist: 's.css',
+    cssVendorDist: 'v.css'
   },
 
   //--------- scripts ----------//

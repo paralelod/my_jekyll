@@ -36,23 +36,9 @@ header {
 
 @import
 
-     //----------- bower  ----------//
-
-	"../../bower_components/normalize-css/normalize",
+    //----------- bower  ----------//
+    "../../bower_components/normalize-css/normalize",
 	"../../bower_components/foundation/scss/foundation",
-    "../../bower_components/aos/src/sass/aos",
-    "../../vendors/swipebox-master/scss/swipebox",
-    "../../bower_components/font-awesome/scss/font-awesome",
-    "../../bower_components/sass-burger/burger",
-    
-    //----------- vendors ----------//
-
-    "../vendor/fullpage",
-	"../vendor/animsition",
-    
-     //----------- mixins ----------//
-
-    // "../mixins/helpers",
 
     //helpers
     "../helper/helpers",
@@ -69,14 +55,14 @@ header {
     "../base/html/links",
     "../base/html/text-global",
     "../base/html/buttons",
-    "../base/html/forms",
-    "../base/html/labels",
-    "../base/html/burger",
+    //"../base/html/forms",
+    //"../base/html/labels",
+    //"../base/html/burger",
 
     //----------- layouts ----------//
 
     "../layout/fullpage-js",
-    "../layout/sidebar",
+    //"../layout/sidebar",
 
     
      //----------- components ----------//
@@ -86,34 +72,34 @@ header {
     
     //nav
     "../component/nav/menu_top",
-    "../component/nav/footer",
+    "../component/nav/footer"
 
     //cards
-    "../component/card/card",
+    //"../component/card/card",
 
 
     //grids
-    "../component/grid/grid",
+    //"../component/grid/grid",
 
     //list
-    "../component/list/list",
+    //"../component/list/list",
 
      //mast-head
-    "../component/mast-head/hero",
+    //"../component/mast-head/hero",
 
     //content
 
-    "../component/content/bio",
-    "../component/content/process",
-    "../component/content/work",
+    //"../component/content/bio",
+    //"../component/content/process",
+    //"../component/content/work",
 
     //embed
-    "../component/embed/mailchimp",
+    //"../component/embed/mailchimp",
 
 
 
      //----------- docs ----------//
 
-    "../docs/docs"
+    //"../docs/docs"
 ;
 
