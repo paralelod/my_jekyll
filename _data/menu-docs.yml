@@ -4,8 +4,14 @@
   url: "/docs/ui-kit/"
 - title: "Foundation 5"
   url: "/docs/vendors/foundation_5/"
-- title: "Fullpage.js"
-  url: "/docs/vendors/fullpage_js/"
+- title: "Fullpage"
+  url: "/docs/vendors/fullpage/"
 - title: Isotope
-  url: "/docs/vendors/isotope_js/"
+  url: "/docs/vendors/isotope/"
+- title: Swipebox
+  url: "/docs/vendors/swipebox/"
+- title: Animsition
+  url: "/docs/vendors/animsition/"
+- title: AOS
+  url: "/docs/vendors/aos/"
 

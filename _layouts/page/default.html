@@ -1,13 +1,20 @@
 ---
 layout: default
 type: page
+
 ---
 {% include molecule/loading/cover.html %}
+
+{% if page.top-nav == 1 %}
 {% include molecule/nav/nav_top-right.html %}
+{% endif %}
+
 {% include atom/util/back_top_btn.html %}
 
-<div class="content-wrap">
+ 
+
+<div class="content-wrap" id="fullpage">
     {{ content }}
 </div>
 
- {% include molecule/script/footer.html %}
+ {% include molecule/script/bottom.html %}

@@ -60,11 +60,39 @@ defaults:
       auto-scroll: false
       txt-color: dark
   - scope:
-      path: _docs/vendors/fullpage_js
+      path: _docs/vendors/fullpage
       type: docs
     values:
-      layout: docs/docs-fullpage_js
+      layout: docs/docs-fullpage
       auto-scroll: true
+      txt-color: dark
+  - scope:
+      path: _docs/vendors/isotope
+      type: docs
+    values:
+      layout: docs/docs-isotope
+      auto-scroll: true
+      txt-color: dark
+  - scope:
+      path: _docs/vendors/animsition
+      type: docs
+    values:
+      layout: docs/docs-animsition
+      auto-scroll: false
+      txt-color: dark
+  - scope:
+      path: _docs/vendors/aos
+      type: docs
+    values:
+      layout: docs/docs-aos
+      auto-scroll: false
+      txt-color: dark
+  - scope:
+      path: _docs/vendors/swipebox
+      type: docs
+    values:
+      layout: docs/docs-swipebox
+      auto-scroll: false
       txt-color: dark
 g-analytics: UA-59944728-3
 fb-app-id: '915671155245552'
