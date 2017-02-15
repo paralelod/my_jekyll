@@ -1,0 +1,1 @@
+var heroBg=$(".hero-post");heroTitle=$(".hero-post-box"),limitTitle=80,limitBg=80,$(window).on("scroll",function(){var i=$(this).scrollTop();i<=limitBg&&heroBg.css({opacity:.2+i/limitBg}),i<=limitTitle&&heroTitle.css({opacity:1-i/limitTitle}),i>=limitTitle&&heroTitle.css({opacity:1-i/limitTitle})});
