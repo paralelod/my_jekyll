@@ -1,0 +1,28 @@
+.tab-bar {
+    background: $tab-bar-bg;
+    a{
+        color: white;
+    }
+}
+
+.left-off-canvas-menu {
+    background: $tab-bar-bg-left;
+}
+
+
+.right-off-canvas-menu {
+    background: $tab-bar-bg-right;
+}
+
+ul.off-canvas-list li label {
+    background: #444444;
+    border-bottom: none;
+    border-top: 1px solid #5e5e5e;
+    color: #999999;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.3rem 0.9375rem;
+    text-transform: uppercase;
+}

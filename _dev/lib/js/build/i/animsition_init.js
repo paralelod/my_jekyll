@@ -1,1 +1,3 @@
-$(document).ready(function(){$(".animsition").animsition()});
+$(document).ready(function() {
+    $('.animsition').animsition();
+  });

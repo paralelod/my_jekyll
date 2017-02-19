@@ -1,1 +1,60 @@
-var TxtRotate=function(t,e,i){this.toRotate=e,this.el=t,this.loopNum=0,this.period=parseInt(i,10)||2e3,this.txt="",this.tick(),this.isDeleting=!1};TxtRotate.prototype.tick=function(){var t=this.loopNum%this.toRotate.length,e=this.toRotate[t];this.isDeleting?this.txt=e.substring(0,this.txt.length-1):this.txt=e.substring(0,this.txt.length+1),this.el.innerHTML='<span class="wrap">'+this.txt+"</span>";var i=this,s=300-100*Math.random();this.isDeleting&&(s/=2),this.isDeleting||this.txt!==e?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.loopNum++,s=500):(s=this.period,this.isDeleting=!0),setTimeout(function(){i.tick()},s)},window.onload=function(){for(var t=document.getElementsByClassName("txt-rotate"),e=0;e<t.length;e++){var i=t[e].getAttribute("data-rotate"),s=t[e].getAttribute("data-period");i&&new TxtRotate(t[e],JSON.parse(i),s)}var o=document.createElement("style");o.type="text/css",o.innerHTML=".txt-rotate > .wrap { border-right: 0.08em solid #666 }",document.body.appendChild(o)};
+
+//autohor: Gregory Schier http://codepen.io/gschier/pen/jkivt
+
+
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};

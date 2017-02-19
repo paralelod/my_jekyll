@@ -1,0 +1,31 @@
+---
+layout: default
+type: page
+
+---
+{% include molecule/loading/cover.html %}
+
+ <div class="off-canvas-wrap" data-offcanvas>
+
+  <div class="inner-wrap">
+    {% if page.top-nav == 3 %}
+        {% include molecule/nav/nav_off-canvas.html %}
+    {% endif %}
+
+    
+
+    {% include atom/nav/off-canvas_menu-left.html %}
+    {% include atom/nav/off-canvas_menu-right.html %}
+
+    <section class="main-section">
+        {{ content }}
+    </section>
+
+    <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+
+{% include atom/util/back_top_btn.html %}
+{% include molecule/script/bottom.html %}

@@ -1,4 +1,4 @@
- {% if page.myscript == true %}
+{% if page.myscript == true %}
     <!--script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/s.js"></script-->
     <!--script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/in.js"></script-->
  {% endif %}
@@ -8,6 +8,23 @@
     <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/preloader.js"></script>
 {% endif %}
 
-{% if page.top-nav == 1 %}
+{% if page.top-nav == 4 %}
     <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/menu_top_bar.js"></script>
 {% endif %}
+
+<script>
+    function sideNav() {
+  if ($(window).width() < 769) {
+    $('.off-canvas-wrap').removeClass('move-right');
+    $('.left-off-canvas-toggle').show();
+  } else {
+    $('.off-canvas-wrap').addClass('move-right');
+    $('.left-off-canvas-toggle').hide();
+  }  
+}
+
+$(window).resize(function() {
+  sideNav();
+});
+
+</script>

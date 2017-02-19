@@ -4,16 +4,11 @@ type: page
 
 ---
 {% include molecule/loading/cover.html %}
-
-{% if page.top-nav == 1 %}
-{% include molecule/nav/nav_top-right.html %}
-{% endif %}
+{% include organism/nav.html %}
 
 {% include atom/util/back_top_btn.html %}
 
- 
-
-<div class="content-wrap" id="fullpage">
+<div class="content-wrap">
     {{ content }}
 </div>
 

@@ -1,0 +1,99 @@
+---
+layout: default
+type: page
+---
+
+<style>
+    .inner-wrap {
+  width: auto; }
+
+    .move-right .inner-wrap {
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    margin-left: 114px; }
+
+    .left-off-canvas-menu {
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    position: fixed;
+    width: 0;
+    height: 100%; }
+
+    .move-right .left-off-canvas-menu {
+    width: 114px; }
+
+    .move-right .exit-off-canvas {
+    display: none; }
+
+    .left-off-canvas-toggle {
+    display: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+    color: #333;
+    transition: all .25s ease-in-out; }
+    .left-off-canvas-toggle:focus {
+        color: #333; }
+    .left-off-canvas-toggle:hover {
+        color: #8c8c8c;
+        transition: all .25s ease-in-out; }
+
+    .ad-block {
+    margin-bottom: 2rem; }
+</style>
+
+{% include molecule/loading/cover.html %}
+
+
+
+
+<link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+
+<div class="off-canvas-wrap move-right" data-offcanvas>
+  <div class="inner-wrap">
+
+    <a class="left-off-canvas-toggle" href="#"><i class="fi-list"></i></a>
+
+    <!-- Off Canvas Menu -->
+    <aside class="left-off-canvas-menu">
+        <div class="icon-bar vertical five-up">
+        <a class="item">
+            <i class="fi-home"></i>
+            <label>Home</label>
+        </a>
+        <a class="item">
+        <i class="fi-home"></i>
+            <label>Bookmark</label>
+        </a>
+        <a class="item">
+            <i class="fi-home"></i>
+            <label>Info</label>
+        </a>
+        <a class="item">
+            <i class="fi-home"></i>
+            <label>Mail</label>
+        </a>
+        <a class="item">
+            <i class="fi-home"></i>
+            <label>Like</label>
+        </a>
+        </div>
+    </aside>
+<!-- main content goes here -->
+    {{ content }}
+    
+    <!-- close the off-canvas menu -->
+    <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+{% include molecule/script/bottom.html %}

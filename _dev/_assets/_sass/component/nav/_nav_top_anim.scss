@@ -1,0 +1,79 @@
+
+.anim-menu {
+  transition: background 0.5s ease;
+  background:$top-bar-bg;
+  position: fixed;
+  width: 100%;
+  z-index: 998 !important;
+}
+
+
+
+.undocked   {
+  padding-bottom: 0.25rem;
+  transition: background 0.5s ease;
+  background: $top-bar-bg-undocked;
+  visibility: visible;
+}
+
+
+.undocked .toggle-topbar{
+  visibility: visible ;
+}
+
+
+
+
+.undocked .name img {
+  max-height: 3rem;
+}
+
+
+// undocked top bar 
+
+
+.undocked .top-bar {
+  transition: height 0.5s ease, margin-top 0.5s ease;
+  margin-top:0px; //padding animation - end
+  .name h1 a {
+    transition: color 0.5s ease;
+    color: $top-bar-txt-undocked;
+    text-decoration: none;
+  }
+}
+
+// undocked top bar  section UL > LI
+
+.undocked .top-bar-section ul li {
+  //background:transparent !important;
+  & > a {
+    transition: background 0.5s ease;
+    color: $top-bar-txt-undocked;
+    text-decoration: none;
+  }
+  visibility: visible;
+}
+
+
+// undocked top bar text 
+
+.undocked .top-bar .toggle-topbar a{
+  color: $top-bar-txt-undocked ;
+  transition: color 0.5s ease;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+
+// undocked top bar expanded
+
+.undocked .top-bar.expanded{
+  transition: height 0.5s ease;
+  //height:20rem !important;
+}
+.undocked .top-bar.expanded .toggle-topbar a{
+  color: $top-bar-txt-undocked;
+  text-decoration: none;
+  border-bottom: none;
+}
+
