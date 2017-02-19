@@ -122,7 +122,7 @@ window.fbAsyncInit = function() {
       </li>
     </ul>
     <section class="top-bar-section">
-      <ul class="right text-right links">
+      <ul class="links">
   
     <li>
   
@@ -2479,16 +2479,11 @@ Your function should return <code>true</code> if the element is valid, or <code>
 
  
 
-
  
 
 
 
  
- 
- 
-
-
  
 
 
@@ -2496,10 +2491,23 @@ Your function should return <code>true</code> if the element is valid, or <code>
  
 
 
- 
 
+<script>
+    function sideNav() {
+  if ($(window).width() < 769) {
+    $('.off-canvas-wrap').removeClass('move-right');
+    $('.left-off-canvas-toggle').show();
+  } else {
+    $('.off-canvas-wrap').addClass('move-right');
+    $('.left-off-canvas-toggle').hide();
+  }  
+}
 
+$(window).resize(function() {
+  sideNav();
+});
 
+</script>
 
 
 

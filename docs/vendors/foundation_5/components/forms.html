@@ -122,7 +122,7 @@ window.fbAsyncInit = function() {
       </li>
     </ul>
     <section class="top-bar-section">
-      <ul class="right text-right links">
+      <ul class="links">
   
     <li>
   
@@ -2710,16 +2710,11 @@ $<span class="tag">select</span>-hover-bg-<span class="attribute">color</span><s
 
  
 
-
  
 
 
 
  
- 
- 
-
-
  
 
 
@@ -2727,10 +2722,23 @@ $<span class="tag">select</span>-hover-bg-<span class="attribute">color</span><s
  
 
 
- 
 
+<script>
+    function sideNav() {
+  if ($(window).width() < 769) {
+    $('.off-canvas-wrap').removeClass('move-right');
+    $('.left-off-canvas-toggle').show();
+  } else {
+    $('.off-canvas-wrap').addClass('move-right');
+    $('.left-off-canvas-toggle').hide();
+  }  
+}
 
+$(window).resize(function() {
+  sideNav();
+});
 
+</script>
 
 
 

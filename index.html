@@ -108,79 +108,93 @@ window.fbAsyncInit = function() {
     </div><!--preloader-->
 </div><!-- overlay -->
 
-
-
-<div class="anim-menu">
-
-  <nav class="top-bar large" data-topbar role="navigation">
-    <ul class="title-area">
-      <li class="logo">
-        <a href="/my_jekyll"><img src="/my_jekyll/lib/img/+logo.png"></a>
-      </li>
-      <li class="toggle-topbar">
-        <a class="menu-button" id="menuButton">
-          Menu <i class="fa fa-bars"></i>
-        </a>
-      </li>
-    </ul>
-    <section class="top-bar-section">
+<nav class="top-bar large" data-topbar role="navigation">
+  <ul class="title-area">
+    <li>
+      <a href="/my_jekyll"><img src="/my_jekyll/lib/img/+logo.png"></a>
+    </li>
+    <li class="toggle-topbar">
+      <a class="menu-button" id="menuButton">
+        Menu <i class="fa fa-bars"></i>
+      </a>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    
+      <ul class="links text-center">
+  
+    <li>
+  
       
-        <ul class="right text-right links">
-  
-    <li>
-  
-    
-        
-              <a class="top-bar-li-dark page-scroll" href="/my_jekyll/">
-                Work
-              </a>
-        
-    
+          
+                <a href="/" class="page-scroll">
+                  Work
+                </a>
+          
+      
    
 </li>
   
     <li>
   
-    
-        
-              <a class="top-bar-li-dark page-scroll" href="/my_jekyll/work">
-                Ideas
-              </a>
-        
-    
+      
+          
+                <a href="/work" class="page-scroll">
+                  Ideas
+                </a>
+          
+      
    
 </li>
   
     <li>
   
-    
-        
-              <a class="top-bar-li-dark page-scroll" href="/my_jekyll/sign-up.html">
-                <i class="fa fa-heart" style="color:#fff"></i> 
-                Newsletter
-              </a>
-        
-    
+      
+          
+                <a href="/sign-up.html" class="page-scroll">
+                  <i class="fa fa-heart" style="color:#fff"></i> 
+                  Newsletter
+                </a>
+          
+      
    
 </li>
   
     <li>
   
-    
-        
-              <a class="top-bar-li-dark page-scroll" href="/my_jekyll#connect">
-                Connect
-              </a>
-        
-    
+      
+          
+                <a href="#connect" class="page-scroll">
+                  Connect
+                </a>
+          
+      
    
 </li>
   
+  <li><a href="hello" role="button" class="right-off-canvas-toggle">Right Menu</a></li>
 </ul>
-      
-    </section>
-  </nav>
-</div>
+    
+  </section>
+</nav>
+
+
+
+
+<!-- 3 OFF CANVAS TEMPLATE ONLY -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -193,9 +207,7 @@ window.fbAsyncInit = function() {
 
 
 
- 
-
-<div class="content-wrap" id="fullpage">
+<div class="content-wrap">
       <div
   class="animsition"
   data-animsition-in-class="rotate-in"
@@ -206,13 +218,38 @@ window.fbAsyncInit = function() {
   <h1> Helloooo </h1>
 </div>
 
+<div  class="hero-txt center-center">
+		<h1>
+			
+		</h1>
+		<h3>
+			
+			<br>
+			<span
+     		class="txt-rotate"
+     		data-period="1000"
+     		data-rotate='[ "", "","", ""]'
+     		>
+     		</span>
+     		<br>
+		</h3>
+		<a href="#bio" class="button btn-outline-light btn-round page-scroll">  <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+	</div>
+
+
+
+
+
 <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 Why do we use it?
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
-
 </h1>
+
+
+
+
 
 </div>
 
@@ -237,7 +274,6 @@ It is a long established fact that a reader will be distracted by the readable c
     <script type="text/javascript" src="/my_jekyll/lib/js/build/i/aos_init.js"></script>
  
 
-
  
     <script type="text/javascript" src="/my_jekyll/lib/js/build/v/animsition.min.js"></script>
     <script type="text/javascript" src="/my_jekyll/lib/js/build/i/animsition_init.js"></script>
@@ -255,6 +291,9 @@ It is a long established fact that a reader will be distracted by the readable c
     <script type="text/javascript" src="/my_jekyll/lib/js/build/v/jquery.swipebox.min.js"></script>
     <script type="text/javascript" src="/my_jekyll/lib/js/build/i/swipebox_init.js"></script>
  
+
+    <!--script type="text/javascript" src="/my_jekyll/lib/js/build/s.js"></script-->
+    <!--script type="text/javascript" src="/my_jekyll/lib/js/build/in.js"></script-->
  
 
 
@@ -263,20 +302,23 @@ It is a long established fact that a reader will be distracted by the readable c
 
 
 
-    <script type="text/javascript" src="/my_jekyll/lib/js/build/c/menu_top_bar.js"></script>
 
+<script>
+    function sideNav() {
+  if ($(window).width() < 769) {
+    $('.off-canvas-wrap').removeClass('move-right');
+    $('.left-off-canvas-toggle').show();
+  } else {
+    $('.off-canvas-wrap').addClass('move-right');
+    $('.left-off-canvas-toggle').hide();
+  }  
+}
 
- 
+$(window).resize(function() {
+  sideNav();
+});
 
-
- 
-    <script type="text/javascript" src="/my_jekyll/lib/js/build/c/preloader.js"></script>
-
-
-
-    <script type="text/javascript" src="/my_jekyll/lib/js/build/c/menu_top_bar.js"></script>
-
-
+</script>
 
  <script>
  console.log("*** INFO  ***")
