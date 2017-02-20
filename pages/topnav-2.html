@@ -114,7 +114,11 @@ window.fbAsyncInit = function() {
   <nav class="top-bar large" data-topbar role="navigation">
   <ul class="title-area">
     <li>
-      <a href="/my_jekyll"><img src="/my_jekyll/lib/img/+logo.png"></a>
+      <a href="/my_jekyll">
+    
+    <img src="/my_jekyll/lib/img/+logo.png">
+    
+</a>
     </li>
     <li class="toggle-topbar">
       <a class="menu-button" id="menuButton">
@@ -123,8 +127,8 @@ window.fbAsyncInit = function() {
     </li>
   </ul>
   <section class="top-bar-section">
-    
-      <ul class="links text-center">
+    <ul class="right text-right">
+      
   
     <li>
   
@@ -175,9 +179,10 @@ window.fbAsyncInit = function() {
    
 </li>
   
-  <li><a href="hello" role="button" class="right-off-canvas-toggle">Right Menu</a></li>
-</ul>
-    
+
+
+
+    <ul class="right text-right">
   </section>
 </nav>
 </div>
@@ -188,6 +193,7 @@ window.fbAsyncInit = function() {
 
 
 
+<!-- 5 deleted -->
 
 
 
@@ -306,22 +312,9 @@ It is a long established fact that a reader will be distracted by the readable c
 
 
 
-<script>
-    function sideNav() {
-  if ($(window).width() < 769) {
-    $('.off-canvas-wrap').removeClass('move-right');
-    $('.left-off-canvas-toggle').show();
-  } else {
-    $('.off-canvas-wrap').addClass('move-right');
-    $('.left-off-canvas-toggle').hide();
-  }  
-}
 
-$(window).resize(function() {
-  sideNav();
-});
 
-</script>
+
 
  <script>
  console.log("*** INFO  ***")
