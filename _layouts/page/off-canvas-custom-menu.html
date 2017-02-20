@@ -1,0 +1,32 @@
+---
+layout: default
+type: page
+
+---
+{% include molecule/loading/cover.html %}
+<div class="off-canvas-custom">
+  <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+      <!--nav class="header">hello mundo</nav-->
+        <a class="right-off-canvas-toggle" href="#" >
+          {% include atom/util/icon_burger-anim.html %}
+        </a>
+      </nav>
+        <!-- Off Canvas Menu -->
+        {% include molecule/off-canvas/off-canvas_menu-right-2.html %}
+
+        <!-- hero  -->
+          {% include atom/mast-head/hero.html %}
+          
+        <!-- content -->
+        <section>
+              {{ content }}
+        </section>
+
+      <!-- close the off-canvas menu -->
+      <a class="exit-off-canvas"></a>
+    </div>
+  </div>
+</div>
+{% include atom/util/back_top_btn.html %}
+{% include molecule/script/bottom.html %}

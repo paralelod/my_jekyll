@@ -1,7 +1,7 @@
 <nav class="top-bar large" data-topbar role="navigation">
   <ul class="title-area">
     <li>
-      <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ site.img-path }}/{{ site.logo }}"></a>
+     {% include atom/nav/nav_logo.html %}
     </li>
     <li class="toggle-topbar">
       <a class="menu-button" id="menuButton">
@@ -10,10 +10,8 @@
     </li>
   </ul>
   <section class="top-bar-section">
-    {% if site.site-structure == "multipage" %}
-      {% include atom/nav/nav_ul-multipage.html %}
-    {% else %}
-        {% include atom/nav/nav_ul-singlepage.html %}
-    {% endif %}
+    <ul class="right text-right">
+      {% include atom/nav/nav_li-loop.html %}
+    <ul class="right text-right">
   </section>
 </nav>
