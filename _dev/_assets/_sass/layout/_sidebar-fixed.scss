@@ -1,0 +1,41 @@
+ .row.full {
+    max-width: 100%; }
+
+    .sidebar {
+    display: inline-block;
+    background: $theme-dark-color;
+        h1, h2 {color: $theme-light-color}
+    }
+    /*.sidebar h1 {
+        color: $theme-light-color;
+        text-transform: uppercase;
+        font-weight: 800; }
+    .sidebar h2 {
+        font-weight: 300;
+        color: #B0CADB; }*/
+
+    .middle-header {
+    text-align: center; 
+    }
+
+    @media only screen and (min-width: 64.063em) {
+    .sidebar {
+        position: fixed;
+        //background-color: #34495e;
+        top: 0;
+        bottom: 0; }
+        /*.sidebar h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800; }
+        .sidebar h2 {
+        font-weight: 300;
+        color: #B0CADB; }*/
+
+    .middle-header {
+        text-align: right;
+        position: relative;
+        top: 20%;
+        //transform: translateY(85%); 
+        } 
+    }

@@ -1,8 +1,4 @@
-{% if page.auto-scroll == true %}
-<div class="anim-menu undocked">
-{% else %}
 <div class="anim-menu">
-{% endif %}
   <nav class="top-bar large" data-topbar role="navigation">
     <ul class="title-area">
       <li class="logo">
@@ -15,7 +11,9 @@
       </li>
     </ul>
     <section class="top-bar-section">
-      {% include atom/nav/nav_ul-docs.html %}
+      <ul class="right text-right">
+        {% include atom/nav/nav_li-loop.html %}
+      <ul class="right text-right">
     </section>
   </nav>
 </div>

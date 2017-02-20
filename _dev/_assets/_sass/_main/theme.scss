@@ -57,12 +57,15 @@ header {
     "../base/html/buttons",
     //"../base/html/forms",
     //"../base/html/labels",
-    //"../base/html/burger",
+    "../base/html/burger",
 
     //----------- layouts ----------//
 
     "../layout/fullpage-js",
-    //"../layout/sidebar",
+    "../layout/sidebar-fixed",
+    "../layout/iconbar-fixed",
+    "../layout/off-canvas",
+
 
     
      //----------- components ----------//
@@ -71,14 +74,18 @@ header {
     "../component/loading/preloader",
     
     //nav
-    "../component/nav/nav_top_foundation",
+    "../component/nav/nav_top",
     "../component/nav/nav_top_mobile",
-    
+    "../component/nav/nav_two-level",
     "../component/nav/nav_top_anim",
-
+    "../component/nav/nav_subnav_middle",
+    "../component/nav/nav_middle",
+    "../component/nav/nav_middle-buttons",
+    "../component/nav/nav_top_menu-left-modal-right",
     "../component/nav/off-canvas_tab-bar",
 
-    "../component/footer/footer"
+
+    //"../component/footer/footer",
 
     //cards
     //"../component/card/card",
@@ -91,7 +98,8 @@ header {
     //"../component/list/list",
 
      //mast-head
-    //"../component/mast-head/hero",
+    "../component/mast-head/hero"
+    //"../component/mast-head/fullpage-hero",
 
     //content
 

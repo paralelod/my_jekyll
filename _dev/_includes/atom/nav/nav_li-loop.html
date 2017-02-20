@@ -1,0 +1,15 @@
+{% if site.site-structure == "multipage" %}
+  {% for link in site.data.menu-multipage %}
+    {% include atom/nav/nav_li.html %}
+  {% endfor %}
+{% else %}
+  {% for link in site.data.menu-singlepage %}
+    {% include atom/nav/nav_li.html %}
+  {% endfor %}
+{% endif %}
+
+{% if site.site-structure == "docs" %}
+  {% for link in site.data.menu-docs %}
+      {% include atom/nav/nav_li.html %}
+  {% endfor %}
+{% endif %}

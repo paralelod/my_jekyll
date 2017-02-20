@@ -1,0 +1,7 @@
+ <a href="{{ site.baseurl }}">
+    {% if site.logo != "" %}
+    <img src="{{ site.baseurl }}{{ site.img-path }}/{{ site.logo }}">
+    {% else %}
+        {{ site.title }}
+    {% endif %}
+</a>

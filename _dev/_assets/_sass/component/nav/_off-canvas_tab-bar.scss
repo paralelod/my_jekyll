@@ -1,7 +1,7 @@
 .tab-bar {
     background: $tab-bar-bg;
     a{
-        color: white;
+        color: $theme-light-color;
     }
 }
 
@@ -15,7 +15,7 @@
 }
 
 ul.off-canvas-list li label {
-    background: #444444;
+    background: $tab-bar-bg;
     border-bottom: none;
     border-top: 1px solid #5e5e5e;
     color: #999999;

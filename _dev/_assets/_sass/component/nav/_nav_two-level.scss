@@ -1,0 +1,19 @@
+.nav-two-level{
+@media only screen and (min-width: 40.063em) {
+  .top-bar {
+    height: 6rem;
+    padding-top: 3rem;
+    position: relative; }
+
+  .social-icons {
+    position: absolute;
+    right: 0;
+    top: -45px; }
+
+  .logo-nav-two-level {
+    margin-top: -2.3rem; } }
+
+@media only screen and (min-width: 40.063em) {
+  .social-icons {
+    top: -35px; } }
+}

@@ -1,0 +1,23 @@
+---
+layout: default
+type: page
+---
+{% include molecule/loading/cover.html %}
+
+<div class="iconbar-fixed">
+  <div class="off-canvas-wrap move-right" data-offcanvas>
+    <div class="inner-wrap">
+
+      <a class="left-off-canvas-toggle" href="#"><i class="fi-list"></i></a>
+
+      <!-- Off Canvas Menu -->
+      {% include molecule/off-canvas/off-canvas_menu-icons.html %}
+      <!-- main content goes here -->
+      {{ content }}
+      
+      <!-- close the off-canvas menu -->
+      <a class="exit-off-canvas"></a>
+    </div>
+  </div>
+</div>
+{% include molecule/script/bottom.html %}

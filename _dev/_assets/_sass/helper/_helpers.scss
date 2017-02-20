@@ -98,3 +98,9 @@
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.content img.author {
+    float: right;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px; }
