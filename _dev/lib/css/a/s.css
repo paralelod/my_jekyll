@@ -7021,10 +7021,10 @@ input[type="submit"] {
 .full-height {
   min-height: 100vh; }
 
-.content-wrap {
-  padding-top: 5rem;
-  padding-bottom: 2rem; }
-
+/*.content-wrap{
+    padding-top: 5rem;
+    padding-bottom: 2rem; 
+}*/
 .row.full {
   max-width: 100%; }
 

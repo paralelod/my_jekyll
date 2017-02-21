@@ -4,18 +4,17 @@ type: page
 
 ---
 {% include molecule/loading/cover.html %}
-
  <div class="off-canvas-wrap" data-offcanvas>
-
   <div class="inner-wrap">
     {% if page.top-nav == 3 %}
         {% include molecule/nav/nav_off-canvas.html %}
     {% endif %}
-
-    
-
-    {% include molecule/off-canvas/off-canvas_menu-left.html %}
-    {% include molecule/off-canvas/off-canvas_menu-right.html %}
+    <aside class="left-off-canvas-menu">
+        {% include molecule/off-canvas/off-canvas_ul.html %}
+    </aside>
+    <aside class="right-off-canvas-menu">
+        {% include molecule/off-canvas/off-canvas_ul-double.html %}
+     </aside>
 
     <section class="main-section">
         {{ content }}
@@ -25,5 +24,7 @@ type: page
 
   </div>
 </div>
+{% include atom/util/back_top_btn.html %}
+{% include organism/footer.html %}
 {% include atom/util/back_top_btn.html %}
 {% include molecule/script/bottom.html %}

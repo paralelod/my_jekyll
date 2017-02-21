@@ -7,16 +7,18 @@ type: page
 <div class="off-canvas-custom">
   <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
-      <!--nav class="header">hello mundo</nav-->
+      <nav>
         <a class="right-off-canvas-toggle" href="#" >
           {% include atom/util/icon_burger-anim.html %}
         </a>
       </nav>
         <!-- Off Canvas Menu -->
-        {% include molecule/off-canvas/off-canvas_menu-right-2.html %}
-
+        <aside class="right-off-canvas-menu">
+          {% include molecule/off-canvas/off-canvas_ul-double.html %}
+        </aside>
+        
         <!-- hero  -->
-          {% include atom/mast-head/hero.html %}
+        {% include atom/mast-head/hero.html %}
           
         <!-- content -->
         <section>
@@ -29,4 +31,5 @@ type: page
   </div>
 </div>
 {% include atom/util/back_top_btn.html %}
+{% include organism/footer.html %}
 {% include molecule/script/bottom.html %}

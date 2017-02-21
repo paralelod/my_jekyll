@@ -1,22 +1,7 @@
 
-<footer class="footer text-center">
+<footer class="footer text-center" style="background: yellow;">
 
-  <div class="row">
-
-    <div class="small-12 medium-12 large-4 columns">
-      <img src="{{ site.baseurl }}{{ site.img-path }}/{{ site.avatar }}" style="vertical-align: baseline;">
-    </div>
-
-    <div class="small-12 medium-12 large-4 columns">
-      <h3>Join</h3>
-      {% include embed/mailchimp.html %}
-    </div>
-
-    <div class="small-12 medium-12 large-4 columns">
-      <{% include atom/txt/conect.html %}
-    </div>
-
-  </div>
+ {% include molecule/footer/footer-row-3cols.html %}
 
 </footer>
 
