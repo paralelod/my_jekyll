@@ -50,7 +50,7 @@
   
   <link rel="icon"  type="image/ico"  href="/my_jekyll/lib/img/+logo.png">
 
-  <link rel="canonical" href="http://lab.diogorusso.com/my_jekyll/pages/iconbar-fixed.html">
+  <link rel="canonical" href="http://lab.diogorusso.com/my_jekyll/comp/link-highlight.html">
   <link rel="alternate" type="application/rss+xml" title="Estúdio Berinjela | Criação" href="http://lab.diogorusso.com/my_jekyll/feed.xml">
 
   <script>document.createElement( "picture" );</script>
@@ -108,109 +108,332 @@ window.fbAsyncInit = function() {
     </div><!--preloader-->
 </div><!-- overlay -->
 
-<div class="iconbar-fixed">
-  <div class="off-canvas-wrap move-right" data-offcanvas>
-    <div class="inner-wrap">
+<nav class="top-bar large" data-topbar role="navigation">
+  <ul class="title-area">
+    <li>
+      <a href="/my_jekyll">
+    
+    <img src="/my_jekyll/lib/img/+logo.png">
+    
+</a>
+    </li>
+    <li class="toggle-topbar">
+      <a class="menu-button" id="menuButton">
+        Menu <i class="fa fa-bars"></i>
+      </a>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="right text-right">
+      
+  
+    <li>
+  
+      
+          
+                <a href="/" class="page-scroll">
+                  Work
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/work" class="page-scroll">
+                  Ideas
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="/sign-up.html" class="page-scroll">
+                  <i class="fa fa-heart" style="color:#fff"></i> 
+                  Newsletter
+                </a>
+          
+      
+   
+</li>
+  
+    <li>
+  
+      
+          
+                <a href="#connect" class="page-scroll">
+                  Connect
+                </a>
+          
+      
+   
+</li>
+  
 
-      <a class="left-off-canvas-toggle" href="#"><i class="fi-list"></i></a>
 
-      <!-- Off Canvas Menu -->
-      <aside class="left-off-canvas-menu">
-        
-<link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
 
-<div class="icon-bar vertical five-up">
-<a class="item">
-    <i class="fi-home"></i>
-    <label>Home</label>
-</a>
-<a class="item">
-<i class="fi-home"></i>
-    <label>Bookmark</label>
-</a>
-<a class="item">
-    <i class="fi-home"></i>
-    <label>Info</label>
-</a>
-<a class="item">
-    <i class="fi-home"></i>
-    <label>Mail</label>
-</a>
-<a class="item">
-    <i class="fi-home"></i>
-    <label>Like</label>
-</a>
+    <ul class="right text-right">
+  </section>
+</nav>
+
+
+
+
+<!-- 3 OFF CANVAS TEMPLATE ONLY -->
+
+
+
+<!-- 5 deleted -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="back-to-top">
+    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
 </div>
-      </aside>
-      <!-- main content goes here -->
-      <style>
-    .ad-block {
-    margin-bottom: 2rem; }
+
+
+
+<div class="content-wrap">
+    <style>
+        /*** Container ****/
+    .box.ideo-buttonbox {
+    background: #fff;
+    }
+
+    /*** Button Code ****/
+    .ideo-container {
+    margin: 40px
+    }
+    .ideo-container:before {
+    content: "";
+    background: #fcf113;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    }
+    .ideo-container:after {
+    content: "";
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    }
+
+    .ideo-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000;
+    margin-bottom: 20px;
+    }
+    .ideo-description span {
+    color: #a2aeb6;
+    }
+
+    .ideo-button {
+    font-size: 37px;
+    line-height: 48px;
+    letter-spacing: 0;
+    color: #000;
+    font-family: serif;
+    font-weight: normal;
+    }
+
+    .ideo-button a {
+        background-image: linear-gradient(180deg,transparent 65%,#fcf113 0);
+        background-size: 0 100%;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        color: #000;
+        -webkit-transition: background-size .4s ease;
+        transition: background-size .4s ease;
+    }
+    
+    .ideo-button a:hover {
+        background-size: 100% 100%;
+        cursor: pointer;
+        color: #000;
+    }
+
+
+    /*** Foundation Code ****/
+    body {
+    background-color: rgba(92, 81, 156, 1);
+    font-family: "Roboto", sans-serif;
+    }
+
+    a {
+    text-decoration: none;
+    }
+
+    .maxcontainer {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    background: rgba(93, 82, 157, .95);
+    }
+
+    @media screen and (min-width: 750px) {
+    .maxcontainer {
+        padding: 0;
+    }
+    }
+
+    .thebutton {
+    float: left;
+    width: 95%;
+    margin: 2.5% 2.5% 0 2.5%;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    @media screen and (min-width: 750px) {
+    .thebutton {
+        width: 47.5%;
+        margin: 2.5% 1.25% 0 1.25%;
+    }
+    }
+
+    .box {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    height: 0;
+    position: relative;
+    padding-bottom: 70%;
+    }
+
+    @media screen and (min-width: 650px) {
+    .box {}
+    }
+
+    .desccontainer {
+    position: relative;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    float: left;
+    }
+
+    .desc {
+    float: left;
+    font-size: 11px;
+    font-weight: 900;
+    padding: 10px 0;
+    letter-spacing: .25px;
+    text-align: center;
+    color: #bcbcbc;
+    opacity: 1;
+    z-index: 2000;
+    background: rgba(255, 255, 255, 1);
+    transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    }
+
+    .desc.left {
+    width: 49.7%;
+    margin-right: .3%;
+    -webkit-box-shadow: 1px 0px 0px 0px rgba(235, 235, 235, 1);
+    -moz-box-shadow: 1px 0px 0px 0px rgba(235, 235, 235, 1);
+    box-shadow: 1px 0px 0px 0px rgba(235, 235, 235, 1);
+    }
+
+    .desc.right {
+    width: 50%;
+    }
+
+    .boxinformation {
+    background: none;
+    color: #fff;
+    font-weight: 200;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    }
+
+    .boxinformation a {
+    color: #fff;
+    opacity: .4;
+    font-weight: bold;
+    }
+    .boxinformation a:hover {
+    opacity: 1;
+    }
+
+
+    .thebutton.info {
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0);
+    }
 </style>
 
-    <header class="row">
-      <div class="small-12 columns">
-        <h1 class="text-center">Off-canvas Sidebar</h1>
+<div class="maxcontainer">
+  <div class="thebutton progressive">
+    <div class="box ideo-buttonbox">
+      <div class="ideo-container">
+        <div class="ideo-description">
+          <span>Title</span> Lorem Ipsum
+        </div>
+        <div class="ideo-button">
+          <a href="#">Button Lorem Ipsum Dolor Sit Amet Consectetur</a>
+        </div>
       </div>
-    </header>
-    
-    <div class="row ad-block">
-      
-      <div class="medium-6 medium-push-6 columns">
-        <img src="https://ununsplash.imgix.net/photo-1429277005502-eed8e872fe52?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="" />
-      </div>
-      
-      <div class="medium-6 medium-pull-6 columns">
-        
-        <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
-        <button>Read On</button>
-        <button>Buy Me</button>
-      </div>
-      
     </div>
-    
-    <div class="row ad-block">
-      
-      <div class="medium-6 columns">
-        <img src="https://ununsplash.imgix.net/photo-1429277005502-eed8e872fe52?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="" />
-      </div>
-      
-      <div class="medium-6 columns">
-        <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
-        <button>Read On</button>
-        <button>Buy Me</button>
-      </div>
-      
+    <div class="desccontainer">
+      <a class="desc left" target="_blank" href="http://new.ideo.com/">Ideo</a>
+      <a class="desc right" target="_blank" href="http://uibuttons.com/">UI Buttons</a>
     </div>
-    
-    <div class="row ad-block">
-      
-      <div class="medium-6 medium-push-6 columns">
-        <img src="https://ununsplash.imgix.net/photo-1429277005502-eed8e872fe52?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="" />
-      </div>
-      
-      <div class="medium-6 medium-pull-6 columns">
-        <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
-        <button>Read On</button>
-        <button>Buy Me</button>
-      </div>
-      
+  </div>
+
+  <div class="thebutton info">
+    <div class="boxinformation">
+      <h1>Ideo Links</h1> 
+      <p>Highlighter Hover!</p> 
+      <p>A solution so simple, it seems obvious. A+
+      </p>
     </div>
-    
-    <div class="row ad-block">
-      
-      <div class="medium-6 columns">
-        <img src="https://ununsplash.imgix.net/photo-1429277005502-eed8e872fe52?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="" />
-      </div>
-      
-      <div class="medium-6 columns">
-        <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
-        <button>Read On</button>
-        <button>Buy Me</button>
-      </div>
-      
-    </div>
-      
+
+  </div>
+
+</div>
+</div>
+<div class="back-to-top">
+    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
+</div>
+
+
+
+
 <footer class="footer text-center" style="background: yellow;">
 
   <div class="row">
@@ -234,17 +457,6 @@ window.fbAsyncInit = function() {
 
 
   
-      <!-- close the off-canvas menu -->
-      <a class="exit-off-canvas"></a>
-    </div>
-  </div>
-</div>
-<div class="back-to-top">
-    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
-</div>
-
-
-
 <script type="text/javascript" src="/my_jekyll/lib/js/build/m.js"></script>
  
     <script type="text/javascript" src="/my_jekyll/lib/js/build/i/foundation_init.js"></script>
@@ -284,6 +496,9 @@ window.fbAsyncInit = function() {
     <script type="text/javascript" src="/my_jekyll/lib/js/build/i/swipebox_init.js"></script>
  
 
+    <!--script type="text/javascript" src="/my_jekyll/lib/js/build/s.js"></script-->
+    <!--script type="text/javascript" src="/my_jekyll/lib/js/build/in.js"></script-->
+ 
 
 
  
@@ -299,12 +514,12 @@ window.fbAsyncInit = function() {
  <script>
  console.log("*** INFO  ***")
  console.log("ID: home ")
- console.log("url: /pages/iconbar-fixed.html ")
- console.log("layout: page/off-canvas-iconbar-fixed ")
+ console.log("url: /comp/link-highlight.html ")
+ console.log("layout: page/default ")
 
  console.log("*** LAYOUT ***")
  console.log("preloader: 1 ")
- console.log("top-nav: 3 ")
+ console.log("top-nav: 1 ")
  console.log("footer: light ")
  console.log("sidebar: left-right-1 ")
  console.log("grid: isotope-columnns-3 ")

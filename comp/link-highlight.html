@@ -1,0 +1,239 @@
+---
+layout: page/default
+page-id: home
+
+dev-info: true
+foundation5: 1
+myscript: true
+fullpage: 1
+scroll-to: true
+fitivid: true
+swipebox: 1
+isotope: 1
+animation-page: true
+animation-scroll: true
+
+preloader: 1
+top-nav: 1
+footer: "light"
+sidebar: "left-right-1"
+grid: "isotope-columnns-3"
+mast-head: "full-height"
+back-to-top: true
+
+---
+
+<style>
+        /*** Container ****/
+    .box.ideo-buttonbox {
+    background: #fff;
+    }
+
+    /*** Button Code ****/
+    .ideo-container {
+    margin: 40px
+    }
+    .ideo-container:before {
+    content: "";
+    background: #fcf113;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    }
+    .ideo-container:after {
+    content: "";
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    }
+
+    .ideo-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000;
+    margin-bottom: 20px;
+    }
+    .ideo-description span {
+    color: #a2aeb6;
+    }
+
+    .ideo-button {
+    font-size: 37px;
+    line-height: 48px;
+    letter-spacing: 0;
+    color: #000;
+    font-family: serif;
+    font-weight: normal;
+    }
+
+    .ideo-button a {
+        background-image: linear-gradient(180deg,transparent 65%,#fcf113 0);
+        background-size: 0 100%;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        color: #000;
+        -webkit-transition: background-size .4s ease;
+        transition: background-size .4s ease;
+    }
+    
+    .ideo-button a:hover {
+        background-size: 100% 100%;
+        cursor: pointer;
+        color: #000;
+    }
+
+
+    /*** Foundation Code ****/
+    body {
+    background-color: rgba(92, 81, 156, 1);
+    font-family: "Roboto", sans-serif;
+    }
+
+    a {
+    text-decoration: none;
+    }
+
+    .maxcontainer {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    background: rgba(93, 82, 157, .95);
+    }
+
+    @media screen and (min-width: 750px) {
+    .maxcontainer {
+        padding: 0;
+    }
+    }
+
+    .thebutton {
+    float: left;
+    width: 95%;
+    margin: 2.5% 2.5% 0 2.5%;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    @media screen and (min-width: 750px) {
+    .thebutton {
+        width: 47.5%;
+        margin: 2.5% 1.25% 0 1.25%;
+    }
+    }
+
+    .box {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    height: 0;
+    position: relative;
+    padding-bottom: 70%;
+    }
+
+    @media screen and (min-width: 650px) {
+    .box {}
+    }
+
+    .desccontainer {
+    position: relative;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    float: left;
+    }
+
+    .desc {
+    float: left;
+    font-size: 11px;
+    font-weight: 900;
+    padding: 10px 0;
+    letter-spacing: .25px;
+    text-align: center;
+    color: #bcbcbc;
+    opacity: 1;
+    z-index: 2000;
+    background: rgba(255, 255, 255, 1);
+    transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    }
+
+    .desc.left {
+    width: 49.7%;
+    margin-right: .3%;
+    -webkit-box-shadow: 1px 0px 0px 0px rgba(235, 235, 235, 1);
+    -moz-box-shadow: 1px 0px 0px 0px rgba(235, 235, 235, 1);
+    box-shadow: 1px 0px 0px 0px rgba(235, 235, 235, 1);
+    }
+
+    .desc.right {
+    width: 50%;
+    }
+
+    .boxinformation {
+    background: none;
+    color: #fff;
+    font-weight: 200;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    }
+
+    .boxinformation a {
+    color: #fff;
+    opacity: .4;
+    font-weight: bold;
+    }
+    .boxinformation a:hover {
+    opacity: 1;
+    }
+
+
+    .thebutton.info {
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0);
+    }
+</style>
+
+<div class="maxcontainer">
+  <div class="thebutton progressive">
+    <div class="box ideo-buttonbox">
+      <div class="ideo-container">
+        <div class="ideo-description">
+          <span>Title</span> Lorem Ipsum
+        </div>
+        <div class="ideo-button">
+          <a href="#">Button Lorem Ipsum Dolor Sit Amet Consectetur</a>
+        </div>
+      </div>
+    </div>
+    <div class="desccontainer">
+      <a class="desc left" target="_blank" href="http://new.ideo.com/">Ideo</a>
+      <a class="desc right" target="_blank" href="http://uibuttons.com/">UI Buttons</a>
+    </div>
+  </div>
+
+  <div class="thebutton info">
+    <div class="boxinformation">
+      <h1>Ideo Links</h1> 
+      <p>Highlighter Hover!</p> 
+      <p>A solution so simple, it seems obvious. A+
+      </p>
+    </div>
+
+  </div>
+
+</div>

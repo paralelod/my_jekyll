@@ -11,13 +11,16 @@ type: page
       <a class="left-off-canvas-toggle" href="#"><i class="fi-list"></i></a>
 
       <!-- Off Canvas Menu -->
-      {% include molecule/off-canvas/off-canvas_menu-icons.html %}
+      <aside class="left-off-canvas-menu">
+        {% include molecule/off-canvas/off-canvas_menu-icons.html %}
+      </aside>
       <!-- main content goes here -->
       {{ content }}
-      
+      {% include organism/footer.html %}
       <!-- close the off-canvas menu -->
       <a class="exit-off-canvas"></a>
     </div>
   </div>
 </div>
+{% include atom/util/back_top_btn.html %}
 {% include molecule/script/bottom.html %}

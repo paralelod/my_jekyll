@@ -50,7 +50,7 @@
   
   <link rel="icon"  type="image/ico"  href="/my_jekyll/lib/img/+logo.png">
 
-  <link rel="canonical" href="http://lab.diogorusso.com/my_jekyll/pages/topnav-9.html">
+  <link rel="canonical" href="http://lab.diogorusso.com/my_jekyll/comp/content-5.html">
   <link rel="alternate" type="application/rss+xml" title="Estúdio Berinjela | Criação" href="http://lab.diogorusso.com/my_jekyll/feed.xml">
 
   <script>document.createElement( "picture" );</script>
@@ -108,36 +108,23 @@ window.fbAsyncInit = function() {
     </div><!--preloader-->
 </div><!-- overlay -->
 
-
-
-
-<!-- 3 OFF CANVAS TEMPLATE ONLY -->
-
-
-
-<!-- 5 deleted -->
-
-
-
-
-
-
-
-
-<nav class="top-bar text-center" data-topbar>
+<nav class="top-bar large" data-topbar role="navigation">
   <ul class="title-area">
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-  <div class="logo">
-     <a href="/my_jekyll">
+    <li>
+      <a href="/my_jekyll">
     
     <img src="/my_jekyll/lib/img/+logo.png">
     
 </a>
-  </div>
+    </li>
+    <li class="toggle-topbar">
+      <a class="menu-button" id="menuButton">
+        Menu <i class="fa fa-bars"></i>
+      </a>
+    </li>
+  </ul>
   <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="center-buttons">
+    <ul class="right text-right">
       
   
     <li>
@@ -192,9 +179,25 @@ window.fbAsyncInit = function() {
 
 
 
-    </ul>
+    <ul class="right text-right">
   </section>
 </nav>
+
+
+
+
+<!-- 3 OFF CANVAS TEMPLATE ONLY -->
+
+
+
+<!-- 5 deleted -->
+
+
+
+
+
+
+
 
 
 
@@ -209,49 +212,210 @@ window.fbAsyncInit = function() {
 
 
 <div class="content-wrap">
-      <div
-  class="animsition"
-  data-animsition-in-class="rotate-in"
-  data-animsition-in-duration="1000"
-  data-animsition-out-class="fade-out"
-  data-animsition-out-duration="800"
->
-  <h1> Helloooo </h1>
+    <style>
+.head-img {
+  postition: fixed;
+}
+
+.overlay-text {
+  color: white;
+  position: absolute;
+  padding-top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.top-block {
+  position: absolute;
+  background: #F27141;
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.profile-wrap {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center !important;
+}
+
+.profile-circle {
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_540/v1461613662/JonBurns_yyxnrg.png");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #efb6a0;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.social {
+  position: absolute;
+  padding-top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.arrow-down {
+  position: relative;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 0;
+  width: 0;
+  border-top: 20px solid #F27141;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 1;
+}
+
+.portfolio {
+  position: relative;
+  padding: 35px;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%);
+}
+
+.section {
+  position: relative;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: 250px;
+}
+
+.footer {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+
+blockquote {
+  color: #fefefe;
+}
+
+blockquote cite {
+  color: #f5f5f5;
+}
+
+@media only screen and (max-width: 667px) {
+  p {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .overlay-text {
+    padding-top: 12px;
+  }
+}
+
+</style>
+
+<div class="head-img">
+  <div class="overlay-text">
+    <h3>Jonathan Burns</h3>
+  </div>
+  <img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,h_683,w_1920/v1460846020/Arizona-High-Resolution-Wallpapers_effoty.jpg"/>
 </div>
-
-<div  class="hero-txt center-center">
-		<h1>
-			
-		</h1>
-		<h3>
-			
-			<br>
-			<span
-     		class="txt-rotate"
-     		data-period="1000"
-     		data-rotate='[ "", "","", ""]'
-     		>
-     		</span>
-     		<br>
-		</h3>
-		<a href="#bio" class="button btn-outline-light btn-round page-scroll">  <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-	</div>
-
-
-
-
-
-<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-</h1>
-
-
-
-
-
+<div class="profile-wrap">
+  <div class="profile-circle">
+  </div>
+</div>
+<div class="top-block">
+  <div class="social">
+    <div class="row">
+      <div class="small-12 medium-4 columns">
+        <a href="#section1">
+          <button class="button">Facebook</button>
+        </a>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <a href="#">
+          <button class="button">Facebook</button>
+        </a>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <a href="#">
+          <button class="button">Facebook</button>
+        </a>
+      </div>
+    </div>
+    <blockquote class="hide-for-small-only">Oh the Places you'll go... whether to high or to low, oh the place you'll go.<cite>Mom</cite></blockquote>
+  </div>
+  <div id="arrow1" class="arrow-down">
+  </div>
+  <div class="portfolio">
+    <div class="section">
+      <h3>Blah Blah Blah</h3>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <h3>Blah Blah Blah</h3>
+    <hr>
+  </div>
+  <div class="portfolio">
+    <div class="row">
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+      <div class="small-12 medium-4 columns">
+        <img class="thumbnail" src="http://foundation.zurb.com/sites/docs/assets/img/thumbnail/01.jpg" alt="Naptune">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  
+</div>
 </div>
 <div class="back-to-top">
     <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
@@ -340,12 +504,12 @@ It is a long established fact that a reader will be distracted by the readable c
  <script>
  console.log("*** INFO  ***")
  console.log("ID: home ")
- console.log("url: /pages/topnav-9.html ")
+ console.log("url: /comp/content-5.html ")
  console.log("layout: page/default ")
 
  console.log("*** LAYOUT ***")
  console.log("preloader: 1 ")
- console.log("top-nav: 9 ")
+ console.log("top-nav: 1 ")
  console.log("footer: light ")
  console.log("sidebar: left-right-1 ")
  console.log("grid: isotope-columnns-3 ")
