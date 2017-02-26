@@ -50,7 +50,7 @@
   
   <link rel="icon"  type="image/ico"  href="/my_jekyll/lib/img/+logo.png">
 
-  <link rel="canonical" href="http://lab.diogorusso.com/my_jekyll/comp/link-highlight.html">
+  <link rel="canonical" href="http://lab.diogorusso.com/my_jekyll/comp/rev/content-18.html">
   <link rel="alternate" type="application/rss+xml" title="Estúdio Berinjela | Criação" href="http://lab.diogorusso.com/my_jekyll/feed.xml">
 
   <script>document.createElement( "picture" );</script>
@@ -66,6 +66,9 @@
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
 </script>
+
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -205,258 +208,214 @@ window.fbAsyncInit = function() {
 
 
 
-<div class="back-to-top">
-    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
-</div>
-
-
-
 <div class="content-wrap">
     <style>
-        /*** Container ****/
-    .box.ideo-buttonbox {
-    background: #fff;
-    }
+section {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 10rem;
+}
 
-    /*** Button Code ****/
-    .ideo-container {
-    margin: 40px
-    }
-    .ideo-container:before {
-    content: "";
-    background: #fcf113;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 10px;
-    width: 100%;
-    }
-    .ideo-container:after {
-    content: "";
-    background: #000;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 6px;
-    width: 100%;
-    }
+span {
+  display: inline-block;
+}
 
-    .ideo-description {
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #000;
-    margin-bottom: 20px;
-    }
-    .ideo-description span {
-    color: #a2aeb6;
-    }
+.cmyk {
+  background: url(//stephy.mccdgm.net/images/patterns/lightpaperfibers.png);
+}
 
-    .ideo-button {
-    font-size: 37px;
-    line-height: 48px;
-    letter-spacing: 0;
-    color: #000;
-    font-family: serif;
-    font-weight: normal;
-    }
+.cmyk span {
+  color: 000;
+  font-family: 'Fredoka One', sans-serif;
+  text-shadow: 0.25rem -0.25rem rgba(255, 0, 255, 0.75), -0.25rem -0.25rem rgba(0, 255, 255, 0.75), 0 0.5rem rgba(255, 255, 0, 0.75);
+}
 
-    .ideo-button a {
-        background-image: linear-gradient(180deg,transparent 65%,#fcf113 0);
-        background-size: 0 100%;
-        background-repeat: no-repeat;
-        text-decoration: none;
-        color: #000;
-        -webkit-transition: background-size .4s ease;
-        transition: background-size .4s ease;
-    }
-    
-    .ideo-button a:hover {
-        background-size: 100% 100%;
-        cursor: pointer;
-        color: #000;
-    }
+.skewed {
+  background: url(//stephy.mccdgm.net/images/patterns/dark_wood.png) #2b2b2b;
+}
 
+.skewed span {
+  font-family: Oswald, sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  padding: 0 25px;
+  /* to extend the border past the text */
+  margin: 80px 0;
+  background: #FFDF00;
+  box-shadow: 0 0 0px 10px #FFDF00;
+  border: 10px solid #fff;
+  transform: rotate(-22.5deg) skew(-22.5deg);
+}
 
-    /*** Foundation Code ****/
-    body {
-    background-color: rgba(92, 81, 156, 1);
-    font-family: "Roboto", sans-serif;
-    }
+.thin-shade {
+  background: #89DFB8;
+  font: 6rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  color: #F7EB98;
+  text-shadow: -4px 4px 0 #89DFB8, -6px 6px 0 rgba(255, 255, 255, 0.5);
+}
 
-    a {
-    text-decoration: none;
-    }
+.candy {
+  background: #D74386;
+}
 
-    .maxcontainer {
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    overflow: auto;
-    background: rgba(93, 82, 157, .95);
-    }
+.candy span {
+  position: relative;
+  font-family: 'Patua One', cursive;
+  color: transparent;
+  z-index: 0;
+}
 
-    @media screen and (min-width: 750px) {
-    .maxcontainer {
-        padding: 0;
-    }
-    }
+.candy span:before, .candy span:after {
+  content: 'Candy';
+  position: absolute;
+  left: 0;
+}
 
-    .thebutton {
-    float: left;
-    width: 95%;
-    margin: 2.5% 2.5% 0 2.5%;
-    position: relative;
-    border-radius: 2px;
-    overflow: hidden;
-    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
-    }
+.candy span:before {
+  color: #FF63AA;
+  background-size: 50px 50px;
+  background-color: #FF63AA;
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    @media screen and (min-width: 750px) {
-    .thebutton {
-        width: 47.5%;
-        margin: 2.5% 1.25% 0 1.25%;
-    }
-    }
+.candy span:after {
+  content: 'Candy';
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  text-shadow: -6px 6px 0 #D8347F, -5px 5px 0 #D8347F, -4px 4px 0 #D8347F, -3px 3px 0 #D8347F, -2px 2px 0 #D8347F, -1px 1px 0 #D8347F, -2px 5px 15px #000;
+}
 
-    .box {
-    overflow: hidden;
-    width: 100%;
-    margin: auto;
-    height: 0;
-    position: relative;
-    padding-bottom: 70%;
-    }
+.pressed {
+  background: #333 url(//stephy.mccdgm.net/images/patterns/gray_sand.png);
+}
 
-    @media screen and (min-width: 650px) {
-    .box {}
-    }
+.pressed span {
+  color: transparent;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  z-index: 0;
+}
 
-    .desccontainer {
-    position: relative;
-    width: 100%;
-    background: rgba(255, 255, 255, 1);
-    float: left;
-    }
+.pressed span:before, .pressed span:after {
+  content: 'Pressed';
+  position: absolute;
+  left: 0;
+  color: #222;
+}
 
-    .desc {
-    float: left;
-    font-size: 11px;
-    font-weight: 900;
-    padding: 10px 0;
-    letter-spacing: .25px;
-    text-align: center;
-    color: #bcbcbc;
-    opacity: 1;
-    z-index: 2000;
-    background: rgba(255, 255, 255, 1);
-    transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -webkit-transition: all .1s ease-in-out;
-    }
+.pressed span:before {
+  z-index: 1;
+  background: -webkit-linear-gradient(transparent, transparent), url(//stephy.mccdgm.net/images/patterns/dark_wall.png);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    .desc.left {
-    width: 49.7%;
-    margin-right: .3%;
-    -webkit-box-shadow: 1px 0px 0px 0px rgba(235, 235, 235, 1);
-    -moz-box-shadow: 1px 0px 0px 0px rgba(235, 235, 235, 1);
-    box-shadow: 1px 0px 0px 0px rgba(235, 235, 235, 1);
-    }
+.pressed span:after {
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
 
-    .desc.right {
-    width: 50%;
-    }
-
-    .boxinformation {
-    background: none;
-    color: #fff;
-    font-weight: 200;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    }
-
-    .boxinformation a {
-    color: #fff;
-    opacity: .4;
-    font-weight: bold;
-    }
-    .boxinformation a:hover {
-    opacity: 1;
-    }
-
-
-    .thebutton.info {
-    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0);
-    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0);
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0);
-    }
 </style>
 
-<div class="maxcontainer">
-  <div class="thebutton progressive">
-    <div class="box ideo-buttonbox">
-      <div class="ideo-container">
-        <div class="ideo-description">
-          <span>Title</span> Lorem Ipsum
-        </div>
-        <div class="ideo-button">
-          <a href="#">Button Lorem Ipsum Dolor Sit Amet Consectetur</a>
-        </div>
-      </div>
-    </div>
-    <div class="desccontainer">
-      <a class="desc left" target="_blank" href="http://new.ideo.com/">Ideo</a>
-      <a class="desc right" target="_blank" href="http://uibuttons.com/">UI Buttons</a>
-    </div>
-  </div>
+<section class="cmyk">
+  <span>CMYK</span>
+</section>
 
-  <div class="thebutton info">
-    <div class="boxinformation">
-      <h1>Ideo Links</h1> 
-      <p>Highlighter Hover!</p> 
-      <p>A solution so simple, it seems obvious. A+
-      </p>
-    </div>
+<section class="skewed">
+  <span>Skewed</span>
+</section>
 
-  </div>
+<section class="candy">
+  <span>Candy</span>
+</section>
 
+<section class="pressed">
+  <span>Pressed</span>
+</section>
+
+<section class="thin-shade">
+  <span>Thin Shade</span>
+</section>
 </div>
-</div>
-<div class="back-to-top">
-    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
-</div>
-
-
-
-
-<footer class="footer text-center" style="background: yellow;">
-
+<footer class="footer">
   <div class="row">
-
-    <div class="small-12 medium-12 large-4 columns">
-      <img src="/my_jekyll/lib/img/+avatar.png" style="vertical-align: baseline;">
+    <div class="small-12 medium-6 medium-push-6 columns">
+      <p class="logo show-for-small-only"><i class="fi-target"></i> FIGHT CLUB</p>
+      <form class="footer-form">
+        <div class="row">
+          <div class="medium-9 medium-push-3 columns">
+            <label>
+              <label for="email" class="contact">Contact Me</label>
+            <input type="email" id="email" placeholder="Email Address" />
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-9 medium-push-3 columns">
+            <label>
+              <textarea rows="5" id="message" placeholder="Message"></textarea>
+            </label>
+          </div>
+          <div class="row">
+            <div class="medium-9 medium-push-3 columns">
+              <button class="submit" type="submit" value="Submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
-
-    <div class="small-12 medium-12 large-4 columns">
-      <h3>Join</h3>
-     newsletter
+    <div class="small-12 medium-6 medium-pull-6 columns">
+      <p class="logo hide-for-small-only"><i class="fi-target"></i> MJS</p>
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="#">Faq</a>
+        <a href="#">Contact</a>
+      </p>
+      <ul class="inline-list social">
+        <a href="#"><i class="fi-social-facebook"></i></a>
+        <a href="#"><i class="fi-social-twitter"></i></a>
+        <a href="#"><i class="fi-social-linkedin"></i></a>
+        <a href="#"><i class="fi-social-github"></i></a>
+      </ul>
+      <p class="copywrite">Copywrite not copywrite © 2015</p>
     </div>
-
-    <div class="small-12 medium-12 large-4 columns">
-      <h3>Connect</h3>
-    </div>
-
   </div>
-
 </footer>
+  <footer id="footer-sticky">
+    <div id="logo-footer">
+      <a href="#" id="go-up" class="go-up-event"></a>
+    </div>
+    <nav class="row">
+      <ul class="footer-navigation">
+        <li id="menu-about" class="menu-item go-down-event"><a href="#">About</a></li>
+        <li id="menu-home" class="menu-item go-up-event"><a href="#">Home</a></li>
+        <li class="menu-item"><a id="portLink" href="#portfolio">My Works</a></li>
+        <li class="menu-item"><a target="_blank" href="//cu7io.us">Blog</a></li>
+      </ul>
+      <p>© 2015 Designed &amp; Coded by Cu7ious</p>
+    </nav>
+  </footer>
+
 
 
   
+<div class="back-to-top">
+    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
+</div>
+
+
+
 <script type="text/javascript" src="/my_jekyll/lib/js/build/m.js"></script>
  
     <script type="text/javascript" src="/my_jekyll/lib/js/build/i/foundation_init.js"></script>
@@ -511,10 +470,12 @@ window.fbAsyncInit = function() {
 
 
 
+
+
  <script>
  console.log("*** INFO  ***")
  console.log("ID: home ")
- console.log("url: /comp/link-highlight.html ")
+ console.log("url: /comp/rev/content-18.html ")
  console.log("layout: page/default ")
 
  console.log("*** LAYOUT ***")
@@ -536,6 +497,77 @@ window.fbAsyncInit = function() {
  </script>
  
 
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDBdh6dj3XOB_UgrUYOP_DvyTT_zbwAc6U&sensor=false">
+    
+</script>
+
+
+
+<script>
+    $( document ).ready( function() {
+
+
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var icons = {
+          parking: {
+            icon: iconBase + 'parking_lot_maps.png'
+          },
+          library: {
+            icon: iconBase + 'library_maps.png'
+          },
+          info: {
+            icon: iconBase + 'info-i_maps.png'
+          }
+        };
+
+
+
+	//Google Maps JS
+	//Set Map
+	function initialize() {
+			var myLatlng = new google.maps.LatLng(-33.916365282092855, 151.22937399734496);
+			var imagePath = 'https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png'
+			var mapOptions = {
+				zoom: 17,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+			}
+
+		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		//Callout Content
+		var contentString = 'Some address here..';
+		//Set window width + content
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString,
+			maxWidth: 500
+		});
+
+		//Add Marker
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			icon: imagePath,
+			title: 'image title'
+		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+
+		//Resize Function
+		google.maps.event.addDomListener(window, "resize", function() {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+});
+</script>
   </body>
 </html>
 

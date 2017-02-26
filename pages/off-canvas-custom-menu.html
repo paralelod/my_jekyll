@@ -67,6 +67,9 @@
   })(document);
 </script>
 
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700' rel='stylesheet' type='text/css'>
+
 </head>
 
  
@@ -140,15 +143,11 @@ window.fbAsyncInit = function() {
   <li><i class="fi-social-twitter"></i></li>
 </ul>
         </aside>
-        
-        <!-- hero  -->
-        <section class="hero">
-    <img class="logo" src="https://s-media-cache-ak0.pinimg.com/736x/17/75/19/1775190f158a67c8af7309949353c58d.jpg" alt="logo" />
-</section>
-          
-        <!-- content -->
+
         <section>
-                <div
+              <section class="hero"></section>
+
+  <div
   class="animsition"
   data-animsition-in-class="rotate-in"
   data-animsition-in-duration="1000"
@@ -156,41 +155,22 @@ window.fbAsyncInit = function() {
   data-animsition-out-duration="800"
 >
   <h1> Helloooo </h1>
+  
 </div>
 
-<div  class="hero-txt center-center">
-		<h1>
-			
-		</h1>
-		<h3>
-			
-			<br>
-			<span
-     		class="txt-rotate"
-     		data-period="1000"
-     		data-rotate='[ "", "","", ""]'
-     		>
-     		</span>
-     		<br>
-		</h3>
-		<a href="#bio" class="button btn-outline-light btn-round page-scroll">  <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-	</div>
-
-
-
-
-
-<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-</h1>
-
+<div class="profile-wrap">
+  <div class="profile-circle">
+  </div>
+</div>
+<div class="section-arrow">
+</div>
+<div id="arrow1" class="arrow-down">
+</div>
         </section>
 
       <!-- close the off-canvas menu -->
       <a class="exit-off-canvas"></a>
+      
     </div>
   </div>
 </div>
@@ -200,27 +180,68 @@ It is a long established fact that a reader will be distracted by the readable c
 
 
 
-
-<footer class="footer text-center" style="background: yellow;">
-
+<footer class="footer">
   <div class="row">
-
-    <div class="small-12 medium-12 large-4 columns">
-      <img src="/my_jekyll/lib/img/+avatar.png" style="vertical-align: baseline;">
+    <div class="small-12 medium-6 medium-push-6 columns">
+      <p class="logo show-for-small-only"><i class="fi-target"></i> FIGHT CLUB</p>
+      <form class="footer-form">
+        <div class="row">
+          <div class="medium-9 medium-push-3 columns">
+            <label>
+              <label for="email" class="contact">Contact Me</label>
+            <input type="email" id="email" placeholder="Email Address" />
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-9 medium-push-3 columns">
+            <label>
+              <textarea rows="5" id="message" placeholder="Message"></textarea>
+            </label>
+          </div>
+          <div class="row">
+            <div class="medium-9 medium-push-3 columns">
+              <button class="submit" type="submit" value="Submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
-
-    <div class="small-12 medium-12 large-4 columns">
-      <h3>Join</h3>
-     newsletter
+    <div class="small-12 medium-6 medium-pull-6 columns">
+      <p class="logo hide-for-small-only"><i class="fi-target"></i> MJS</p>
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="#">Faq</a>
+        <a href="#">Contact</a>
+      </p>
+      <ul class="inline-list social">
+        <a href="#"><i class="fi-social-facebook"></i></a>
+        <a href="#"><i class="fi-social-twitter"></i></a>
+        <a href="#"><i class="fi-social-linkedin"></i></a>
+        <a href="#"><i class="fi-social-github"></i></a>
+      </ul>
+      <p class="copywrite">Copywrite not copywrite © 2015</p>
     </div>
-
-    <div class="small-12 medium-12 large-4 columns">
-      <h3>Connect</h3>
-    </div>
-
   </div>
-
 </footer>
+  <footer id="footer-sticky">
+    <div id="logo-footer">
+      <a href="#" id="go-up" class="go-up-event"></a>
+    </div>
+    <nav class="row">
+      <ul class="footer-navigation">
+        <li id="menu-about" class="menu-item go-down-event"><a href="#">About</a></li>
+        <li id="menu-home" class="menu-item go-up-event"><a href="#">Home</a></li>
+        <li class="menu-item"><a id="portLink" href="#portfolio">My Works</a></li>
+        <li class="menu-item"><a target="_blank" href="//cu7io.us">Blog</a></li>
+      </ul>
+      <p>© 2015 Designed &amp; Coded by Cu7ious</p>
+    </nav>
+  </footer>
+
 
 
   
@@ -280,6 +301,8 @@ It is a long established fact that a reader will be distracted by the readable c
 
 
 
+
+
  <script>
  console.log("*** INFO  ***")
  console.log("ID: home ")
@@ -305,6 +328,77 @@ It is a long established fact that a reader will be distracted by the readable c
  </script>
  
 
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDBdh6dj3XOB_UgrUYOP_DvyTT_zbwAc6U&sensor=false">
+    
+</script>
+
+
+
+<script>
+    $( document ).ready( function() {
+
+
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var icons = {
+          parking: {
+            icon: iconBase + 'parking_lot_maps.png'
+          },
+          library: {
+            icon: iconBase + 'library_maps.png'
+          },
+          info: {
+            icon: iconBase + 'info-i_maps.png'
+          }
+        };
+
+
+
+	//Google Maps JS
+	//Set Map
+	function initialize() {
+			var myLatlng = new google.maps.LatLng(-33.916365282092855, 151.22937399734496);
+			var imagePath = 'https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png'
+			var mapOptions = {
+				zoom: 17,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+			}
+
+		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		//Callout Content
+		var contentString = 'Some address here..';
+		//Set window width + content
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString,
+			maxWidth: 500
+		});
+
+		//Add Marker
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			icon: imagePath,
+			title: 'image title'
+		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+
+		//Resize Function
+		google.maps.event.addDomListener(window, "resize", function() {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+});
+</script>
   </body>
 </html>
 
