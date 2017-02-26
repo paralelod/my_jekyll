@@ -1,0 +1,61 @@
+
+.icis-social-bar {
+  position: fixed;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.icis-social-icon {
+  padding: 10px;
+  margin-right: 10px;
+  color: #fff;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.icis-social-icon:hover {
+  padding-right: 20px;
+  margin-right: 0;
+}
+
+.icis-social-linkedin {
+  background: #0177B5;
+}
+
+.icis-social-twitter {
+  background: #1DA1F2;
+}
+
+.icis-social-googleplus {
+  background: #DB4437;
+}
+
+.icis-social-email {
+  background: #878787;
+}
+
+@media (max-width: 850px) {
+  .icis-social-bar {
+    bottom: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  .icis-social-icon {
+    display: block;
+    float: left;
+    padding: 10px;
+    margin: 0;
+    width: 25%;
+    color: #fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .icis-social-icon:hover {
+    padding: 10px;
+  }
+}

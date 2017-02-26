@@ -1,0 +1,167 @@
+---
+layout: page/default
+page-id: home
+
+dev-info: true
+foundation5: 1
+myscript: true
+fullpage: 1
+scroll-to: true
+fitivid: true
+swipebox: 1
+isotope: 1
+animation-page: true
+animation-scroll: true
+
+preloader: 1
+top-nav: 1
+footer: "light"
+sidebar: "left-right-1"
+grid: "isotope-columnns-3"
+mast-head: "full-height"
+back-to-top: true
+
+---
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+.snip1523 {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  background-color: #1A1A1A;
+}
+
+.snip1523 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1523 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.snip1523 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 30px;
+  background-color: #202123;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.snip1523 h2,
+.snip1523 h3,
+.snip1523 p {
+  margin: 0;
+}
+
+.snip1523 h2,
+.snip1523 h3 {
+  font-family: 'Slabo 27px', serif;
+  line-height: 1.2em;
+}
+
+.snip1523 h2 {
+  font-size: 1.9em;
+  color: #35ADF9;
+}
+
+.snip1523 h3 {
+  color: #EBEBEB;
+  font-size: 1.3em;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.snip1523 p {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9em;
+  margin-top: 12px;
+  padding: 12px 0 15px;
+  line-height: 1.5em;
+}
+
+.snip1523 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1523:hover > img,
+.snip1523.hover > img {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.snip1523:hover figcaption,
+.snip1523.hover figcaption {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+
+/* Demo purposes only */
+
+body {
+  background-color: #212121;
+}
+</style>
+
+<figure class="snip1523">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85" />
+  <figcaption>
+    <h2>Benjamin Evalent</h2>
+    <h3>UX Design</h3>
+    <p>I'm learning real skills that I can apply throughout the rest of my life ... Procrastinating and rationalizing.</p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="snip1523"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample99.jpg" alt="sample99" />
+  <figcaption>
+    <h2>Sheq Bivouac</h2>
+    <h3>Accountant</h3>
+    <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="snip1523"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample73.jpg" alt="sample73" />
+  <figcaption>
+    <h2>Ruby Von Rails</h2>
+    <h3>Public Relations</h3>
+    <p>But Calvin is no kind and loving god! He's one of the old gods! He demands sacrifice! </p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+
+<script>
+    /* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+
+</script>

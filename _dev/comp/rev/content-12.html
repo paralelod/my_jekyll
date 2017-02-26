@@ -1,0 +1,62 @@
+---
+layout: page/default
+page-id: home
+
+dev-info: true
+foundation5: 1
+myscript: true
+fullpage: 1
+scroll-to: true
+fitivid: true
+swipebox: 1
+isotope: 1
+animation-page: true
+animation-scroll: true
+
+preloader: 1
+top-nav: 1
+footer: "light"
+sidebar: "left-right-1"
+grid: "isotope-columnns-3"
+mast-head: "full-height"
+back-to-top: true
+
+---
+
+<style>
+
+.or-divider{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  margin: 0 1em;
+}
+.or-divider.italic{
+  font-style: italic;
+}
+.or-divider::before{
+  content: '';
+  height: .125em;
+  background: black;
+  flex: 1;
+  margin: 0 .25em 0 0;
+}
+.or-divider::after{
+  content: '';
+  height: .125em;
+  background: black;
+  flex: 1;
+  margin: 0 0 0 .25em;
+}
+.or-divider.italic::before,
+.or-divider.italic::after{
+  transform: skew(-18deg)
+}
+</style>
+
+<p class="or-divider">OR</p>
+<p class="or-divider italic">OR</p>
+<p class="or-divider">THEN</p>
+<p class="or-divider italic">THEN</p>

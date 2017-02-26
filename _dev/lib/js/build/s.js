@@ -1,14 +1,142 @@
-$(document).ready(function(){
-  		$(window).resize(function(){
-			    var footerHeight = $('.footer').outerHeight();
-			    var stickFooterPush = $('.push').height(footerHeight);
-		
-    			$('.wrapper').css({'marginBottom':'-' + footerHeight + 'px'});
-		    });
-		
-    		$(window).resize();
-	    });
 
+  var FOOTER_APPEARS = 400;
+  var TRIGGER = 80; // size of the footer
+
+  var lastScrollTop = 0;
+
+  var footer = document.getElementById('footer-sticky');
+  //var footerLogo = document.getElementById('logo-footer');
+  //var menuHome = document.getElementById('menu-home');
+  //var menuAbout = document.getElementById('menu-about');
+
+
+
+
+  window.addEventListener("scroll", function () {
+    var position = window.scrollY;
+
+    height = document.body.scrollHeight - document.body.offsetHeight;
+
+    if (position > lastScrollTop) {
+      // downscroll code
+      if (position > height - TRIGGER) {
+        footer.classList.remove('footer-closed');
+      } else {
+        footer.classList.add('footer-closed');
+      }
+
+      setTimeout(function () {
+
+        var footerOffset = footer.getBoundingClientRect().top;
+
+        if (counter === 0) {
+          if (position + FOOTER_APPEARS > footerOffset) {
+            if (!progressSetter) {
+              progressSetter = true;
+            }
+          }
+
+          setTimeout(function () {
+            counter = 1;
+          }, 800);
+        }
+
+      }, 600);
+    } else {
+      // upscroll code
+      footer.classList.add('footer-closed');
+
+      setTimeout(function () {
+        if (position === 0) {
+          footer.classList.remove('footer-closed');
+        }
+
+       
+
+      }, 100);
+    }
+  });
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+
+  "use strict";
+
+  var FOOTER_APPEARS = 400;
+  var TRIGGER = 80;
+
+  var scrolling = false;
+  var lastScroll;
+
+  var heroTitle = document.getElementById('hero-title');
+  var goDownButton = document.getElementById('go-down');
+  var lastScrollTop = 0;
+  var height;
+  var header = document.getElementById('header');
+  var cotnentTop = document.getElementById('content').getBoundingClientRect().top;
+
+
+  // Utils
+  function fade() {
+    lastScroll = window.scrollY;
+
+    heroTitle.style.transform = 'translate3d(0,' + Math.round(lastScroll / 2) + 'px,0)';
+    heroTitle.style.opacity = (100 - lastScroll / 4) / 100;
+
+
+    goDownButton.style.opacity = (100 - lastScroll / 4) / 100;
+
+    if (scrolling === true) {
+      window.requestAnimationFrame(fade);
+    }
+  }
+
+  function setHeight(el) {
+    var elHeight = document.body.offsetHeight;
+    el.style.height = elHeight + 'px';
+    el.style.maxHeight = elHeight + 'px';
+  }
+
+  function scrollTo(element, to, duration) {
+    if (duration <= 0) return;
+    var difference = to - element.scrollTop;
+    var perTick = difference / duration * 10;
+
+    setTimeout(function () {
+      element.scrollTop = element.scrollTop + perTick;
+      if (element.scrollTop === to) return;
+      scrollTo(element, to, duration - 10);
+    }, 10);
+  }
+
+  // Executions block
+  heroTitle.style.minHeight = (heroTitle.childNodes[1].offsetHeight + 100) + 'px';
+
+  setHeight(header);
+
+  if (window.scrollY > cotnentTop) {
+    progressSetter = true;
+  }
+
+  window.addEventListener("resize", function () {
+    setTimeout(function () {
+      setHeight(header);
+    }, 200);
+  });
+
+
+  // Animate Scrolling to content on click on the elements
+  var goDownElements = document.getElementsByClassName('go-down-event');
+  goDownElements = Array.prototype.slice.call(goDownElements);
+  goDownElements.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      var cotnentTop = document.getElementById('content').getBoundingClientRect().top;
+      scrollTo(document.body, cotnentTop, 200);
+    });
+  });
+});
+// Executions block
 var menuButton = document.getElementById('menuButton');
 menuButton.addEventListener('click', function (e) {
     menuButton.classList.toggle('is-active');
@@ -120,6 +248,27 @@ $(window).on('scroll', function() {
   }
 
 });
+(function() {
+
+  var fa = document.createElement('link');
+  fa.rel = 'stylesheet';
+  fa.type = 'text/css';
+  fa.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+  document.head.appendChild(fa);
+
+  var sd = document.createElement('div');
+  sd.id = 'social';
+  document.getElementsByTagName('body')[0].appendChild(sd);
+
+  var container = document.getElementById('social');
+
+  container.innerHTML = '<div class="icis-social-bar">' +
+    '<div class="icis-social-icon icis-social-linkedin" onclick="share("linkedin")"><i class="fa fa-linkedin" aria-hidden="true"></i></div>' +
+    '<div class="icis-social-icon icis-social-twitter" onclick="share("twitter")"><i class="fa fa-twitter" aria-hidden="true"></i></div>' +
+    '<div class="icis-social-icon icis-social-googleplus" onclick="share("googleplus")"><i class="fa fa-google-plus-official" aria-hidden="true"></i></div>' +
+    '<div class="icis-social-icon icis-social-email" onclick="share("email")"><i class="fa fa-envelope" aria-hidden="true"></i></div>';
+
+}());
 
 //autohor: Gregory Schier http://codepen.io/gschier/pen/jkivt
 

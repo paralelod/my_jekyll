@@ -55,7 +55,7 @@ header {
     "../base/html/links",
     "../base/html/text-global",
     "../base/html/buttons",
-    //"../base/html/forms",
+    "../base/html/forms",
     //"../base/html/labels",
     "../base/html/burger",
 
@@ -65,7 +65,6 @@ header {
     "../layout/sidebar-fixed",
     "../layout/iconbar-fixed",
     "../layout/off-canvas",
-
 
     
      //----------- components ----------//
@@ -84,11 +83,23 @@ header {
     "../component/nav/nav_top_menu-left-modal-right",
     "../component/nav/off-canvas_tab-bar",
 
+    //social bar
+    "../component/social-bar",
 
-    //"../component/footer/footer",
+     //sections
+
+    "../component/section/section_profile",
+    "../component/section/section-arrow",
+
+    //footer
+
+    "../component/footer/footer",
+    "../component/footer/footer-sticky",
 
     //cards
-    //"../component/card/card",
+    "../component/card/card",
+    "../component/card/flipcard",
+    "../component/card/card-fancy",
 
 
     //grids
@@ -98,7 +109,9 @@ header {
     //"../component/list/list",
 
      //mast-head
-    "../component/mast-head/hero"
+    "../component/mast-head/hero",
+    "../component/mast-head/hero-2",
+    "../component/mast-head/hero-3",
     //"../component/mast-head/fullpage-hero",
 
     //content
@@ -111,6 +124,11 @@ header {
     //"../component/embed/mailchimp",
 
 
+    //helpers
+    "../helper/images",
+    "../helper/color-box",
+    "../helper/hover",
+    "../helper/list"    
 
      //----------- docs ----------//
 

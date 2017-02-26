@@ -1,0 +1,44 @@
+
+.color-box {
+	width: 128px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 6px #CCC;
+	border-radius: 5px;
+	display: block;
+	margin: 10px;
+}
+
+.color-box-h1 {
+	font-size: 14px;
+	display: block;
+	line-height: 2.5;
+	margin: 0;
+}
+
+.color-box-p {
+	font-size: 11px;
+	display: block;
+	padding-bottom: 0.5rem;
+}
+
+.color-box-left {
+	width: 64px;
+	height: 85px;
+	border-top-left-radius: 5px;
+	background-color: #000;
+	display: block;
+	float: left;
+}
+
+.color-box-right {
+	width: 64px;
+	height: 85px;
+	background-color: #000;
+	border-top-right-radius: 5px;
+	display: block;
+	float: left;
+}
+
+/* Grapefruit */
+.grapefruit-light {background-color:#ED5565;}
+.grapefruit-dark {background-color:#DA4453;}

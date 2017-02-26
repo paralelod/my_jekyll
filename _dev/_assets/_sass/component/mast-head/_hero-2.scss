@@ -1,0 +1,54 @@
+section.hero {
+  z-index: -3;
+}
+
+.hero {
+  background: url("http://pickywallpapers.com/miscellaneous/clean-style/steelers-picture") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom right, #002f4b, #dc4225);
+  opacity: .8;
+}
+
+.hero .intro {
+  padding: 3rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+/*   outline: 1px solid red; */
+}
+
+.hero h1 {
+  color: #fff;
+  text-align: right;
+  padding-top: 4rem;
+}
+
+.hero p {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.hero p.intro-mobile {
+  display:none;
+}
+
+.hero .tech-img {
+  background: yellow no-repeat center center;
+  background-size: cover;
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}

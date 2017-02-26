@@ -1,0 +1,160 @@
+---
+layout: page/default
+page-id: home
+
+dev-info: true
+foundation5: 1
+myscript: true
+fullpage: 1
+scroll-to: true
+fitivid: true
+swipebox: 1
+isotope: 1
+animation-page: true
+animation-scroll: true
+
+preloader: 1
+top-nav: 1
+footer: "light"
+sidebar: "left-right-1"
+grid: "isotope-columnns-3"
+mast-head: "full-height"
+back-to-top: true
+
+---
+
+<style>
+section {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 10rem;
+}
+
+span {
+  display: inline-block;
+}
+
+.cmyk {
+  background: url(//stephy.mccdgm.net/images/patterns/lightpaperfibers.png);
+}
+
+.cmyk span {
+  color: 000;
+  font-family: 'Fredoka One', sans-serif;
+  text-shadow: 0.25rem -0.25rem rgba(255, 0, 255, 0.75), -0.25rem -0.25rem rgba(0, 255, 255, 0.75), 0 0.5rem rgba(255, 255, 0, 0.75);
+}
+
+.skewed {
+  background: url(//stephy.mccdgm.net/images/patterns/dark_wood.png) #2b2b2b;
+}
+
+.skewed span {
+  font-family: Oswald, sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  padding: 0 25px;
+  /* to extend the border past the text */
+  margin: 80px 0;
+  background: #FFDF00;
+  box-shadow: 0 0 0px 10px #FFDF00;
+  border: 10px solid #fff;
+  transform: rotate(-22.5deg) skew(-22.5deg);
+}
+
+.thin-shade {
+  background: #89DFB8;
+  font: 6rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  color: #F7EB98;
+  text-shadow: -4px 4px 0 #89DFB8, -6px 6px 0 rgba(255, 255, 255, 0.5);
+}
+
+.candy {
+  background: #D74386;
+}
+
+.candy span {
+  position: relative;
+  font-family: 'Patua One', cursive;
+  color: transparent;
+  z-index: 0;
+}
+
+.candy span:before, .candy span:after {
+  content: 'Candy';
+  position: absolute;
+  left: 0;
+}
+
+.candy span:before {
+  color: #FF63AA;
+  background-size: 50px 50px;
+  background-color: #FF63AA;
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.candy span:after {
+  content: 'Candy';
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  text-shadow: -6px 6px 0 #D8347F, -5px 5px 0 #D8347F, -4px 4px 0 #D8347F, -3px 3px 0 #D8347F, -2px 2px 0 #D8347F, -1px 1px 0 #D8347F, -2px 5px 15px #000;
+}
+
+.pressed {
+  background: #333 url(//stephy.mccdgm.net/images/patterns/gray_sand.png);
+}
+
+.pressed span {
+  color: transparent;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  z-index: 0;
+}
+
+.pressed span:before, .pressed span:after {
+  content: 'Pressed';
+  position: absolute;
+  left: 0;
+  color: #222;
+}
+
+.pressed span:before {
+  z-index: 1;
+  background: -webkit-linear-gradient(transparent, transparent), url(//stephy.mccdgm.net/images/patterns/dark_wall.png);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pressed span:after {
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+</style>
+
+<section class="cmyk">
+  <span>CMYK</span>
+</section>
+
+<section class="skewed">
+  <span>Skewed</span>
+</section>
+
+<section class="candy">
+  <span>Candy</span>
+</section>
+
+<section class="pressed">
+  <span>Pressed</span>
+</section>
+
+<section class="thin-shade">
+  <span>Thin Shade</span>
+</section>

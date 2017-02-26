@@ -1,0 +1,17 @@
+.arrow-down {
+  position: relative;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 0;
+  width: 0;
+  border-top: 20px solid #F27141;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 1;
+}
+
+.section-arrow {
+  background: #F27141;
+  height: 450px;
+}

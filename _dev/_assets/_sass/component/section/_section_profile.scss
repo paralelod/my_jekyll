@@ -1,0 +1,18 @@
+.profile-wrap {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center !important;
+}
+
+
+.profile-circle {
+  background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_540/v1461613662/JonBurns_yyxnrg.png");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #efb6a0;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}

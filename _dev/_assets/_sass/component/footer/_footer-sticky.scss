@@ -1,0 +1,79 @@
+
+.footer-navigation {
+  float: right
+}
+.logo-text, nav #logo {
+  float: left;
+  z-index: 99999
+}
+
+
+.footer-navigation a {
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle
+}
+.footer-navigation a:hover {
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.footer-navigation a::after {
+  display: block;
+  width: 0;
+  margin: -29px auto 0;
+  height: 1px;
+  background-color: #fff;
+  content: "";
+  transition: width .2s
+}
+.footer-navigation a:hover::after {
+  width: 100%
+}
+.footer-navigation>li {
+  float: right;
+  position: relative;
+  padding: 20px 15px
+}
+.footer-navigation {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: outside;
+  position: relative
+}
+.footer-navigation li {
+  display: block;
+  position: relative;
+  float: left
+}
+.footer-navigation li:last-child {
+  margin-right: 0
+}
+
+#footer-sticky {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(98, 40, 140, .9) 0, rgba(44, 116, 164, .9) 50%, rgba(32, 152, 132, .9) 100%);
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  position: fixed;
+  bottom: 0;
+  max-height: 80px;
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function: cubic-bezier(0, 1, .5, 1)
+}
+
+#footer-sticky.footer-closed {
+  max-height: 0
+}
+#footer-sticky .footer-navigation {
+  float: left
+}
+#footer-sticky .footer-navigation li {
+  padding: 0 15px
+}
+#footer-sticky p {
+  float: right;
+  line-height: 80px;
+  transition: opacity .8s linear;
+  height: auto
+}
