@@ -67,6 +67,9 @@
   })(document);
 </script>
 
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700' rel='stylesheet' type='text/css'>
+
 </head>
 
  
@@ -205,300 +208,8 @@ window.fbAsyncInit = function() {
 
 
 
-<div class="back-to-top">
-    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
-</div>
-
-
-
 <div class="content-wrap">
-    <style>
-    .top-bar {
-  background-color: black;
-}
-
-ul.menu {
-  background-color: black;
-}
-
-ul.menu li a {
-  color: white;
-}
-
-.menu-text {
-  color: white;
-}
-
-section.hero {
-  z-index: -3;
-}
-
-.hero {
-  background: url("http://pickywallpapers.com/miscellaneous/clean-style/steelers-picture") no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-/*   outline: 1px solid red; */
-}
-
-.hero:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
-  opacity: .8;
-}
-
-.hero .intro {
-  padding: 3rem;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-/*   outline: 1px solid red; */
-}
-
-.hero h1 {
-  color: #fff;
-  font-size: 1.5rem;
-  line-height: 1.5em;
-  letter-spacing: -0.025em;
-  font-weight: 300;
-  text-align: right;
-  padding-top: 4rem;
-}
-
-.hero p {
-  color: #fff;
-  line-height: 1.75em;
-  font-weight: 200;
-  text-align: right;
-  margin-bottom: 2rem;
-}
-
-.hero p.intro-mobile {
-  display:none;
-}
-
-.hero .tech-img {
-  background: url("https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/11312307_1645513115661604_1109393852_n.jpg") no-repeat center center;
-  background-size: cover;
-  height: 18rem;
-  width: 18rem;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-}
-
-@media only screen and (max-width: 40.063em) {
-  .hero .tech-img {
-    /*     height: 18rem;
-    width: 18rem; */
-    display: none;
-  }
-  .hero .intro {
-    padding: 3rem;
-    position: relative;
-    top: 40%;
-/*     outline: 1px solid red; */
-  }
-  .hero h1 {
-    padding-top: none;
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  
- .hero p.intro-mobile {
-  display:block;
-   text-align: center;
-}
-  .hero p {
-    text-align: center;
-    display:none;
-  }
-}
-
-.website-example {
-  background: #fff;
-  padding: 1.75rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.website-example h3 {
-  font-weight: normal;
-  margin: 0;
-  padding: 0 0 0.5rem 0;
-}
-
-@media only screen and (max-width: 64em) {
-  .website-example h3 {
-    padding-top: 1rem;
-  }
-}
-
-.website-example h6 {
-  color: #50b2d0;
-  text-transform: uppercase;
-  line-height: 1;
-  font-size: 0.875rem;
-  font-weight: bold;
-  padding: 0 0 0.5rem 0;
-}
-
-.website-example p {
-  font-size: 0.875rem;
-  line-height: 1.2rem;
-  margin: 0;
-  padding: 0.875rem 0;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-}
-
-.website-example .button {
-  font-weight: bold;
-  color: #2BA6CB;
-  background: transparent;
-  padding-left: 0;
-  margin-bottom: 0;
-  box-shadow: none;
-}
-
-.row.wide {
-  max-width: rem-calc(1200);
-}
-
-.footer {
-  background-color: #292c2f;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 1rem;
-}
-
-.footer .social a {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  background-color: #33383b;
-  border-radius: 2px;
-  font-size: 1.5rem;
-  color: #fff;
-  text-align: center;
-  line-height: 2rem;
-  margin: 0 3px 0 0;
-}
-
-.footer .copywrite {
-  color: #8f9296;
-  font-size: 0.875rem;
-  margin: 1rem 0 1rem 0;
-}
-
-.footer .footer-form textarea,
-.footer .footer-form input {
-  border-radius: 3px;
-  background-color: #1f2022;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-  border: none;
-  resize: none;
-  font: inherit;
-  font-size: 0.875rem;
-  font-weight: normal;
-  color: #d1d2d2;
-  padding: 1.3rem;
-}
-
-.footer .footer-form label {
-  color: #fff;
-  font-size: 1.2rem;
-  margin: 0 0 1rem 0;
-  font-weight: bold;
-}
-
-.footer .footer-form .submit {
-  border-radius: 3px;
-  background-color: #33383b;
-  color: #ffffff;
-  border: 0;
-  padding: 1rem 3.5rem;
-  font-weight: bold;
-  float: right;
-  margin: 0 1rem 2rem 0;
-}
-
-.footer .footer-links a {
-  list-style: none;
-  font-weight: normal;
-  color: #fff;
-  padding: 3rem 0 2rem;
-  margin: 0;
-  font-size: 0.875rem;
-}
-
-.footer .footer-links a::after {
-  content: "•";
-  padding: 0 0.2rem 0 0.4rem;
-}
-
-.footer .footer-links a:last-child::after {
-  content: "";
-  padding: 0 0.4rem 0 0.8rem;
-}
-
-@media only screen and (min-width: 40.063em) {
-  .footer {
-    padding: 4rem;
-  }
-  .footer p {
-    text-align: left;
-  }
-  .footer .social {
-    text-align: left;
-    margin: 0;
-  }
-  .footer .footer-form .contact {
-    position: absolute;
-    left: -45%;
-    top: 10%;
-  }
-}
-
-.logo {
-  color: #fff;
-  font-size: 1.5rem;
-}
-
-.logo i {
-  margin-right: 0.5rem;
-}
-</style>
-
-<!--div class="title-bar" data-responsive-toggle="right-menu" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">Menu</div>
-</div>
-
-<div class="top-bar" id="right-menu">
-  <div class="top-bar-left">
-    <ul class="menu">
-      <li class="menu-text">MJS</li>
-    </ul>
-  </div>
-
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li><a href="#">One</a></li>
-      <li><a href="#">Two</a></li>
-      <li><a href="#">Three</a></li>
-    </ul>
-  </div>
-</div-->
-
-
-<section class="hero">
+    <section class="hero">
   <div class="row intro">
     <div class="small-centered medium-uncentered medium-6 large-7 columns">
       <h1>Welcome</h1>
@@ -513,66 +224,60 @@ section.hero {
   </div>
 </section>
 
-<article class="website-example row wide">
-  <div class="large-6 columns">
-    <div class="row">
-      <div class="small-12 columns">
-        <img src="http://atomthought.com/wp-content/uploads/2014/07/bigstock-Set-of-Flat-Design-Icons-Mobi-63042550-620x350.jpg" alt="Mini Cooper Site Desktop Image">
+<article class="row" style="padding: 5rem 0; ">
+  <div class="card card-shadow">
+  <div class="row large-collapse">
+      <div class="large-6 columns">
+          <img src="http://atomthought.com/wp-content/uploads/2014/07/bigstock-Set-of-Flat-Design-Icons-Mobi-63042550-620x350.jpg">
       </div>
-      <!--       <div class="small-4 columns">
-        <img src="http://zurb.com/responsive/system/upload/mobile_screenshots/images/000/000/845/regular/5-door.mini.com.au-narrow.jpg?1423529203" alt="Mini Cooper Site Mobile Image">
-      </div> -->
+      <div class="large-6 columns">
+        <div class="large-12 columns">
+          <h3>Lorem Ipsum</h3>
+        <h6>Lorem ipsum dolor sit amet</h6>
+        <p>Ignota dignissim liberavisse vim at, ei utroque pericula duo. Sit unum docendi eloquentiam et, equidem conceptam usu ei. Vel eirmod fuisset id, vim posse facilisi recteque eu. Eruditi phaedrum splendide ne mei, ne inermis accommodare usu. 
+        </p>
+        <a class="button" href="http://5-door.mini.com.au/">Take a Closer Look »</a>
+      </div>
+        </div>
     </div>
   </div>
-  <div class="large-6 columns">
-    <h3>Lorem Ipsum</h3>
-    <h6>Lorem ipsum dolor sit amet</h6>
-    <p>Ignota dignissim liberavisse vim at, ei utroque pericula duo. Sit unum docendi eloquentiam et, equidem conceptam usu ei. Vel eirmod fuisset id, vim posse facilisi recteque eu. Eruditi phaedrum splendide ne mei, ne inermis accommodare usu. Ex elit populo usu. Erat primis inermis duo at, soluta appareat honestatis eam cu, vim cu eros probo suscipit.
-    </p>
-    <a class="button" href="http://5-door.mini.com.au/">Take a Closer Look »</a>
+  <br><br>
+  <div class="card card-shadow">
+  <div class="row large-collapse">
+      <div class="large-6 columns">
+          <img src="http://atomthought.com/wp-content/uploads/2014/07/bigstock-Set-of-Flat-Design-Icons-Mobi-63042550-620x350.jpg">
+      </div>
+      <div class="large-6 columns">
+        <div class="large-12 columns">
+          <h3>Lorem Ipsum</h3>
+        <h6>Lorem ipsum dolor sit amet</h6>
+        <p>Ignota dignissim liberavisse vim at, ei utroque pericula duo. Sit unum docendi eloquentiam et, equidem conceptam usu ei. Vel eirmod fuisset id, vim posse facilisi recteque eu. Eruditi phaedrum splendide ne mei, ne inermis accommodare usu. 
+        </p>
+        <a class="button" href="http://5-door.mini.com.au/">Take a Closer Look »</a>
+      </div>
+        </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="card card-shadow">
+  <div class="row large-collapse">
+      <div class="large-6 columns">
+          <img src="http://atomthought.com/wp-content/uploads/2014/07/bigstock-Set-of-Flat-Design-Icons-Mobi-63042550-620x350.jpg">
+      </div>
+      <div class="large-6 columns">
+        <div class="large-12 columns">
+          <h3>Lorem Ipsum</h3>
+        <h6>Lorem ipsum dolor sit amet</h6>
+        <p>Ignota dignissim liberavisse vim at, ei utroque pericula duo. Sit unum docendi eloquentiam et, equidem conceptam usu ei. Vel eirmod fuisset id, vim posse facilisi recteque eu. Eruditi phaedrum splendide ne mei, ne inermis accommodare usu. 
+        </p>
+        <a class="button" href="http://5-door.mini.com.au/">Take a Closer Look »</a>
+      </div>
+        </div>
+    </div>
   </div>
 </article>
 
-<article class="website-example row wide">
-  <div class="large-6 columns">
-    <div class="row">
-      <div class="small-12 columns">
-        <img src="http://atomthought.com/wp-content/uploads/2014/07/bigstock-Set-of-Flat-Design-Icons-Mobi-63042550-620x350.jpg" alt="Mini Cooper Site Desktop Image">
-      </div>
-      <!--       <div class="small-4 columns">
-        <img src="http://zurb.com/responsive/system/upload/mobile_screenshots/images/000/000/845/regular/5-door.mini.com.au-narrow.jpg?1423529203" alt="Mini Cooper Site Mobile Image">
-      </div> -->
-    </div>
-  </div>
-  <div class="large-6 columns">
-    <h3>Lorem Ipsum</h3>
-    <h6>Lorem ipsum dolor sit amet</h6>
-    <p>Ignota dignissim liberavisse vim at, ei utroque pericula duo. Sit unum docendi eloquentiam et, equidem conceptam usu ei. Vel eirmod fuisset id, vim posse facilisi recteque eu. Eruditi phaedrum splendide ne mei, ne inermis accommodare usu. Ex elit populo usu. Erat primis inermis duo at, soluta appareat honestatis eam cu, vim cu eros probo suscipit.
-    </p>
-    <a class="button" href="http://5-door.mini.com.au/">Take a Closer Look »</a>
-  </div>
-</article>
-
-<article class="website-example row wide">
-  <div class="large-6 columns">
-    <div class="row">
-      <div class="small-12 columns">
-        <img src="http://atomthought.com/wp-content/uploads/2014/07/bigstock-Set-of-Flat-Design-Icons-Mobi-63042550-620x350.jpg">
-      </div>
-      <!--       <div class="small-4 columns">
-        <img src="http://zurb.com/responsive/system/upload/mobile_screenshots/images/000/000/845/regular/5-door.mini.com.au-narrow.jpg?1423529203" alt="Mini Cooper Site Mobile Image">
-      </div> -->
-    </div>
-  </div>
-  <div class="large-6 columns">
-    <h3>Lorem Ipsum</h3>
-    <h6>Lorem ipsum dolor sit amet</h6>
-    <p>Ignota dignissim liberavisse vim at, ei utroque pericula duo. Sit unum docendi eloquentiam et, equidem conceptam usu ei. Vel eirmod fuisset id, vim posse facilisi recteque eu. Eruditi phaedrum splendide ne mei, ne inermis accommodare usu. Ex elit populo usu. Erat primis inermis duo at, soluta appareat honestatis eam cu, vim cu eros probo suscipit.
-    </p>
-    <a class="button" href="http://5-door.mini.com.au/">Take a Closer Look »</a>
-  </div>
-</article>
-
+</div>
 <footer class="footer">
   <div class="row">
     <div class="small-12 medium-6 medium-push-6 columns">
@@ -620,37 +325,30 @@ section.hero {
     </div>
   </div>
 </footer>
-</div>
+  <footer id="footer-sticky">
+    <div id="logo-footer">
+      <a href="#" id="go-up" class="go-up-event"></a>
+    </div>
+    <nav class="row">
+      <ul class="footer-navigation">
+        <li id="menu-about" class="menu-item go-down-event"><a href="#">About</a></li>
+        <li id="menu-home" class="menu-item go-up-event"><a href="#">Home</a></li>
+        <li class="menu-item"><a id="portLink" href="#portfolio">My Works</a></li>
+        <li class="menu-item"><a target="_blank" href="//cu7io.us">Blog</a></li>
+      </ul>
+      <p>© 2015 Designed &amp; Coded by Cu7ious</p>
+    </nav>
+  </footer>
+
+
+
+  
 <div class="back-to-top">
     <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
 </div>
 
 
 
-
-<footer class="footer text-center" style="background: yellow;">
-
-  <div class="row">
-
-    <div class="small-12 medium-12 large-4 columns">
-      <img src="/my_jekyll/lib/img/+avatar.png" style="vertical-align: baseline;">
-    </div>
-
-    <div class="small-12 medium-12 large-4 columns">
-      <h3>Join</h3>
-     newsletter
-    </div>
-
-    <div class="small-12 medium-12 large-4 columns">
-      <h3>Connect</h3>
-    </div>
-
-  </div>
-
-</footer>
-
-
-  
 <script type="text/javascript" src="/my_jekyll/lib/js/build/m.js"></script>
  
     <script type="text/javascript" src="/my_jekyll/lib/js/build/i/foundation_init.js"></script>
@@ -705,6 +403,8 @@ section.hero {
 
 
 
+
+
  <script>
  console.log("*** INFO  ***")
  console.log("ID: home ")
@@ -730,6 +430,77 @@ section.hero {
  </script>
  
 
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDBdh6dj3XOB_UgrUYOP_DvyTT_zbwAc6U&sensor=false">
+    
+</script>
+
+
+
+<script>
+    $( document ).ready( function() {
+
+
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var icons = {
+          parking: {
+            icon: iconBase + 'parking_lot_maps.png'
+          },
+          library: {
+            icon: iconBase + 'library_maps.png'
+          },
+          info: {
+            icon: iconBase + 'info-i_maps.png'
+          }
+        };
+
+
+
+	//Google Maps JS
+	//Set Map
+	function initialize() {
+			var myLatlng = new google.maps.LatLng(-33.916365282092855, 151.22937399734496);
+			var imagePath = 'https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png'
+			var mapOptions = {
+				zoom: 17,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+			}
+
+		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		//Callout Content
+		var contentString = 'Some address here..';
+		//Set window width + content
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString,
+			maxWidth: 500
+		});
+
+		//Add Marker
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			icon: imagePath,
+			title: 'image title'
+		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+
+		//Resize Function
+		google.maps.event.addDomListener(window, "resize", function() {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+});
+</script>
   </body>
 </html>
 

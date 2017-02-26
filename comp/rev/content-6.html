@@ -1,0 +1,1139 @@
+---
+layout: page/default
+page-id: home
+
+dev-info: true
+foundation5: 1
+myscript: true
+fullpage: 1
+scroll-to: true
+fitivid: true
+swipebox: 1
+isotope: 1
+animation-page: true
+animation-scroll: true
+
+preloader: 1
+top-nav: 1
+footer: "light"
+sidebar: "left-right-1"
+grid: "isotope-columnns-3"
+mast-head: "full-height"
+back-to-top: true
+
+---
+<style>
+ @import url(http://fonts.googleapis.com/css?family=Raleway:500,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Playball);
+Html body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: static;
+  overflow-x: hidden;
+}
+
+*, h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  position: relative;
+}
+header #home-header {
+  position: relative;
+  height: 75vh;
+  min-height: 400px;
+  background: url("http://i.huffpost.com/gen/1501366/images/o-HAIRSTYLIST-facebook.jpg") no-repeat fixed center center/cover;
+  /* vertical centering */
+  /*position: relative;*/
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+  /* horizontal centering */
+  /*margin: 0 auto;*/
+  /*display: table;*/
+}
+header #home-header .middle .button-holder {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header #home-header .middle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header #home-header a {
+  background-color: rgba(255, 255, 255, 0.75);
+  /*border: 1px solid  #4B7F99;*/
+  color: #4B7F99;
+  -webkit-transition: .2s;
+  /* Safari */
+  transition: .2s;
+  padding: 20px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+header #home-header a:hover {
+  background-color: rgba(255, 255, 255, 0.48);
+  border: dashed 2px rgba(255, 255, 255, 0.48);
+}
+header #home-header a:hover i {
+  margin-right: 10px;
+  -webkit-transition: .2s;
+  /* Safari */
+  transition: 0.2s;
+}
+header #home-header a i {
+  margin-right: 5px;
+  -webkit-transition: .2s;
+  /* Safari */
+  transition: 0.2s;
+}
+header #home-header h1 {
+  color: #fff;
+  font-family: 'Playball', cursive;
+  font-weight: 100;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+header #home-header h1 span {
+  float: right;
+  font-size: 0.6em;
+}
+
+#nav {
+  box-shadow: 0px -2px 5px #888888;
+}
+
+@media screen and (max-width: 1072px) {
+  #overons img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1072px) {
+  #overons .content-holder {
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1072px) {
+  #overons {
+    min-height: 0px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .products-slider, .footer-r {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+.products-slider h2, .footer-r h2 {
+  text-align: center;
+  padding: 20px;
+  font-weight: 100;
+}
+
+section, footer {
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: 400px;
+}
+@media screen and (max-width: 640px) {
+  section, footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+section.gray, footer.gray {
+  background: whitesmoke;
+}
+section.white, footer.white {
+  background-color: #fff;
+}
+section.background, footer.background {
+  /*		background-size: 100% 100%, cover;
+        background-repeat: repeat, no-repeat;
+        background-position: top left, center center;*/
+}
+section.text-white, footer.text-white {
+  color: #fff;
+}
+section.text-white h2, footer.text-white h2 {
+  color: #fff;
+}
+section.bg-1, footer.bg-1 {
+  background: linear-gradient(rgba(136, 200, 232, 0.5), #88c8e8), url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-116044.jpg") no-repeat fixed center center/cover;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+ul.producten {
+  margin-top: -86px;
+}
+
+/*footer{
+
+	ul{
+		display: inline-block;
+		width: 33.333%;
+		margin-left: 0px;
+		text-align:center;
+		li{
+			list-style-type: none;
+				text-align:center;
+		}
+	}
+}*/
+footer {
+  min-height: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer ul {
+  text-align: center;
+}
+footer ul li h3 {
+  margin: 30px auto 0px auto;
+  font-weight: 100;
+  font-size: 1.9em;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(187, 187, 187, 0.39);
+}
+footer ul li p {
+  margin: 30px auto 0px auto;
+  /* color: white; */
+  font-size: 1em;
+  font-weight: 100;
+}
+
+/*appelsap*/
+.accordion {
+  margin-left: 0;
+  margin-bottom: 2rem;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.accordion .accordion-navigation {
+  -moz-transition: ease 0.4s all;
+  -o-transition: ease 0.4s all;
+  -webkit-transition: ease 0.4s all;
+  transition: ease 0.4s all;
+  /* 		@include box-shadow(0 0 1px rgba(black, 0.2)); */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.accordion .accordion-navigation.active {
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.accordion .accordion-navigation.active > a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background: transparent;
+  color: #000;
+}
+
+.accordion .accordion-navigation > a {
+  -moz-transition: ease 0.4s all;
+  -o-transition: ease 0.4s all;
+  -webkit-transition: ease 0.4s all;
+  transition: ease 0.4s all;
+  background: transparent;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.accordion .accordion-navigation > a:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.accordion .accordion-navigation > .content {
+  display: block;
+  max-height: 0;
+  overflow-y: auto;
+  padding: 0 1rem;
+  -moz-transition: ease 0.4s all;
+  -o-transition: ease 0.4s all;
+  -webkit-transition: ease 0.4s all;
+  transition: ease 0.4s all;
+}
+
+.accordion .accordion-navigation > .content.active {
+  max-height: 60vh;
+  padding: 1rem;
+  -moz-transition: ease 0.4s all;
+  -o-transition: ease 0.4s all;
+  -webkit-transition: ease 0.4s all;
+  transition: ease 0.4s all;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  background: transparent;
+  color: black;
+}
+
+@media screen and (max-width: 640px) {
+  .box-shadow {
+    display: none;
+  }
+}
+
+#afspraak {
+  padding: 0;
+}
+#afspraak img {
+  position: absolute;
+  height: 80px;
+  margin-left: 778px;
+  margin-top: 125px;
+}
+@media screen and (max-width: 1072px) {
+  #afspraak img {
+    display: none;
+  }
+}
+
+#calendar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  font-family: 'Lato', sans-serif;
+}
+
+#calendar_weekdays div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#calendar_content, #calendar_weekdays, #calendar_header {
+  position: relative;
+  width: 320px;
+  overflow: hidden;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+#calendar_weekdays div, #calendar_content div {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #787878;
+}
+
+#calendar_content {
+  -webkit-border-radius: 0px 0px 12px 12px;
+  -moz-border-radius: 0px 0px 12px 12px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+#calendar_content div {
+  float: left;
+}
+
+#calendar_content div:hover {
+  background-color: #F8F8F8;
+}
+
+#calendar_content div.blank {
+  background-color: #fff;
+}
+
+#calendar_header, #calendar_content div.today {
+  zoom: 1;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+#calendar_content div.today {
+  color: #FFFFFF;
+}
+
+#calendar_header {
+  width: 100%;
+  height: 37px;
+  text-align: center;
+  background-color: #FF6860;
+  padding: 18px 0;
+  -webkit-border-radius: 12px 12px 0px 0px;
+  -moz-border-radius: 12px 12px 0px 0px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#calendar_header h1 {
+  font-size: 1.5em;
+  color: #FFFFFF;
+  float: left;
+  width: 70%;
+}
+
+i[class^=icon-chevron] {
+  color: #FFFFFF;
+  float: left;
+  width: 15%;
+  border-radius: 50%;
+  line-height: 40px !important;
+}
+
+.reveal-modal-bg {
+  position: fixed;
+}
+
+.reveal-modal.open {
+  position: fixed;
+  top: 50% !important;
+  /* override inline style injected from JS */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#copy {
+  height: 35px;
+  background: rgba(255, 255, 255, 0.63);
+  border-top: 1px solid rgba(0, 100, 255, 0.3);
+}
+#copy a {
+  color: #000;
+  font-size: .8em;
+  line-height: 35px;
+  paddin-left: 10px;
+}
+
+#footerbwrap {
+  padding: 0;
+  clear: both;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #222222;
+  padding: 0px 0 22px 0;
+}
+
+#footerb {
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 0px 0;
+  overflow: hidden;
+  margin-top: -25px;
+}
+
+#footerb .copyright {
+  text-align: center;
+  margin-top: 35px;
+  width: 100%;
+}
+
+.lower-footer-logo {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    line-height: 300px;
+  }
+}
+
+section#cd-google-map {
+  position: relative;
+}
+
+#google-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #e7eaf0;
+}
+@media only screen and (min-width: 768px) {
+  #google-container {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  #google-container {
+    height: 600px;
+  }
+}
+
+#cd-google-map {
+  position: relative;
+}
+#cd-google-map address {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1em 1em;
+  background-color: rgba(211, 104, 104, 0.9);
+  color: #ffffff;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+@media only screen and (min-width: 768px) {
+  #cd-google-map address {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    text-align: center;
+  }
+}
+
+#cd-zoom-in, #cd-zoom-out {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: rgba(211, 104, 104, 0.9);
+  background-repeat: no-repeat;
+  background-size: 32px 64px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-controller.svg");
+}
+.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
+  background-color: #d36868;
+}
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in, #cd-zoom-out {
+    margin-left: 50px;
+  }
+}
+
+#cd-zoom-in {
+  background-position: 50% 0;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in {
+    margin-top: 50px;
+  }
+}
+
+#cd-zoom-out {
+  background-position: 50% -32px;
+}
+
+#cd-google-map.hidden {
+  opacity: .0;
+  max-height: 0px;
+}
+
+#footerb.high {
+  max-height: 90px;
+}
+
+.c-holder {
+  color: #fff;
+}
+.c-holder h2, .c-holder h3 {
+  color: #fff;
+}
+.c-holder i {
+  font-size: 3em;
+}
+.c-holder .left {
+  width: 50%;
+  float: left;
+  text-align: center;
+  background-color: rgba(3, 169, 244, 0.55);
+  min-height: 400px;
+  box-sizing: border-box;
+  padding-top: 115px;
+  transition: .2s;
+}
+.c-holder .left i {
+  transition: .2s;
+}
+.c-holder .left:hover {
+  transition: .2s;
+}
+.c-holder .left:hover i {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: .2s;
+}
+.c-holder .right {
+  width: 50%;
+  float: right;
+  text-align: center;
+  background-color: rgba(3, 169, 244, 0.44);
+  min-height: 400px;
+  box-sizing: border-box;
+  padding-top: 115px;
+  transition: .2s;
+}
+.c-holder .right i {
+  transition: .2s;
+}
+.c-holder .right:hover {
+  transition: .2s;
+}
+.c-holder .right:hover i {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: .2s;
+}
+
+.a-h2 {
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+.a-h2 h2 {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+}
+
+</style>
+
+
+
+<header>
+	<div id="home-header">
+    <div class="middle">
+        <!--<h1><i>KAPSALON</i> Gerlinda</h1>-->
+							<img src="http://i.imgur.com/ApIzAuY.png" alt="" />
+				<div class="button-holder">
+				<a href="#afspraak"><i class="fa fa-scissors"></i></i>Maak een afspraak</a></div>
+
+    </div>
+	</div>
+</header>
+<div data-magellan-expedition="fixed" id="nav">
+  <dl class="sub-nav">
+    <dd data-magellan-arrival="Overons"><a href="#overons">Over Ons</a></dd>
+		<dd data-magellan-arrival="Tarieven"><a href="#tarieven">Tarieven</a></dd>
+		<dd data-magellan-arrival="Afsrpaak"><a href="#afspraak">Afspraak maken</a></dd>
+		<dd data-magellan-arrival="Contact"><a href="#footer">Contact</a></dd>
+  </dl>
+</div>
+<section id="overons" class="gray">
+	<div class="row">
+		<div class="content-holder" style="float: left; max-width: 500px;">
+		<h2 class="thin">De nieuwste trends</h2>
+		<p>Je ziet de nieuwste trends op het gebied van kapsels en make-up: verfrissend en inspirerend. Onze kapsters, de pedicure en de schoonheidsspecialistes geven demonstraties en Shoeby toont diverse mode-items uit haar voorjaarscollectie. Combineer een nieuwe look met een nieuwe outfit en je gaat stralend de lente in! </p>
+	</div>
+		<div>
+			<img src="http://s1.postimg.org/lb2a56ar1/909095111_orig.png" style="width: 450px;
+  float: right;" alt="" />
+		</div>
+	</div>
+</section>
+
+<section id="tarieven" class="background bg-1 text-white thin">
+	<div class="row">
+		<h2 class="thin">Tarieven Kapsalon Gerlinda </h2>
+	  <div class="small-12 columns">
+			<ul class="accordion" data-accordion>
+				<li class="accordion-navigation active">
+					<a href="#panel1a">Knippen</a>
+					<div id="panel1a" class="content active">
+						<table style="width: 100%;">
+							<tbody>
+								<tr>
+									<td>Knippen kinderen (t/m bassischool)</td>
+									<td>13,00</td>
+								</tr>
+								<tr>
+									<td>Knippen</td>
+									<td>17,00</td>
+								</tr>
+								<tr>
+									<td>Tondeuze kapsel</td>
+									<td>10,00</td>
+								</tr>
+								<tr>
+									<td>Wassen watergolven</td>
+									<td>17,50</td>
+								</tr>
+								<tr>
+									<td>Wassen knippen watergolven</td>
+									<td>33,00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="accordion-navigation">
+					<a href="#panel2a">Permanenten</a>
+					<div id="panel2a" class="content">
+												<table style="width: 100%;">
+							<tbody>
+								<tr>
+									<td>Permanent deel</td>
+									<td>47,00</td>
+								</tr>
+								<tr>
+									<td>Permanent deel</td>
+									<td>57,00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="accordion-navigation">
+					<a href="#panel3a">Verven</a>
+					<div id="panel3a" class="content">
+						<table style="width: 100%;">
+							<tbody>
+								<tr>
+									<td>Verven</td>
+									<td>33,00</td>
+								</tr>
+								<tr>
+									<td>Verven knippen</td>
+									<td>48,00</td>
+								</tr>
+								<tr>
+									<td>Coupeloei en knippen</td>
+									<td>47,00</td>
+								</tr>
+								<tr>
+									<td>Uitgroei H.L vanaf</td>
+									<td>13,50</td>
+								</tr>
+								<tr>
+									<td>Extra tinten</td>
+									<td>8,00 extra</td>
+								</tr>
+								<tr>
+									<td>Here kleuren</td>
+									<td>18,50</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="accordion-navigation">
+					<a href="#panel4a">Collerance</a>
+					<div id="panel4a" class="content">
+											<table style="width: 100%;">
+							<tbody>
+								<tr>
+									<td>Collerance</td>
+									<td>32,00</td>
+								</tr>
+								<tr>
+									<td>Collerance en knippen</td>
+									<td>47,00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+			</ul>
+  </div>
+	</div>
+</section>
+
+<section id="afspraak" class="white">
+	<!--<div class="row">
+		<img style="position: absolute;" src="http://i.imgur.com/y1VtUY0.png" alt="" />
+		<div id="calendar" style="width: 100% !important;">
+    <div id="calendar_header"><i class="icon-chevron-left"></i>          <h1></h1><i class="icon-chevron-right"></i>         </div>
+    <div id="calendar_weekdays"></div>
+    <div id="calendar_content"></div>
+  </div>
+	</div>-->
+	      <div class="c-holder">
+                <div class="left">
+                    <h2>Telefoon</h2>
+                    <i class="fa fa-phone"></i>
+                    <h3>038 465 09 89</h3>
+
+                </div>
+                <div class="right">
+                    <h2>Mail adres</h2>
+                    <i class="fa fa-envelope-o"></i>
+                    <h3><a style="color: #fff;" href="mailto:name@email.com">info@gerlinda.eu</a></h3>
+
+                </div>
+        </div>
+</section>
+
+<footer id="footer" class="gray">
+	<div class="row">
+
+		<ul class="small-block-grid-1 medium-block-grid-3 appels footer-r">
+			<li><div class="holder"><h3>Adres</h3><p>Muijdermanstraat 6</p><p>8017 HX Zwolle-Zuid</p><p><a href="#footerbwrap"><img class="bekijken" src="http://i.imgur.com/DkBHO1C.png" width="160" alt="" /></a></p></div></li>
+			<li><div class="holder"><h3>Contact</h3><p>038 465 09 89</p><p>info@gerlinda.eu</p></div></li>
+			<li><div class="holder"><h3>Openingstijden</h3><p>Din t/m vrij 09:00-18:00</p><p>Don koopavond tot 21:00</p><p>Zat 09:00-14:00</p></div></li>
+		</ul>
+	</div>
+	
+</footer>
+<div id="footerbwrap">
+					<div class="row"><div class="box-shadow">
+	<img style="margin-top: -56px;" src="http://i.imgur.com/IM7ynCW.png" alt="" />
+</div></div>
+		<div id="footerb" class="high">
+			<div class="lowerfooter">
+			<div class="copyright">	
+				<div class="lower-footer-logo">Laat je knippen bij<!--<img src="http://barber.premiumcoding.com/wp-content/uploads/2013/12/barber-footer-icon.png" width="16">--> GERLINDA</div>
+
+Gerlinda.eu @2015 door <a href="http://www.disc-ict.nl">Disc bv</a>
+				<section id="cd-google-map" class="hidden">
+	<div id="google-container"></div>
+	<div id="cd-zoom-in"></div>
+	<div id="cd-zoom-out"></div>
+</section>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+			</div>
+			</div>
+		</div>
+	
+	</div>
+
+
+<!--<div id="kaart" class="reveal-modal" style="" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Locatie</h2>
+				<section id="cd-google-map" class="hidden">
+	<div id="google-container"></div>
+	<div id="cd-zoom-in"></div>
+	<div id="cd-zoom-out"></div>
+</section>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>-->
+
+<div id="cal" class="reveal-modal" style="" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Afspraak bevestigen</h2>
+		<form action="#">
+				<div class="row">
+    <div class="large-12 columns">
+      <label>Behandeling
+        <select>
+          <option value="select">Selecteer een behandeling...</option>
+					<option value="husker">Husker</option>
+          <option value="starbuck">Starbuck</option>
+          <option value="hotdog">Hot Dog</option>
+          <option value="apollo">Apollo</option>
+        </select>
+      </label>
+			<label>Kapper/Kapster
+        <select>
+          <option value="select">Selecteer een gewenste kapper/kapster...</option>
+					<option value="husker">Husker</option>
+          <option value="starbuck">Starbuck</option>
+          <option value="hotdog">Hot Dog</option>
+          <option value="apollo">Apollo</option>
+        </select>
+      </label>
+			<label>Tijdstip
+        <select>
+          <option value="select">Selecteer een gewenst tijdstip...</option>
+					<option value="husker">08:00</option>
+          <option value="starbuck">12:00</option>
+          <option value="hotdog">14:30</option>
+          <option value="apollo">16:00</option>
+        </select>
+      </label>
+    </div>
+  </div>
+		</form>	
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div id="contact" class="reveal-modal" style="" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Contact</h2>
+<ul class="small-block-grid-1 medium-block-grid-3 appels footer-r">
+			<li><div class="holder"><h3>Adres</h3><p>Muijdermanstraat 6</p><p>8017 HX Zwolle-Zuid</p></div></li>
+			<li><div class="holder"><h3>Contact</h3><p>038 465 09 89</p><p>info@gerlinda.eu</p></div></li>
+			<li><div class="holder"><h3>Openingstijden</h3><p>Din t/m vrij 09:00-18:00</p><p>Don koopavond tot 21:00</p><p>Zat 09:00-14:00</p></div></li>
+		</ul>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+
+
+
+
+
+<script>
+    $(document).foundation();
+
+$(document).ready(function($){
+	//set your google maps parameters
+	$("img.bekijken").click(function () { 
+    $('#footerb').toggleClass("high");
+		$('section#cd-google-map').toggleClass("hidden");
+		
+			google.maps.event.trigger(map, 'resize');
+});
+
+/*	$('#kaart').on('opened', function () { 
+   $('section#cd-google-map').toggleClass("hidden");
+		google.maps.event.trigger(map, 'resize'); 
+});*/
+	var $latitude = 52.4955089,
+		$longitude = 6.1065151,
+		$map_zoom = 17;
+
+	//google map custom marker icon - .png fallback for IE11
+	var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
+	var $marker_url = ( is_internetExplorer11 ) ? 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.png' : 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location_1.svg';
+		
+	//define the basic color of your map, plus a value for saturation and brightness
+	var	$main_color = '#2d313f',
+		$saturation= -20,
+		$brightness= 5;
+
+	//we define here the style of the map
+	var style= [ 
+		{
+			//set saturation for the labels on the map
+			elementType: "labels",
+			stylers: [
+				{saturation: $saturation}
+			]
+		},  
+	    {	//poi stands for point of interest - don't show these lables on the map 
+			featureType: "poi",
+			elementType: "labels",
+			stylers: [
+				{visibility: "off"}
+			]
+		},
+		{
+			//don't show highways lables on the map
+	        featureType: 'road.highway',
+	        elementType: 'labels',
+	        stylers: [
+	            {visibility: "off"}
+	        ]
+	    }, 
+		{ 	
+			//don't show local road lables on the map
+			featureType: "road.local", 
+			elementType: "labels.icon", 
+			stylers: [
+				{visibility: "off"} 
+			] 
+		},
+		{ 
+			//don't show arterial road lables on the map
+			featureType: "road.arterial", 
+			elementType: "labels.icon", 
+			stylers: [
+				{visibility: "off"}
+			] 
+		},
+		{
+			//don't show road lables on the map
+			featureType: "road",
+			elementType: "geometry.stroke",
+			stylers: [
+				{visibility: "off"}
+			]
+		}, 
+		//style different elements on the map
+		{ 
+			featureType: "transit", 
+			elementType: "geometry.fill", 
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		}, 
+		{
+			featureType: "poi",
+			elementType: "geometry.fill",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		},
+		{
+			featureType: "poi.government",
+			elementType: "geometry.fill",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		},
+		{
+			featureType: "poi.sport_complex",
+			elementType: "geometry.fill",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		},
+		{
+			featureType: "poi.attraction",
+			elementType: "geometry.fill",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		},
+		{
+			featureType: "poi.business",
+			elementType: "geometry.fill",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		},
+		{
+			featureType: "transit",
+			elementType: "geometry.fill",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		},
+		{
+			featureType: "transit.station",
+			elementType: "geometry.fill",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		},
+		{
+			featureType: "landscape",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+			
+		},
+		{
+			featureType: "road",
+			elementType: "geometry.fill",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		},
+		{
+			featureType: "road.highway",
+			elementType: "geometry.fill",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		}, 
+		{
+			featureType: "water",
+			elementType: "geometry",
+			stylers: [
+				{ hue: $main_color },
+				{ visibility: "on" }, 
+				{ lightness: $brightness }, 
+				{ saturation: $saturation }
+			]
+		}
+	];
+		
+	//set google map options
+	var map_options = {
+      	center: new google.maps.LatLng($latitude, $longitude),
+      	zoom: $map_zoom,
+      	panControl: false,
+      	zoomControl: false,
+      	mapTypeControl: false,
+      	streetViewControl: false,
+      	mapTypeId: google.maps.MapTypeId.ROADMAP,
+      	scrollwheel: false,
+      	styles: style,
+		
+    }
+    //inizialize the map
+	var map = new google.maps.Map(document.getElementById('google-container'), map_options);
+	//add a custom marker to the map				
+	var marker = new google.maps.Marker({
+	  	position: new google.maps.LatLng($latitude, $longitude),
+	    map: map,
+	    visible: true,
+	 	icon: $marker_url,
+	});
+	
+	    var popup=new google.maps.InfoWindow({
+        content: "Hello"
+    });
+    google.maps.event.addListener(marker, 'click', function(e) {
+        console.log(e);
+        popup.open(map, this);
+    });
+
+	//add custom buttons for the zoom-in/zoom-out on the map
+	function CustomZoomControl(controlDiv, map) {
+		//grap the zoom elements from the DOM and insert them in the map 
+	  	var controlUIzoomIn= document.getElementById('cd-zoom-in'),
+	  		controlUIzoomOut= document.getElementById('cd-zoom-out');
+	  	controlDiv.appendChild(controlUIzoomIn);
+	  	controlDiv.appendChild(controlUIzoomOut);
+
+		// Setup the click event listeners and zoom-in or out according to the clicked element
+		google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
+		    map.setZoom(map.getZoom()+1)
+		});
+		google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
+		    map.setZoom(map.getZoom()-1)
+		});
+	}
+
+	var zoomControlDiv = document.createElement('div');
+ 	var zoomControl = new CustomZoomControl(zoomControlDiv, map);
+
+  	//insert the zoom div on the top left of the map
+  	map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
+});
+
+
+
+
+</script>

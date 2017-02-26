@@ -67,6 +67,9 @@
   })(document);
 </script>
 
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700' rel='stylesheet' type='text/css'>
+
 </head>
 
  
@@ -205,640 +208,93 @@ window.fbAsyncInit = function() {
 
 
 
-<div class="back-to-top">
-    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
-</div>
-
-
-
 <div class="content-wrap">
-    <style>
-body {
-  min-width: 360px;
-}
-
-a {
-  text-decoration: none;
-  color: #4ca492;
-  transition: color .3s ease;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #378071;
-}
-
-
-/* navigation and logo section */
-
-nav {
-  float: left;
-  background-color: #242626;
-  width: 100%;
-  font-family: Montserrat, Sans-Serif;
-}
-
-h1 {
-  font-size: 60px;
-  font-weight: 700;
-  color: #4ca492;
-  padding: 0;
-  padding-top: 22px;
-  margin: 0;
-  float: left;
-}
-
-.h1-small {
-  display: block;
-  font-size: 14px;
-  color: #fff;
-  font-family: Raleway, Sans-serif;
-  font-weight: 400;
-  padding-left: 5px;
-}
-
-#menu {
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
-
-#menu li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 70px 0 0 20px;
-  margin: 0;
-}
-
-#menu li:first-child {
-  display: none;
-}
-
-#menu li a {
-  font-family: Raleway, Sans-serif;
-  color: #fff;
-  margin: 0;
-  text-decoration: none;
-  transition: color .3s ease;
-}
-
-#menu li a:hover {
-  color: #4ca492;
-}
-
-.mob-icon-container {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  h1 {
-    font-size: 40px;
-  }
-  #menu {
-    background-color: #242626;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: -100px;
-    width: 0;
-    height: 100%;
-    text-align: left;
-    z-index: 1000;
-    overflow: hidden;
-    box-shadow: -3px 0 8px 0 rgba(0, 0, 0, .5);
-  }
-  #menu li:first-child {
-    display: block;
-    text-align: right;
-    margin: 15px;
-  }
-  #menu li i {
-    color: #4ca492;
-    font-size: 40px;
-  }
-  #menu li {
-    display: block;
-    padding-top: 10px;
-    font-size: 30px;
-  }
-  .mob-icon {
-    border: 3px solid #4ca492;
-    float: right;
-    margin-top: 35px;
-    cursor: pointer;
-  }
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 6px;
-    background-color: #4ca492;
-  }
-}
-
-
-/* hero image and principles slider */
-
-header {
-  float: left;
-  width: 100%;
-  height: 736px;
-  border-bottom: 10px solid #242626;
-  background-color: #f6f6f6;
-  background-image: url("https://cdn.gomix.com/a30076b8-4d38-438e-a249-cb8aa5b106ff%2Fhero-img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-}
-
-.slide-section {
-  align-self: center;
-}
-
-.my-h2 {
-  font-family: Montserrat, Sans-Serif;
-  font-weight: 700;
-  color: #4ca492;
-}
-
-.h2-principles {
-  border: 3px solid #4ca492;
-  display: inline-block;
-  padding: 5px;
-}
-
-#slides {
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-}
-
-.quote-block {
-  position: absolute;
-}
-
-.slideUp {
-  animation: slideUp 2s 1;
-  position: absolute;
-}
-
-.slideOut {
-  transform: translateX(1000px);
-  transition: transform 1s ease-out;
-}
-
-.quote-block p {
-  font-family: Raleway, Sans-serif;
-  font-size: 60px;
-  line-height: 76px;
-}
-
-@media (max-width: 1200px) {
-  .quote-block {
-    background-color: rgba(0, 0, 0, .5);
-    padding: 15px
-  }
-  .quote-block p {
-    color: #fff;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    display: block;
-    padding: 50px 0;
-    height: 450px;
-    background-position: top left;
-  }
-  .quote-block p {
-    font-family: Raleway, Sans-serif;
-    font-size: 45px;
-    line-height: 60px;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: .0;
-    transform: translateX(-300px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-
-/* life and work section */
-
-article {
-  clear: both;
-  padding: 25px 0;
-}
-
-article p {
-  font-family: Raleway, Sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-}
-
-blockquote {
-  margin-top: 15px;
-  font-family: Raleway, Sans-Serif;
-  font-size: 24px;
-  border-left: 5px solid #4ca492;
-}
-
-
-/* cta section */
-
-.cta {
-  background-color: #242626;
-  padding: 25px 0;
-}
-
-.my-btn {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  background-color: #4ca492;
-  border: none;
-  outline: none;
-  font-size: 24px;
-  text-align: center;
-  border-radius: 54px;
-  transition: all .3s ease;
-  color: #fff;
-
-}
-
-.my-btn{
-}
-
-.my-btn:hover {
-  background-color: #378071;
-  color:#fff;
-}
-
-h3 {
-  font-family: Raleway, Sans-serif;
-  font-size: 36px;
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  line-height: 1.8em;
-}
-video {
-  width: 100%    !important;
-  height: auto   !important;
-}
-#documentary {
-  padding: 0 0 25px 0;
-}
-
-
-/* footer section */
-
-footer {
-  width: 100%;
-  background-color: #242626;
-  padding: 25px 0 0 0;
-}
-
-.achievements-list {
-  padding-left: 20px;
-}
-
-.achievements-list li {
-  font-family: Raleway, Sans-serif;
-  font-size: 14px;
-  font-weight: 400px;
-  list-style-image: url("https://cdn.gomix.com/a30076b8-4d38-438e-a249-cb8aa5b106ff%2Fbullet.png");
-  padding-left: 0;
-  padding: 10px;
-  color: #fff;
-}
-
-.copyright {
-  background-color: #fff;
-  width: 100%;
-  padding: 15px 0;
-  margin-top: 25px;
-}
-
-.copyright p {
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 28px;
-}
-
-.copyright i {
-  padding: 0;
-  margin: 0 0 0 5px;
-  font-size: 28px;
-  line-height: 28px;
-  color: #ccc;
-    transition: color .3s ease;
-}
-.copyright i:hover {
- color: #4ca492;
-}
-</style>
-
-<nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-12">
-        <h1><span class="h1-small">tribute to</span>Dieter Rams </h1>
-        <div class="mob-icon">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
-
-
-      <ul class="col-lg-6" id="menu">
-        <li id="close-menu"><i class="fa fa-times" aria-hidden="true"></i></li>
-        <li>
-          <a href="#life" class="menu-links">life &amp; work</a>
-        </li>
-        <li>
-          <a href="#documentary" class="menu-links">documentary</a>
-        </li>
-        <li>
-          <a href="#accomplishments" class="menu-links">accomplishments</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- end of navigation section -->
-
-<header>
-  <div class="slide-section  container">
-    <div class="row">
-      <div class="col-xs-12 col-lg-6 col-lg-push-6">
-        <h2 class="h2-principles my-h2">ten principles</h2>
-        <div id="slides">
-          <div class="quote-block slideOut">
-            <p>Good design is innovative</p>
-          </div>
-          <div class="quote-block slideOut">
-            <p>Good design makes a product useful</p>
-          </div>
-          <div class="quote-block slideOut">
-            <p>Good design is aesthetic</p>
-          </div>
-          <div class="quote-block slideOut">
-            <p>Good design makes a product understandable</p>
-          </div>
-          <div class="quote-block slideOut">
-            <p>Good design is unobtrusive</p>
-          </div>
-          <div class="quote-block slideOut">
-            <p>Good design is honest</p>
-          </div>
-          <div class="quote-block slideOut">
-            <p>Good design is long-lasting</p>
-          </div>
-          <div class="quote-block slideOut">
-            <p>Good design is thorough down to the last detail</p>
-          </div>
-          <div class="quote-block slideOut">
-            <p>Good design is environmentally-friendly</p>
-          </div>
-          <div class="quote-block slideOut">
-            <p>Good design is as little design as possible</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-<!-- end of hero section -->
-
-<main>
-  <article id="life">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="my-h2">life &amp; work</h2>
-        </div>
-
-        <div class="col-md-6">
-
-          <p>H.C. Dieter Rams (born 20 May 1932 in Wiesbaden, Hessen) is a German professor emeritus and industrial designer closely associated with the consumer products company Braun and the Functionalist school of industrial design. His unobtrusive approach
-            and belief in "less but better" design generated a timeless quality in his products and have influenced the design of many products, which also secured Rams worldwide recognition and appreciation.</p>
-          <p>Dieter Rams began his studies in architecture and interior decoration at Wiesbaden School of Art in 1947. A year later, in 1948, he took a break from studying to gain practical experience and finish his carpentry apprenticeship. He returned
-            to Wiesbaden School of Art in 1948 and graduated with honours in 1953 after which he began working for Frankfurt-based architect Otto Apel. In 1955, he was recruited to Braun as an architect and an interior designer. In 1961, he became the
-            Chief Design Officer at Braun, a position he retained until 1995.
-          </p>
-          <p>Dieter Rams was strongly influenced by the presence of his grandfather, a carpenter. Rams once explained his design approach in the phrase "Weniger, aber besser" which translates as "Less, but better". Rams and his staff designed many memorable
-            products for Braun including the famous SK-4 record player and the high-quality 'D'-series (D45, D46) of 35 mm film slide projectors. He is also known for designing a furniture collection for Vitsœ in the 1960s including the 606 Universal
-            Shelving System and 620 Chair Programme. By producing electronic gadgets that were remarkable in their austere aesthetic and user friendliness, Rams made Braun a household name in the 1950s.
-            <br/><br/>Source: <a href="https://en.wikipedia.org/wiki/Dieter_Rams" target="_blank">wiki - Dieter Rams</a></p>
-        </div>
-        <div class="col-md-6">
-          <figure>
-            <figcaption>606 Universal Shelving System, 1960, by Dieter Rams for Vitsœ</figcaption>
-            <img src="https://cdn.gomix.com/a30076b8-4d38-438e-a249-cb8aa5b106ff%2Fshelfs.jpg" alt="RT 20 tischsuper radio" class="img-responsive" />
-          </figure>
-          <blockquote>
-            <em>Rams once explained his design approach in the phrase "Weniger, aber besser" which translates as <a href="https://www.amazon.com/Dieter-Rams-Better-English-German/dp/3899555252" target="_blank"><strong>"Less, but better"</strong></a></em>.
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </article>
-  <!--end of life and work section-->
-
-  <div class="cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h3><em>see more products by Dieter Rams</em></h3></div>
-        <div class="col-md-4"><a class="my-btn" href="http://dieterrams.tumblr.com/" target="blank">click here</a></div>
-      </div>
-    </div>
-  </div>
-  <!--end of cta section-->
-
-  <div id="documentary">
-    <div class="container">
-      <div class="row">
-        <article>
-          <div class="col-md-12">
-            <h2 class="my-h2">documentary</h2>
-          </div>
-
-
-          <div class="col-md-6">
-
-
-            <p>For over fifty years Dieter has left an indelible mark on the field of product design and the world at large with his iconic work at Braun and Vitsoe.
-            </p>
-            <p>
-              The objects Dieter has designed have touched the lives of millions of people – so many of us have had a Braun coffeemaker, shaver, stereo, calculator, speakers, or alarm clock. Or an Oral-B toothbrush. Or a Vitsoe 606 shelving system. Or any of the hundreds
-              of other products Dieter has designed or overseen the design of.
-              <br /><br /> Source: <a href="https://www.kickstarter.com/projects/1019019367/rams-the-first-feature-documentary-about-dieter-ra" target="_blank">RAMS: The First Feature Documentary About Dieter Rams by Gary Hustwit</a>
-            </p>
-
-          </div>
-          <div class="col-md-6">
-            <figure>
-              <video poster="https://cdn.gomix.com/a30076b8-4d38-438e-a249-cb8aa5b106ff%2Fdoc_dieter.jpg" controls>
-              <source src="https://ksr-video.imgix.net/projects/2505481/video-680701-h264_high.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </figure>
-          </div>
-        </article>
-      </div>
-
-    </div>
-  </div>
-</main>
-<!-- end of main section -->
-
-<footer id="accomplishments">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="my-h2">accomplishments</h2>
-      </div>
-      <div class="col-md-6">
-        <ul class="achievements-list">
-          <li>1960 Receives ‘Kulturkreis im Bundesverband der Deutschen Industrie’ Scholarship Award.</li>
-          <li>
-            1961 TP1 Portable record player and radio receives ‘Supreme Award’ at Interplas exhibition, London.</li>
-          <li>1963 F21 receives ‘Supreme Award’ at Interplas exhibition, London.</li>
-          <li>1968 Awarded ‘Honorary Royal Designer for Industry’ of the Royal Society of Arts, UK for ‘distinguished design in furniture and light engineering products’</li>
-          <li>
-            1969 620 Chair awarded ‘Gold Medal’ at the International Furniture Exhibition in Vienna.</li>
-          <li>1978 Awarded ‘SIAD Medal of the Society of Industrial Artists and Designers’, UK.</li>
-          <li>
-            1985 Awarded ‘Académico de Honor Extranjero’ by the Academia Mexicana de Diseño, Mexico</li>
-          <li>1989 First recipient of the ‘Industrie Forum Design Hannover’, Germany, for special contribution to design.</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <ul class="achievements-list">
-          <li>1989 Awarded ‘Doctor honoris causa’ by Royal College of Arts, London, UK.</li>
-          <li>1992 Receives IKEA prize and uses prize money for his own ‘Dieter and Ingeborg Rams Foundation’ for the promotion of design.</li>
-          <li>1996 Receives ‘World Design Medal’ from the Industrial Designers Society of America.</li>
-          <li>2002 Awarded ‘Verdienstkreuz des Verdienstordens der Bundesrepublik Deutschland (Commanders Cross of the Order of Merit of the Federal Republic of Germany)</li>
-          <li>2003 Receives ‘Design Award ONDI’, Havana, Cuba for his special contribution to industrial design and world culture.</li>
-          <li>2007 Awarded Design Prize of the Federal republic of Germany for his life’s work.</li>
-          <li>2007 Receives Lucky Strike Designer Award from the Raymond Loewy Foundation.</li>
-          <li>1960 Receives ‘Kulturkreis im Bundesverband der Deutschen Industrie’ Scholarship Award.</li>
-          <li>2013 Awarded Lifetime Achievement Medal at London Design Festival 2013.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6">
-          <p>&copy; Copyright 2017 - Designed &amp; Developed by <a href="http://denisjunuzovic.com/" target="_blank">Denis Junuzovic</a></p>
-        </div>
-        <div class="col-xs-6 text-right">
-          <a href="https://ba.linkedin.com/in/denis-junuzovic-a4153835" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          <a href="https://github.com/deni1688" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-          <a href="https://www.freecodecamp.com/deni1688" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
-          <a href="http://codepen.io/code2eat/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- end of footer -->
-
-<script>
-    (function() {
-  var i = 0; //defining the intial index
-  var blocks = document.querySelectorAll(".quote-block"); //collecting all the divs with .quote-block into a array
-  var mobIcon = document.getElementsByClassName("mob-icon")[0];
-  var closeMenu = document.getElementById("close-menu");
-  var menu = document.getElementById("menu");
-
-  blocks[i].className = "quote-block slideUp"; //setting the first div.quote-block to add .slideUp 
-  var slideAnimation = setInterval(runBlocks, 4000);
-
-  function runBlocks() { //function runs the blocks
-    if (i > 0) {
-      blocks[i - 1].className = "quote-block slideOut"; //to hide the previous block if its past the first one
-      if (i === blocks.length) {
-        i = 0; //resetting the index if when it comes to the last instance of the array
-      }
-    }
-    blocks[i].className = "quote-block slideOut"; //remove class from current
-    blocks[i++].className = "quote-block slideUp"; //adding class to next
-  }
-
-  /*menu related event listeners*/
-  mobIcon.addEventListener("click", function() {
-    menu.style.width = "300px";
-    menu.style.transition = "all .5s ease";
-
-  }); //open menu
-  closeMenu.addEventListener("click", function() {
-    menu.style.width = "0";
-    menu.style.transition = "all .5s ease";
-  }); //close menu
-  menu.addEventListener("click", function(e) {
-    var winW = window.innerWidth;
-    if (e.target.classList.contains("menu-links") && winW < 1200) {
-      menu.style.width = "0";
-      menu.style.transition = "all .5s ease";
-    }
-  }); //event bubbling used to close menu when menu link is clicked
-  window.addEventListener("resize", function(e) {
-    var winW = e.target.innerWidth;
-    if (winW >= 1200) {
-      menu.style.width = "50%";
-    } else if (winW <= 1200) {
-      menu.style.width = "0";
-    }
-  });
-
-})();
-</script>
+    <h2>accomplishments</h2>
+<ul class="custom-list">
+    <li>1960 Receives ‘Kulturkreis im Bundesverband der Deutschen Industrie’ Scholarship Award.</li>
+    <li>
+    1961 TP1 Portable record player and radio receives ‘Supreme Award’ at Interplas exhibition, London.</li>
+    <li>1963 F21 receives ‘Supreme Award’ at Interplas exhibition, London.</li>
+    <li>1968 Awarded ‘Honorary Royal Designer for Industry’ of the Royal Society of Arts, UK for ‘distinguished design in furniture and light engineering products’</li>
+    <li>
+    1969 620 Chair awarded ‘Gold Medal’ at the International Furniture Exhibition in Vienna.</li>
+    <li>1978 Awarded ‘SIAD Medal of the Society of Industrial Artists and Designers’, UK.</li>
+    <li>
+    1985 Awarded ‘Académico de Honor Extranjero’ by the Academia Mexicana de Diseño, Mexico</li>
+    <li>1989 First recipient of the ‘Industrie Forum Design Hannover’, Germany, for special contribution to design.</li>
+</ul>
 </div>
-<div class="back-to-top">
-    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
-</div>
-
-
-
-
-<footer class="footer text-center" style="background: yellow;">
-
+<footer class="footer">
   <div class="row">
-
-    <div class="small-12 medium-12 large-4 columns">
-      <img src="/my_jekyll/lib/img/+avatar.png" style="vertical-align: baseline;">
+    <div class="small-12 medium-6 medium-push-6 columns">
+      <p class="logo show-for-small-only"><i class="fi-target"></i> FIGHT CLUB</p>
+      <form class="footer-form">
+        <div class="row">
+          <div class="medium-9 medium-push-3 columns">
+            <label>
+              <label for="email" class="contact">Contact Me</label>
+            <input type="email" id="email" placeholder="Email Address" />
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-9 medium-push-3 columns">
+            <label>
+              <textarea rows="5" id="message" placeholder="Message"></textarea>
+            </label>
+          </div>
+          <div class="row">
+            <div class="medium-9 medium-push-3 columns">
+              <button class="submit" type="submit" value="Submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
-
-    <div class="small-12 medium-12 large-4 columns">
-      <h3>Join</h3>
-     newsletter
+    <div class="small-12 medium-6 medium-pull-6 columns">
+      <p class="logo hide-for-small-only"><i class="fi-target"></i> MJS</p>
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="#">Faq</a>
+        <a href="#">Contact</a>
+      </p>
+      <ul class="inline-list social">
+        <a href="#"><i class="fi-social-facebook"></i></a>
+        <a href="#"><i class="fi-social-twitter"></i></a>
+        <a href="#"><i class="fi-social-linkedin"></i></a>
+        <a href="#"><i class="fi-social-github"></i></a>
+      </ul>
+      <p class="copywrite">Copywrite not copywrite © 2015</p>
     </div>
-
-    <div class="small-12 medium-12 large-4 columns">
-      <h3>Connect</h3>
-    </div>
-
   </div>
-
 </footer>
+  <footer id="footer-sticky">
+    <div id="logo-footer">
+      <a href="#" id="go-up" class="go-up-event"></a>
+    </div>
+    <nav class="row">
+      <ul class="footer-navigation">
+        <li id="menu-about" class="menu-item go-down-event"><a href="#">About</a></li>
+        <li id="menu-home" class="menu-item go-up-event"><a href="#">Home</a></li>
+        <li class="menu-item"><a id="portLink" href="#portfolio">My Works</a></li>
+        <li class="menu-item"><a target="_blank" href="//cu7io.us">Blog</a></li>
+      </ul>
+      <p>© 2015 Designed &amp; Coded by Cu7ious</p>
+    </nav>
+  </footer>
+
 
 
   
+<div class="back-to-top">
+    <a href="#top" class="button btn-circle page-scroll"><i class="fa fa-angle-up"></i></a>
+</div>
+
+
+
 <script type="text/javascript" src="/my_jekyll/lib/js/build/m.js"></script>
  
     <script type="text/javascript" src="/my_jekyll/lib/js/build/i/foundation_init.js"></script>
@@ -893,6 +349,8 @@ footer {
 
 
 
+
+
  <script>
  console.log("*** INFO  ***")
  console.log("ID: home ")
@@ -918,6 +376,77 @@ footer {
  </script>
  
 
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDBdh6dj3XOB_UgrUYOP_DvyTT_zbwAc6U&sensor=false">
+    
+</script>
+
+
+
+<script>
+    $( document ).ready( function() {
+
+
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var icons = {
+          parking: {
+            icon: iconBase + 'parking_lot_maps.png'
+          },
+          library: {
+            icon: iconBase + 'library_maps.png'
+          },
+          info: {
+            icon: iconBase + 'info-i_maps.png'
+          }
+        };
+
+
+
+	//Google Maps JS
+	//Set Map
+	function initialize() {
+			var myLatlng = new google.maps.LatLng(-33.916365282092855, 151.22937399734496);
+			var imagePath = 'https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png'
+			var mapOptions = {
+				zoom: 17,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+			}
+
+		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		//Callout Content
+		var contentString = 'Some address here..';
+		//Set window width + content
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString,
+			maxWidth: 500
+		});
+
+		//Add Marker
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			icon: imagePath,
+			title: 'image title'
+		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+
+		//Resize Function
+		google.maps.event.addDomListener(window, "resize", function() {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+});
+</script>
   </body>
 </html>
 
