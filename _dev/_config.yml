@@ -41,6 +41,28 @@ collections:
 defaults:
   - scope:
       path: ''
+      type: pages
+    values:
+      layout: page/default
+      dev-info: true
+      foundation5: 1
+      fullpage: 1
+      isotope: 1
+      scroll-to: 1
+      animation-page: 1
+      animation-scroll: 1
+      fitivid: 1
+      swipebox: 1
+      preloader: 1
+      top-nav: 1
+      footer: 2
+      sidebar: 1
+      grid: 1
+      mast-head: 1
+      back-to-top: 1
+      map: 1
+  - scope:
+      path: ''
       type: posts
     values:
       layout: post
@@ -53,48 +75,6 @@ defaults:
       description: DESCRIPTION DEFAULT
       tags:
         - journal
-  - scope:
-      path: _docs/vendors/foundation_5
-      type: docs
-    values:
-      layout: docs/docs-foundation
-      auto-scroll: false
-      txt-color: dark
-  - scope:
-      path: _docs/vendors/fullpage
-      type: docs
-    values:
-      layout: docs/docs-fullpage
-      auto-scroll: true
-      txt-color: dark
-  - scope:
-      path: _docs/vendors/isotope
-      type: docs
-    values:
-      layout: docs/docs-isotope
-      auto-scroll: true
-      txt-color: dark
-  - scope:
-      path: _docs/vendors/animsition
-      type: docs
-    values:
-      layout: docs/docs-animsition
-      auto-scroll: false
-      txt-color: dark
-  - scope:
-      path: _docs/vendors/aos
-      type: docs
-    values:
-      layout: docs/docs-aos
-      auto-scroll: false
-      txt-color: dark
-  - scope:
-      path: _docs/vendors/swipebox
-      type: docs
-    values:
-      layout: docs/docs-swipebox
-      auto-scroll: false
-      txt-color: dark
 g-analytics: UA-59944728-3
 fb-app-id: '915671155245552'
 see-also:

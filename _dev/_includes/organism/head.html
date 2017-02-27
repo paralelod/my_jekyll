@@ -1,9 +1,8 @@
 <head>
-
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
   {% include atom/head/head-meta.html %}
-  {% include molecule/script/head.html %}
-
+  {% include atom/head/head-links.html %}
+  {% include atom/head/head-css.html %}
+  {% include atom/head/head-js.html %}
 </head>
 

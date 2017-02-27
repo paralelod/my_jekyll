@@ -1,4 +1,4 @@
-/*$(function(){
+$(function(){
 var $grid= $('.grid').isotope({
     itemSelector: '.grid li',
     percentPosition: true,
@@ -14,7 +14,7 @@ var $grid= $('.grid').isotope({
         $grid.append($elements);
         $grid.isotope();
     });
-
+/*
     // filter .Creative_Direction items
     $grid.isotope({ filter: '.Creative_Direction' });
 
@@ -32,5 +32,7 @@ var $grid= $('.grid').isotope({
       var filterValue = $(this).attr('data-filter');
       $grid.isotope({ filter: filterValue });
     });
+*/
+});
 
-});*/
+console.log('INIT - isotope');

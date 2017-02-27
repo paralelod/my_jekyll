@@ -1,0 +1,93 @@
+---
+layout: page/default
+page-id: home
+
+dev-info: true
+foundation5: 1
+myscript: true
+fullpage: 1
+scroll-to: true
+fitivid: true
+swipebox: 1
+isotope: 1
+animation-page: true
+animation-scroll: true
+
+preloader: 1
+top-nav: 1
+footer: 1
+sidebar: "left-right-1"
+grid: "isotope-columnns-3"
+mast-head: "full-height"
+back-to-top: true
+
+---
+
+<style>
+.container {
+  background: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 800px;
+}
+
+#videoModal {
+  padding: 15px 50px 0 50px;
+  min-width: 100%;
+  background: #125069;
+  top: 0;
+  left: 0;
+  margin: 0;
+  min-height: 100%;
+}
+#videoModal .close-reveal-modal {
+  color: #fff;
+}
+
+.play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  display: block;
+}
+.play-button .play {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.play-button .play span {
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 40px solid #fff;
+  margin-top: 20px;
+  margin-left: 30px;
+  display: inline-block;
+}
+.play-button:hover .play {
+  border: 5px solid #41637C;
+}
+.play-button:hover .play span {
+  border-left: 40px solid #41637C;
+}
+</style>
+
+
+  
+    <div class="container">
+      <a href="#" data-reveal-id="videoModal" class="play-button">
+        <div class="play"><span> </span></div>
+      </a>
+    </div>
+      
+    <!-- start modal -->
+    <div id="videoModal" class="reveal-modal" data-reveal>
+      <div class="flex-video widescreen vimeo">
+        <iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>

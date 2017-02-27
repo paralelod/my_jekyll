@@ -1,17 +1,19 @@
 $(document).ready(function() {
     $('.animsition').animsition();
   });
+console.log('INIT - animsition');
 
   AOS.init({
         easing: 'ease-in-out-sine'
       });
-//fitvid
+  console.log('INIT - AOS');
 
 $(document).ready(function(){
     // Target your .container, .wrapper, .post, etc.
     $([".fit"]).fitVids();
   });
 
+console.log('INIT - fitvid');
 //foundation init
   $(document).foundation();
 
@@ -32,6 +34,21 @@ setTimeout(function() {
     });
   }
 }, 600);*/
+/*$(document).foundation('section').foundation('orbit', {
+    animation: 'fade',
+    timer_speed: 3000,
+    animation_speed: 400,
+    stack_on_small: false,
+    navigation_arrows: false,
+    slide_number: false,
+    pause_on_hover: false,
+    resume_on_mouseout: false,
+    bullets: false,
+    timer: true,
+    variable_height: false,
+  });*/
+
+  console.log('INIT - foundation5');
   $(document).ready(function() {
       $('#fullpage').fullpage({
         menu: 'anim-menu',
@@ -48,6 +65,8 @@ setTimeout(function() {
       
       });
     });
+
+    console.log('INIT - fullpage auto-scroll');
  $(document).ready(function() {
       $('#fullpage-noscroll').fullpage({
         menu: 'anim-menu',
@@ -94,7 +113,8 @@ setTimeout(function() {
       }
       );
     });
-/*$(function(){
+    console.log('INIT - fullpage');
+$(function(){
 var $grid= $('.grid').isotope({
     itemSelector: '.grid li',
     percentPosition: true,
@@ -110,7 +130,7 @@ var $grid= $('.grid').isotope({
         $grid.append($elements);
         $grid.isotope();
     });
-
+/*
     // filter .Creative_Direction items
     $grid.isotope({ filter: '.Creative_Direction' });
 
@@ -128,8 +148,10 @@ var $grid= $('.grid').isotope({
       var filterValue = $(this).attr('data-filter');
       $grid.isotope({ filter: filterValue });
     });
+*/
+});
 
-});*/
+console.log('INIT - isotope');
 $( document ).ready(function() {
 
 			/* Basic Gallery */
@@ -148,3 +170,5 @@ $( document ).ready(function() {
 			} );
 
       });
+
+	  console.log('INIT - swipebox');

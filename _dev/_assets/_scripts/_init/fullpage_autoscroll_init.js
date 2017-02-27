@@ -14,3 +14,5 @@
       
       });
     });
+
+    console.log('INIT - fullpage auto-scroll');

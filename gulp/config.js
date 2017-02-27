@@ -134,6 +134,7 @@ module.exports = {
       './_dev/_assets/vendors/FitVids.js-master/jquery.fitvids.js',
       './_dev/_assets/vendors/swipebox-master/src/js/jquery.swipebox.min.js',
       './_dev/_assets/bower_components/jquery.easing/js/jquery.easing.min.js' ,
+      './_dev/_assets/bower_components/slick-carousel/slick/slick.min.js' ,
       //'./_dev/_assets/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js' ,
       './_dev/_assets/bower_components/aos/dist/aos.js',
       './_dev/_assets/vendors/animsition-master/animsition.min.js'

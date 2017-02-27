@@ -8224,6 +8224,21 @@ ul.off-canvas-list li label {
   transform: translate(5px, -50%);
   opacity: 1; }
 
+.maps-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px; }
+
+#map_container {
+  position: relative; }
+
+#map {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 22.25%;
+  padding-top: 30px;
+  position: relative; }
+
 .hero {
   background: url("http://static.pexels.com/wp-content/uploads/2014/06/18-apple-black-and-white-680-825x550.jpg") no-repeat center center fixed;
   background-size: cover;

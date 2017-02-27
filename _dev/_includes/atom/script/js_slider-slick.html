@@ -1,0 +1,26 @@
+{% if page.slider == 1 %}
+
+<script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/v/slick.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+  
+  $(".slideshow").slick({
+    autoplay:true,
+    autoplaySpeed:10000,
+    speed:900,
+    slidesToShow:1,
+    slidesToScroll:1,
+    pauseOnHover:true,
+    dots:true,
+    pauseOnDotsHover:true,
+    cssEase:'linear',
+    fade:true,
+    draggable:false,
+    prevArrow:'<button class="PrevArrow"></button>',
+    nextArrow:'<button class="NextArrow"></button>', 
+  });
+  
+})
+</script>
+{% endif %}
