@@ -1,21 +1,14 @@
 ---
 layout: default
-type: page-fullpage
+type: page
+dev-info: true
 ---
-
 {% include molecule/loading/cover.html %}
-{% include molecule/nav/nav_top-right-docs.html %}
-
-{% if page.auto-scroll == true %}
-<div id="fullpage-scroll">
-{% else %}
-<div id="fullpage-noscroll">
-{% endif %}
+<a id="top"></a>
+{% include organism/nav.html %}
+<div id="fullpage">
     {{ content }}
 </div>
 {% include atom/util/back_top_btn.html %}
-{% include molecule/footer.html %}
-{% include molecule/script/bottom.html %}
-{% include atom/script/js_init_fullpage.html %}
-
-
+{% include organism/footer.html %}
+{% include organism/script/bottom.html %}

@@ -1,16 +1,4 @@
-{% if page.myscript == true %}
-    <!--script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/s.js"></script-->
-    <!--script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/in.js"></script-->
- {% endif %}
-
-
- {% if page.preloader == 1 %}
-    <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/preloader.js"></script>
-{% endif %}
-
-{% if page.top-nav == 4 %}
-    <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/menu_top_bar.js"></script>
-{% endif %}
+<!-- layout -->
 
 {% if page.layout == "page/off-canvas-custom-menu" %}
     <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/off-canvas.js"></script>
@@ -20,8 +8,31 @@
     <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/off-canvas.js"></script>
 {% endif %}
 
+
+<!-- page -->
+
+ {% if page.preloader == 1 %}
+    <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/preloader.js"></script>
+{% endif %}
+
 {% if page.footer == 2 %}
     <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/footer-sticky.js"></script>
+{% endif %}
+
+
+{% if page.top-nav == 4 %}
+    <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/menu_top_bar.js"></script>
+{% endif %}
+
+{% if page.mast-head == 2 %}
     <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/mast-head-fade.js"></script>
+{% endif %}
+
+{% if page.social-bar == 1 %}
     <script type="text/javascript" src="{{ site.baseurl }}/lib/js/build/c/social_bar.js"></script>
 {% endif %}
+
+
+
+
+

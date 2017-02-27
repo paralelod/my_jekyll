@@ -1,0 +1,1 @@
+$(function(){var i=$(".grid").isotope({itemSelector:".grid li",percentPosition:!0,transitionDuration:0,isInitLayout:!0});i.imagesLoaded().always(function(){var o=".grid-item",t=$(o);i.append(t),i.isotope()})}),console.log("INIT - isotope");

@@ -1,1 +1,1 @@
-$(document).ready(function(){$([".fit"]).fitVids()});
+$(document).ready(function(){$([".fit"]).fitVids()}),console.log("INIT - fitvid");

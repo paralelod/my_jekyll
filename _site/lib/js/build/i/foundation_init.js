@@ -1,1 +1,1 @@
-$(document).foundation();
+$(document).foundation(),console.log("INIT - foundation5");
